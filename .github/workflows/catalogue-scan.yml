@@ -1,0 +1,246 @@
+name: FCC Catalogue Discovery
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+
+      # ----------------------------------------
+      # CHECK OUT REPOSITORY
+      # ----------------------------------------
+
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      # ----------------------------------------
+      # SET UP NODE
+      # ----------------------------------------
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # ----------------------------------------
+      # INSTALL PLAYWRIGHT
+      # ----------------------------------------
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      # ----------------------------------------
+      # OPEN FCC AND LOAD ALL COURSES
+      # ----------------------------------------
+
+      - name: Discover FCC catalogue
+        run: |
+          node - <<'EOF'
+          const { chromium } = require('playwright');
+
+          (async () => {
+
+            const browser = await chromium.launch({
+              headless: true
+            });
+
+            const page = await browser.newPage({
+              viewport: {
+                width: 1600,
+                height: 1000
+              }
+            });
+
+            try {
+
+              console.log('========================================');
+              console.log('FCC CATALOGUE DISCOVERY');
+              console.log('========================================');
+
+              // ----------------------------------------
+              // OPEN FCC
+              // ----------------------------------------
+
+              console.log('Opening FCC...');
+
+              await page.goto(
+                'https://mysis-fccollege.empower-xl.com/fusebox.cfm?fuseaction=CourseCatalog&rpt=1',
+                {
+                  waitUntil: 'domcontentloaded',
+                  timeout: 60000
+                }
+              );
+
+              await page.waitForTimeout(2000);
+
+              console.log('✓ FCC loaded');
+
+              // ----------------------------------------
+              // SELECT TERM
+              // ----------------------------------------
+
+              const term = page.locator(
+                'select[name="empower_global_term_id"]'
+              );
+
+              await term.selectOption({
+                label: '2026 Fall'
+              });
+
+              console.log('✓ Term: 2026 Fall');
+
+              await page.waitForTimeout(1500);
+
+              // ----------------------------------------
+              // LEAVE DEPARTMENT BLANK
+              // ----------------------------------------
+
+              console.log(
+                '✓ Department: ALL'
+              );
+
+              // ----------------------------------------
+              // LEAVE COURSE BLANK
+              // ----------------------------------------
+
+              console.log(
+                '✓ Course: ALL'
+              );
+
+              // ----------------------------------------
+              // SEARCH
+              // ----------------------------------------
+
+              const search = page.locator(
+                'button[name="search"]'
+              );
+
+              await search.waitFor({
+                state: 'visible',
+                timeout: 30000
+              });
+
+              await search.click();
+
+              console.log('✓ Search clicked');
+
+              // Give FCC time to populate the results.
+              await page.waitForTimeout(5000);
+
+              // ----------------------------------------
+              // COUNT RESULT ROWS
+              // ----------------------------------------
+
+              const rows = page.locator(
+                'div.ui-grid-row'
+              );
+
+              const rowCount = await rows.count();
+
+              console.log('');
+              console.log('========================================');
+              console.log('RESULT DISCOVERY');
+              console.log('========================================');
+
+              console.log(
+                `Rows detected in DOM: ${rowCount}`
+              );
+
+              // ----------------------------------------
+              // PRINT EVERY ROW
+              // ----------------------------------------
+
+              for (let i = 0; i < rowCount; i++) {
+
+                const row = rows.nth(i);
+
+                const text = (await row.innerText())
+                  .replace(/\u00a0/g, ' ')
+                  .replace(/\s+/g, ' ')
+                  .trim();
+
+                if (!text) {
+                  continue;
+                }
+
+                console.log('');
+                console.log(`ROW ${i + 1}`);
+                console.log(text);
+
+              }
+
+              // ----------------------------------------
+              // SCREENSHOT
+              // ----------------------------------------
+
+              await page.screenshot({
+                path: 'fcc-catalogue.png',
+                fullPage: true
+              });
+
+              console.log('');
+              console.log('========================================');
+              console.log('DISCOVERY COMPLETE');
+              console.log('========================================');
+
+            } catch (error) {
+
+              console.error('');
+              console.error('========================================');
+              console.error('ERROR');
+              console.error('========================================');
+
+              console.error(error);
+
+              try {
+
+                await page.screenshot({
+                  path: 'fcc-error.png',
+                  fullPage: true
+                });
+
+              } catch {}
+
+              process.exit(1);
+
+            } finally {
+
+              await browser.close();
+
+            }
+
+          })();
+          EOF
+
+      # ----------------------------------------
+      # SAVE SCREENSHOT
+      # ----------------------------------------
+
+      - name: Save catalogue screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fcc-catalogue
+          path: fcc-catalogue.png
+          retention-days: 3
+
+      # ----------------------------------------
+      # SAVE ERROR SCREENSHOT
+      # ----------------------------------------
+
+      - name: Save error screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fcc-error
+          path: fcc-error.png
+          retention-days: 3
