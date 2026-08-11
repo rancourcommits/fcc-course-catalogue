@@ -3519,7 +3519,7 @@
       ]
     },
     "COMP 360 B": {
-      "available": 3,
+      "available": 2,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "A Khanum",
@@ -5947,7 +5947,7 @@
       ]
     },
     "ENGL 108 N": {
-      "available": 3,
+      "available": 2,
       "enrolled": 25,
       "credits": "3.00",
       "instructor": "S Hanif",
@@ -6901,7 +6901,7 @@
       ]
     },
     "GEOG 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "TBD",
@@ -8148,7 +8148,7 @@
       ]
     },
     "MCOM 105 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "Dr S Abbas",
@@ -8174,7 +8174,7 @@
       ]
     },
     "MCOM 200 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "M Batool",
@@ -8226,7 +8226,7 @@
       ]
     },
     "MCOM 202 A": {
-      "available": 9,
+      "available": 10,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "S A Naeem",
