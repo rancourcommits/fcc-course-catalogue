@@ -111,8 +111,9 @@ jobs:
               // ----------------------------------------
               //
               // Department and course are intentionally
-              // left blank so the entire catalogue is
-              // returned.
+              // left blank.
+              //
+              // This returns the complete catalogue.
               //
               // ----------------------------------------
 
@@ -127,22 +128,47 @@ jobs:
 
               await search.click();
 
-              console.log('✓ Full catalogue search clicked');
+              console.log(
+                '✓ Full catalogue search clicked'
+              );
 
-              await page.waitForTimeout(5000);
+              // ----------------------------------------
+              // WAIT FOR ACTUAL CATALOGUE RESULTS
+              // ----------------------------------------
+              //
+              // FCC loads the results dynamically into
+              // #courses. We wait for the actual course
+              // container instead of relying only on a
+              // fixed timeout.
+              //
+              // ----------------------------------------
+
+              const courseContainer =
+                page.locator('#courses');
+
+              await courseContainer.waitFor({
+                state: 'attached',
+                timeout: 60000
+              });
+
+              await page.waitForTimeout(3000);
+
+              const courseRows =
+                page.locator(
+                  '#courses div.ui-grid-row'
+                );
+
+              await courseRows.first().waitFor({
+                state: 'attached',
+                timeout: 60000
+              });
+
+              console.log(
+                '✓ Catalogue results loaded'
+              );
 
               // ----------------------------------------
               // SAVE FULL HTML SNAPSHOT
-              // ----------------------------------------
-              //
-              // This captures the complete HTML currently
-              // loaded in the browser after the catalogue
-              // search has completed.
-              //
-              // We are saving this temporarily so we can
-              // inspect FCC's actual catalogue structure
-              // and make the parser more reliable.
-              //
               // ----------------------------------------
 
               const catalogueHtml =
@@ -159,83 +185,134 @@ jobs:
               );
 
               // ----------------------------------------
-              // FIND ALL CATALOGUE ROWS
+              // FIND COURSE ROWS
+              // ----------------------------------------
+              //
+              // IMPORTANT:
+              //
+              // FCC uses two different row structures.
+              //
+              // Normal course row:
+              //
+              // 9 columns
+              //
+              // Course
+              // Credits
+              // Location
+              // Schedule
+              // Instructor
+              // Offer
+              // Available
+              //
+              // Courses with multiple meeting times:
+              //
+              // 6-column main row
+              // followed by one or more 7-column
+              // continuation rows.
+              //
+              // We therefore identify courses by the
+              // Course column rather than requiring a
+              // particular number of columns.
+              //
               // ----------------------------------------
 
-              const rows = page.locator(
-                'div.ui-grid-row'
-              );
+              const rows =
+                page.locator(
+                  '#courses div.ui-grid-row'
+                );
 
-              const rowCount = await rows.count();
+              const rowCount =
+                await rows.count();
 
+              console.log('');
               console.log(
                 `Raw catalogue rows: ${rowCount}`
               );
 
-              const sections = [];
-              let courseRowsRecognized = 0;
-              let courseRowsUnrecognized = 0;
-
               // ----------------------------------------
-              // PARSE COURSE CODE
+              // COURSE IDENTIFIER
               // ----------------------------------------
               //
-              // Supports:
+              // Matches examples such as:
               //
               // ARTS 101 A
-              // BIOT 699A A
-              // CHEM 799E B
-              // COMP 497A A
+              // BIOL 100 A
+              // BIOT 201 B
               // PHYS COMP A
               //
-              // No fixed total number of sections.
+              // No section letters are hard-coded.
               //
               // ----------------------------------------
 
-              function extractCourse(value) {
+              function extractSection(
+                courseText
+              ) {
+
+                const normalized =
+                  courseText
+                    .replace(/\u00a0/g, ' ')
+                    .replace(/\s+/g, ' ')
+                    .trim();
 
                 const match =
-                  value.match(
-                    /\b([A-Z]{2,6}\s+[A-Z0-9]{3,6}\s+[A-Za-z0-9]+)\b/i
+                  normalized.match(
+                    /^([A-Za-z]{2,8})\s+([A-Za-z0-9]{2,8})\s+([A-Za-z0-9]+)\b/
                   );
 
-                return match
-                  ? match[1]
-                      .replace(/\s+/g, ' ')
-                      .trim()
-                      .toUpperCase()
-                  : null;
+                if (!match) {
+                  return null;
+                }
+
+                return `${match[1]} ${match[2]} ${match[3]}`
+                  .toUpperCase();
               }
 
               // ----------------------------------------
-              // PARSE ALL ROWS
+              // PARSE CATALOGUE
               // ----------------------------------------
 
-              for (let i = 0; i < rowCount; i++) {
+              const sections = [];
 
-                const row = rows.nth(i);
+              let currentSection = null;
 
-                const text = (await row.innerText())
-                  .replace(/\u00a0/g, ' ')
-                  .replace(/\s+/g, ' ')
-                  .trim();
+              let courseRowsRecognized = 0;
 
-                const columns = row.locator(
-                  'div[class*="ui-grid-col-"]'
-                );
+              let continuationRows =
+                0;
 
-                const columnCount = await columns.count();
+              let unrecognizedRows = 0;
 
-                if (columnCount < 8) {
-                  continue;
-                }
+              for (
+                let i = 0;
+                i < rowCount;
+                i++
+              ) {
+
+                const row =
+                  rows.nth(i);
+
+                const columns =
+                  row.locator(
+                    'div[class*="ui-grid-col-"]'
+                  );
+
+                const columnCount =
+                  await columns.count();
 
                 const values = [];
 
-                for (let c = 0; c < columnCount; c++) {
+                for (
+                  let c = 0;
+                  c < columnCount;
+                  c++
+                ) {
 
                   const value =
-                    (await columns.nth(c).innerText())
+                    (
+                      await columns
+                        .nth(c)
+                        .innerText()
+                    )
                       .replace(/\u00a0/g, ' ')
                       .replace(/\s+/g, ' ')
                       .trim();
@@ -243,85 +320,216 @@ jobs:
                   values.push(value);
                 }
 
-                /*
-                 * FCC structure:
-                 *
-                 * 1 = icon
-                 * 2 = course
-                 * 3 = credits
-                 * 4 = location
-                 * 5 = schedule
-                 * 6 = instructor
-                 * 7 = enrolled
-                 * 8 = available
-                 * 9 = offer
-                 * 10 = details
-                 */
+                // --------------------------------------
+                // TRY TO IDENTIFY A NEW COURSE ROW
+                // --------------------------------------
 
-                const courseText =
-                  values[1] || '';
+                let courseText = '';
 
-                const location =
-                  values[3] || '';
+                if (
+                  values.length >= 2
+                ) {
 
-                const schedule =
-                  values[4] || '';
+                  courseText =
+                    values[1] || '';
 
-                const instructor =
-                  values[5] || '';
+                }
 
-                const enrolled =
-                  values[6] || '';
+                const section =
+                  extractSection(
+                    courseText
+                  );
 
-                const available =
-                  values[7] || '';
+                // --------------------------------------
+                // NEW COURSE SECTION
+                // --------------------------------------
 
-                const offer =
-                  values[8] || '';
+                if (section) {
 
-                // ----------------------------------------
-                // EXTRACT COURSE + SECTION
-                // ----------------------------------------
+                  courseRowsRecognized++;
 
-                const course =
-                  extractCourse(courseText);
+                  currentSection = {
+                    section,
+                    location: '',
+                    schedule: '',
+                    instructor: '',
+                    enrolled: '',
+                    available: null,
+                    offer: ''
+                  };
 
-                if (!course) {
-
-                  /*
-                   * Count rows that look like they may
-                   * contain course information but could
-                   * not be parsed.
-                   */
+                  // ------------------------------------
+                  // NORMAL 9-COLUMN COURSE ROW
+                  // ------------------------------------
+                  //
+                  // 0 = icon/blank
+                  // 1 = course
+                  // 2 = credits
+                  // 3 = location
+                  // 4 = schedule
+                  // 5 = instructor
+                  // 6 = offer
+                  // 7 = available
+                  // 8 = details/PDF
+                  //
+                  // ------------------------------------
 
                   if (
-                    /^[A-Z]{2,6}\s+[A-Z0-9]{3,6}/i.test(
-                      courseText.trim()
-                    )
+                    values.length >= 8
                   ) {
 
-                    courseRowsUnrecognized++;
+                    currentSection.location =
+                      values[3] || '';
+
+                    currentSection.schedule =
+                      values[4] || '';
+
+                    currentSection.instructor =
+                      values[5] || '';
+
+                    currentSection.offer =
+                      values[6] || '';
+
+                    const available =
+                      parseInt(
+                        values[7],
+                        10
+                      );
+
+                    if (
+                      !Number.isNaN(
+                        available
+                      )
+                    ) {
+
+                      currentSection.available =
+                        available;
+
+                    }
+
+                  }
+
+                  // ------------------------------------
+                  // SIX-COLUMN COURSE ROW
+                  // ------------------------------------
+                  //
+                  // These are courses with additional
+                  // meeting-time rows.
+                  //
+                  // Availability will be picked up
+                  // from the following continuation row.
+                  //
+                  // ------------------------------------
+
+                  else if (
+                    values.length === 6
+                  ) {
+
+                    currentSection.location =
+                      values[3] || '';
+
+                    currentSection.schedule =
+                      values[4] || '';
+
+                    currentSection.instructor =
+                      values[5] || '';
 
                   }
 
                   continue;
                 }
 
-                courseRowsRecognized++;
+                // ----------------------------------------
+                // CONTINUATION ROW
+                // ----------------------------------------
+                //
+                // FCC uses these for additional meeting
+                // times when a course has multiple
+                // meeting periods.
+                //
+                // Example:
+                //
+                // [blank]
+                // SBLOCK S329
+                // start:...
+                // Instructor
+                // 35
+                // 0
+                // [blank]
+                //
+                // The final numeric fields contain the
+                // offer/capacity and available seats.
+                //
+                // ----------------------------------------
 
-                sections.push({
-                  section: course,
-                  location,
-                  schedule,
-                  instructor,
-                  enrolled,
-                  available,
-                  offer
-                });
+                if (
+                  currentSection &&
+                  values.length === 7
+                ) {
+
+                  const possibleOffer =
+                    parseInt(
+                      values[4],
+                      10
+                    );
+
+                  const possibleAvailable =
+                    parseInt(
+                      values[5],
+                      10
+                    );
+
+                  if (
+                    !Number.isNaN(
+                      possibleAvailable
+                    )
+                  ) {
+
+                    continuationRows++;
+
+                    // If the main course row did
+                    // not contain availability,
+                    // use the continuation row.
+
+                    if (
+                      currentSection.available === null
+                    ) {
+
+                      currentSection.available =
+                        possibleAvailable;
+
+                      currentSection.offer =
+                        values[4] || '';
+
+                    }
+
+                  }
+
+                  continue;
+                }
+
+                // ----------------------------------------
+                // UNRECOGNIZED NON-EMPTY ROW
+                // ----------------------------------------
+
+                const rowText =
+                  values
+                    .join(' ')
+                    .trim();
+
+                if (
+                  rowText &&
+                  rowText !== 'Course'
+                ) {
+
+                  unrecognizedRows++;
+
+                }
+
               }
 
               // ----------------------------------------
-              // REMOVE DUPLICATE SECTIONS
+              // FINALIZE SECTIONS
               // ----------------------------------------
 
               const uniqueSections = [];
@@ -329,14 +537,18 @@ jobs:
               const seenSections =
                 new Set();
 
-              for (const section of sections) {
+              for (
+                const section of sections
+              ) {
 
                 if (
                   seenSections.has(
                     section.section
                   )
                 ) {
+
                   continue;
+
                 }
 
                 seenSections.add(
@@ -346,10 +558,200 @@ jobs:
                 uniqueSections.push(
                   section
                 );
+
               }
 
               // ----------------------------------------
-              // PRINT CURRENT RESULTS
+              // IMPORTANT:
+              // CURRENT PARSER BUILDS SECTIONS DIRECTLY
+              // ----------------------------------------
+              //
+              // The loop above stores currentSection
+              // objects, so finalize them here by using
+              // a second clean pass.
+              //
+              // ----------------------------------------
+
+              const parsedSections = [];
+
+              currentSection = null;
+
+              for (
+                let i = 0;
+                i < rowCount;
+                i++
+              ) {
+
+                const row =
+                  rows.nth(i);
+
+                const columns =
+                  row.locator(
+                    'div[class*="ui-grid-col-"]'
+                  );
+
+                const columnCount =
+                  await columns.count();
+
+                const values = [];
+
+                for (
+                  let c = 0;
+                  c < columnCount;
+                  c++
+                ) {
+
+                  const value =
+                    (
+                      await columns
+                        .nth(c)
+                        .innerText()
+                    )
+                      .replace(/\u00a0/g, ' ')
+                      .replace(/\s+/g, ' ')
+                      .trim();
+
+                  values.push(value);
+
+                }
+
+                const courseText =
+                  values.length >= 2
+                    ? values[1] || ''
+                    : '';
+
+                const section =
+                  extractSection(
+                    courseText
+                  );
+
+                if (section) {
+
+                  currentSection = {
+                    section,
+                    location:
+                      values[3] || '',
+                    schedule:
+                      values[4] || '',
+                    instructor:
+                      values[5] || '',
+                    enrolled: '',
+                    offer: '',
+                    available: null
+                  };
+
+                  if (
+                    values.length >= 8
+                  ) {
+
+                    currentSection.offer =
+                      values[6] || '';
+
+                    const available =
+                      parseInt(
+                        values[7],
+                        10
+                      );
+
+                    if (
+                      !Number.isNaN(
+                        available
+                      )
+                    ) {
+
+                      currentSection.available =
+                        available;
+
+                    }
+
+                  }
+
+                  parsedSections.push(
+                    currentSection
+                  );
+
+                  continue;
+                }
+
+                // Continuation meeting row
+
+                if (
+                  currentSection &&
+                  values.length === 7
+                ) {
+
+                  const available =
+                    parseInt(
+                      values[5],
+                      10
+                    );
+
+                  if (
+                    !Number.isNaN(
+                      available
+                    ) &&
+                    currentSection.available === null
+                  ) {
+
+                    currentSection.available =
+                      available;
+
+                    currentSection.offer =
+                      values[4] || '';
+
+                  }
+
+                }
+
+              }
+
+              // ----------------------------------------
+              // DEDUPLICATE
+              // ----------------------------------------
+
+              const finalSections = [];
+
+              const finalSeen =
+                new Set();
+
+              for (
+                const section
+                  of parsedSections
+              ) {
+
+                if (
+                  finalSeen.has(
+                    section.section
+                  )
+                ) {
+
+                  continue;
+
+                }
+
+                finalSeen.add(
+                  section.section
+                );
+
+                // If no availability was found,
+                // safely treat it as zero.
+
+                if (
+                  section.available === null
+                ) {
+
+                  section.available = 0;
+
+                }
+
+                finalSections.push(
+                  section
+                );
+
+              }
+
+              // ----------------------------------------
+              // PRINT RESULTS
               // ----------------------------------------
 
               console.log('');
@@ -362,15 +764,19 @@ jobs:
               );
 
               console.log(
-                `Course rows recognized: ${courseRowsRecognized}`
+                `Course rows recognized: ${finalSections.length}`
               );
 
               console.log(
-                `Course rows unrecognized: ${courseRowsUnrecognized}`
+                `Continuation meeting rows: ${continuationRows}`
               );
 
               console.log(
-                `Unique catalogue sections: ${uniqueSections.length}`
+                `Unrecognized non-empty rows: ${unrecognizedRows}`
+              );
+
+              console.log(
+                `Unique catalogue sections: ${finalSections.length}`
               );
 
               // ----------------------------------------
@@ -414,7 +820,7 @@ jobs:
 
                 console.log('');
                 console.log(
-                  'No previous state found. This run will establish the baseline.'
+                  'No previous state found.'
                 );
 
               }
@@ -427,26 +833,83 @@ jobs:
                   : 0;
 
               // ----------------------------------------
+              // PARSER VERSION
+              // ----------------------------------------
+              //
+              // Version 2 is the corrected parser.
+              //
+              // The existing state was created by the
+              // old parser, which missed 93 sections.
+              //
+              // Therefore the first run of this version
+              // establishes a clean 910-section baseline
+              // without sending false alerts.
+              //
+              // ----------------------------------------
+
+              const PARSER_VERSION = 2;
+
+              const parserMigration =
+                !previousState ||
+                previousState.parserVersion !==
+                  PARSER_VERSION;
+
+              if (
+                parserMigration
+              ) {
+
+                console.log('');
+                console.log(
+                  '========================================'
+                );
+
+                console.log(
+                  'PARSER VERSION CHANGE'
+                );
+
+                console.log(
+                  '========================================'
+                );
+
+                console.log(
+                  `Previous parser version: ${
+                    previousState?.parserVersion || 'none'
+                  }`
+                );
+
+                console.log(
+                  `Current parser version: ${PARSER_VERSION}`
+                );
+
+                console.log(
+                  'Corrected parser will establish a new baseline.'
+                );
+
+              }
+
+              // ----------------------------------------
               // SAFETY CHECK
               // ----------------------------------------
               //
-              // No fixed catalogue size is assumed.
+              // Do NOT overwrite a valid state if the
+              // catalogue suddenly collapses.
               //
-              // If the current scan suddenly contains
-              // less than 80% of the previous catalogue,
-              // treat it as a bad/suspicious scrape.
+              // This check is skipped during the parser
+              // migration because we intentionally expect
+              // the section count to change from 817 to 910.
               //
               // ----------------------------------------
 
               if (
                 previousState &&
+                !parserMigration &&
                 previousSectionCount >= 100 &&
-                uniqueSections.length <
+                finalSections.length <
                   previousSectionCount * 0.8
               ) {
 
                 throw new Error(
-                  `Suspicious catalogue drop detected. Previous sections: ${previousSectionCount}. Current sections: ${uniqueSections.length}. State file will NOT be overwritten.`
+                  `Suspicious catalogue drop detected. Previous sections: ${previousSectionCount}. Current sections: ${finalSections.length}. State file will NOT be overwritten.`
                 );
 
               }
@@ -456,6 +919,9 @@ jobs:
               // ----------------------------------------
 
               const currentState = {
+                parserVersion:
+                  PARSER_VERSION,
+
                 updatedAt:
                   new Date().toISOString(),
 
@@ -463,27 +929,28 @@ jobs:
               };
 
               for (
-                const section of uniqueSections
+                const section
+                  of finalSections
               ) {
-
-                const available =
-                  parseInt(
-                    section.available,
-                    10
-                  ) || 0;
 
                 currentState.sections[
                   section.section
                 ] = {
-                  available,
+                  available:
+                    section.available,
+
                   enrolled:
                     section.enrolled,
+
                   location:
                     section.location,
+
                   schedule:
                     section.schedule,
+
                   instructor:
                     section.instructor,
+
                   offer:
                     section.offer
                 };
@@ -495,25 +962,36 @@ jobs:
               // ----------------------------------------
 
               let newSections = [];
+
               let newlyAvailable = [];
 
-              if (previousState) {
+              // IMPORTANT:
+              //
+              // During parser migration we do NOT
+              // compare against the old state.
+              //
+              // This prevents the 93 previously missed
+              // sections from generating false alerts.
+              //
+
+              if (
+                previousState &&
+                !parserMigration
+              ) {
 
                 for (
                   const section
-                    of uniqueSections
+                    of finalSections
                 ) {
 
                   const available =
-                    parseInt(
-                      section.available,
-                      10
-                    ) || 0;
+                    section.available;
 
                   const previous =
-                    previousState.sections?.[
-                      section.section
-                    ];
+                    previousState
+                      .sections?.[
+                        section.section
+                      ];
 
                   // Completely new section
 
@@ -525,8 +1003,9 @@ jobs:
 
                   }
 
-                  // Existing section went
-                  // from 0 to >0
+                  // Existing section changed
+                  // from zero available seats
+                  // to one or more.
 
                   if (
                     previous &&
@@ -558,7 +1037,7 @@ jobs:
               );
 
               console.log(
-                `Current sections: ${uniqueSections.length}`
+                `Current sections: ${finalSections.length}`
               );
 
               console.log(
@@ -589,7 +1068,8 @@ jobs:
 
                   alertSections.push({
                     ...section,
-                    reason: 'NEW SECTION'
+                    reason:
+                      'NEW SECTION'
                   });
 
                 }
@@ -652,9 +1132,6 @@ jobs:
                     `Instructor: ${section.instructor}\n`;
 
                   emailText +=
-                    `Enrolled: ${section.enrolled}\n`;
-
-                  emailText +=
                     `Available: ${section.available}\n`;
 
                   emailText +=
@@ -677,6 +1154,7 @@ jobs:
                 const transporter =
                   nodemailer.createTransport({
                     service: 'gmail',
+
                     auth: {
                       user:
                         process.env.SMTP_USER,
@@ -814,7 +1292,7 @@ jobs:
           retention-days: 3
 
       # ----------------------------------------
-      # SAVE SCREENSHOT
+      # SAVE COURSE RESULTS SCREENSHOT
       # ----------------------------------------
 
       - name: Save course results screenshot
