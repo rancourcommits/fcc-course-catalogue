@@ -1,4 +1,4 @@
-name: FCC Catalogue Discovery
+name: FCC Catalogue Structure Test
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: read
 
 jobs:
-  discover:
+  inspect:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -39,10 +39,10 @@ jobs:
           npx playwright install --with-deps chromium
 
       # ----------------------------------------
-      # OPEN FCC AND LOAD ALL COURSES
+      # INSPECT FCC CATALOGUE
       # ----------------------------------------
 
-      - name: Discover FCC catalogue
+      - name: Inspect FCC catalogue structure
         run: |
           node - <<'EOF'
           const { chromium } = require('playwright');
@@ -63,13 +63,14 @@ jobs:
             try {
 
               console.log('========================================');
-              console.log('FCC CATALOGUE DISCOVERY');
+              console.log('FCC CATALOGUE STRUCTURE TEST');
               console.log('========================================');
 
               // ----------------------------------------
               // OPEN FCC
               // ----------------------------------------
 
+              console.log('');
               console.log('Opening FCC...');
 
               await page.goto(
@@ -104,17 +105,13 @@ jobs:
               // LEAVE DEPARTMENT BLANK
               // ----------------------------------------
 
-              console.log(
-                '✓ Department: ALL'
-              );
+              console.log('✓ Department: ALL');
 
               // ----------------------------------------
               // LEAVE COURSE BLANK
               // ----------------------------------------
 
-              console.log(
-                '✓ Course: ALL'
-              );
+              console.log('✓ Course: ALL');
 
               // ----------------------------------------
               // SEARCH
@@ -133,11 +130,11 @@ jobs:
 
               console.log('✓ Search clicked');
 
-              // Give FCC time to populate the results.
+              // Give FCC time to populate everything.
               await page.waitForTimeout(5000);
 
               // ----------------------------------------
-              // COUNT RESULT ROWS
+              // FIND ALL GRID ROWS
               // ----------------------------------------
 
               const rows = page.locator(
@@ -148,16 +145,97 @@ jobs:
 
               console.log('');
               console.log('========================================');
-              console.log('RESULT DISCOVERY');
+              console.log('RAW GRID INFORMATION');
               console.log('========================================');
 
               console.log(
-                `Rows detected in DOM: ${rowCount}`
+                `Total ui-grid-row elements: ${rowCount}`
               );
 
               // ----------------------------------------
-              // PRINT EVERY ROW
+              // INSPECT FIRST 30 ROWS
               // ----------------------------------------
+              //
+              // We deliberately only print the first
+              // 30 rows so the GitHub log remains usable.
+              //
+              // ----------------------------------------
+
+              const rowsToInspect =
+                Math.min(rowCount, 30);
+
+              console.log('');
+              console.log(
+                `Inspecting first ${rowsToInspect} grid rows...`
+              );
+
+              for (let i = 0; i < rowsToInspect; i++) {
+
+                const row = rows.nth(i);
+
+                const text = (await row.innerText())
+                  .replace(/\u00a0/g, ' ')
+                  .replace(/\s+/g, ' ')
+                  .trim();
+
+                console.log('');
+                console.log(
+                  `========== GRID ROW ${i + 1} ==========`
+                );
+
+                console.log(
+                  `TEXT: ${text}`
+                );
+
+                // ----------------------------------------
+                // FIND CHILD GRID COLUMNS
+                // ----------------------------------------
+
+                const columns = row.locator(
+                  'div[class*="ui-grid-col-"]'
+                );
+
+                const columnCount =
+                  await columns.count();
+
+                console.log(
+                  `COLUMN COUNT: ${columnCount}`
+                );
+
+                for (
+                  let c = 0;
+                  c < columnCount;
+                  c++
+                ) {
+
+                  const value =
+                    (await columns.nth(c).innerText())
+                      .replace(/\u00a0/g, ' ')
+                      .replace(/\s+/g, ' ')
+                      .trim();
+
+                  console.log(
+                    `COLUMN ${c + 1}: ${value}`
+                  );
+
+                }
+
+              }
+
+              // ----------------------------------------
+              // FIND COURSE-LIKE ROWS
+              // ----------------------------------------
+              //
+              // This checks how many grid rows contain
+              // something that looks like a course code.
+              //
+              // We are NOT using this as the final parser.
+              //
+              // ----------------------------------------
+
+              let courseLikeRows = 0;
+
+              const courseSamples = [];
 
               for (let i = 0; i < rowCount; i++) {
 
@@ -168,28 +246,144 @@ jobs:
                   .replace(/\s+/g, ' ')
                   .trim();
 
-                if (!text) {
-                  continue;
+                if (
+                  /\b[A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+\b/
+                    .test(text)
+                ) {
+
+                  courseLikeRows++;
+
+                  if (courseSamples.length < 20) {
+
+                    courseSamples.push(text);
+
+                  }
+
                 }
 
-                console.log('');
-                console.log(`ROW ${i + 1}`);
-                console.log(text);
+              }
+
+              console.log('');
+              console.log('========================================');
+              console.log('COURSE-LIKE ROW TEST');
+              console.log('========================================');
+
+              console.log(
+                `Rows containing a course-like code: ${courseLikeRows}`
+              );
+
+              console.log('');
+
+              console.log(
+                'Sample course-like rows:'
+              );
+
+              for (
+                let i = 0;
+                i < courseSamples.length;
+                i++
+              ) {
+
+                console.log(
+                  `${i + 1}. ${courseSamples[i]}`
+                );
 
               }
 
               // ----------------------------------------
-              // SCREENSHOT
+              // INSPECT THE RESULT CONTAINER HIERARCHY
+              // ----------------------------------------
+
+              console.log('');
+              console.log('========================================');
+              console.log('RESULT CONTAINER INSPECTION');
+              console.log('========================================');
+
+              const firstCourseRow =
+                rows.filter({
+                  hasText: /\b[A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+\b/
+                }).first();
+
+              if (
+                await firstCourseRow.count() > 0
+              ) {
+
+                console.log(
+                  '✓ Found a course-like grid row.'
+                );
+
+                const tagName =
+                  await firstCourseRow.evaluate(
+                    element => element.tagName
+                  );
+
+                console.log(
+                  `Row tag: ${tagName}`
+                );
+
+                const className =
+                  await firstCourseRow.getAttribute(
+                    'class'
+                  );
+
+                console.log(
+                  `Row class: ${className}`
+                );
+
+                const parentInfo =
+                  await firstCourseRow.evaluate(
+                    element => {
+
+                      const parent =
+                        element.parentElement;
+
+                      if (!parent) {
+                        return null;
+                      }
+
+                      return {
+                        tag: parent.tagName,
+                        className:
+                          parent.className,
+                        childCount:
+                          parent.children.length
+                      };
+
+                    }
+                  );
+
+                console.log(
+                  'Parent information:'
+                );
+
+                console.log(
+                  JSON.stringify(
+                    parentInfo,
+                    null,
+                    2
+                  )
+                );
+
+              } else {
+
+                console.log(
+                  '⚠ No course-like row found.'
+                );
+
+              }
+
+              // ----------------------------------------
+              // SAVE SCREENSHOT
               // ----------------------------------------
 
               await page.screenshot({
-                path: 'fcc-catalogue.png',
+                path: 'fcc-catalogue-structure.png',
                 fullPage: true
               });
 
               console.log('');
               console.log('========================================');
-              console.log('DISCOVERY COMPLETE');
+              console.log('STRUCTURE TEST COMPLETE');
               console.log('========================================');
 
             } catch (error) {
@@ -222,15 +416,15 @@ jobs:
           EOF
 
       # ----------------------------------------
-      # SAVE SCREENSHOT
+      # SAVE CATALOGUE SCREENSHOT
       # ----------------------------------------
 
       - name: Save catalogue screenshot
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-catalogue
-          path: fcc-catalogue.png
+          name: fcc-catalogue-structure
+          path: fcc-catalogue-structure.png
           retention-days: 3
 
       # ----------------------------------------
