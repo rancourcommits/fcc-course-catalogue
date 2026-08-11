@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T21:01:56.835Z",
+  "updatedAt": "2026-08-11T21:12:12.163Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1987,7 +1987,7 @@
       "offer": "35"
     },
     "COMP 300 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:08/31/2026 M W 09:00 - 10:50",
@@ -2147,7 +2147,7 @@
       "offer": "35"
     },
     "COMP 410 B": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S317",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -2651,7 +2651,7 @@
       "offer": "25"
     },
     "CSCS 342 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 13:00 - 14:50",
@@ -2931,7 +2931,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3843,7 +3843,7 @@
       "offer": "35"
     },
     "ENGL 322 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3867,7 +3867,7 @@
       "offer": "35"
     },
     "ENGL 350 A": {
-      "available": 32,
+      "available": 33,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4275,7 +4275,7 @@
       "offer": "35"
     },
     "GEOG 133 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4683,7 +4683,7 @@
       "offer": "20"
     },
     "LING 207 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6099,7 +6099,7 @@
       "offer": "35"
     },
     "PSYC 160 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6923,7 +6923,7 @@
       "offer": "35"
     },
     "STAT 115 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
