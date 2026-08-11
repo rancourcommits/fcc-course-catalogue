@@ -5299,7 +5299,7 @@
       ]
     },
     "ECON 501 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "H Ahsan",
@@ -5830,7 +5830,7 @@
       ]
     },
     "ENGL 108 C": {
-      "available": 2,
+      "available": 1,
       "enrolled": 25,
       "credits": "3.00",
       "instructor": "M Zia",
@@ -7940,7 +7940,7 @@
       ]
     },
     "MATH 108 C": {
-      "available": 5,
+      "available": 6,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "F Jamil",
