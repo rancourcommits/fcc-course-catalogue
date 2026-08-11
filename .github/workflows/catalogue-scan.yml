@@ -9,7 +9,7 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
 
     steps:
 
@@ -111,9 +111,8 @@ jobs:
               // ----------------------------------------
               //
               // Department and course are intentionally
-              // left blank.
-              //
-              // This returns the complete catalogue.
+              // left blank so the entire catalogue is
+              // returned.
               //
               // ----------------------------------------
 
@@ -133,13 +132,11 @@ jobs:
               );
 
               // ----------------------------------------
-              // WAIT FOR ACTUAL CATALOGUE RESULTS
+              // WAIT FOR CATALOGUE RESULTS
               // ----------------------------------------
               //
               // FCC loads the results dynamically into
-              // #courses. We wait for the actual course
-              // container instead of relying only on a
-              // fixed timeout.
+              // #courses.
               //
               // ----------------------------------------
 
@@ -151,8 +148,6 @@ jobs:
                 timeout: 60000
               });
 
-              await page.waitForTimeout(3000);
-
               const courseRows =
                 page.locator(
                   '#courses div.ui-grid-row'
@@ -163,57 +158,17 @@ jobs:
                 timeout: 60000
               });
 
+              // Small buffer to ensure all dynamically
+              // inserted continuation rows are present.
+
+              await page.waitForTimeout(1500);
+
               console.log(
                 '✓ Catalogue results loaded'
               );
 
               // ----------------------------------------
-              // SAVE FULL HTML SNAPSHOT
-              // ----------------------------------------
-
-              const catalogueHtml =
-                await page.content();
-
-              fs.writeFileSync(
-                'fcc-catalogue-response.html',
-                catalogueHtml,
-                'utf8'
-              );
-
-              console.log(
-                `✓ Full catalogue HTML saved (${catalogueHtml.length} characters)`
-              );
-
-              // ----------------------------------------
               // FIND COURSE ROWS
-              // ----------------------------------------
-              //
-              // IMPORTANT:
-              //
-              // FCC uses two different row structures.
-              //
-              // Normal course row:
-              //
-              // 9 columns
-              //
-              // Course
-              // Credits
-              // Location
-              // Schedule
-              // Instructor
-              // Offer
-              // Available
-              //
-              // Courses with multiple meeting times:
-              //
-              // 6-column main row
-              // followed by one or more 7-column
-              // continuation rows.
-              //
-              // We therefore identify courses by the
-              // Course column rather than requiring a
-              // particular number of columns.
-              //
               // ----------------------------------------
 
               const rows =
@@ -233,14 +188,16 @@ jobs:
               // COURSE IDENTIFIER
               // ----------------------------------------
               //
-              // Matches examples such as:
+              // Matches course/section combinations
+              // without hard-coding section letters.
+              //
+              // Examples:
               //
               // ARTS 101 A
               // BIOL 100 A
-              // BIOT 201 B
+              // BIOT 699A A
+              // CHEM 799E B
               // PHYS COMP A
-              //
-              // No section letters are hard-coded.
               //
               // ----------------------------------------
 
@@ -270,15 +227,23 @@ jobs:
               // ----------------------------------------
               // PARSE CATALOGUE
               // ----------------------------------------
+              //
+              // FCC uses two row structures:
+              //
+              // 1. Normal course rows
+              //
+              // 2. Continuation rows for courses with
+              //    multiple meeting times.
+              //
+              // We process both in a single pass.
+              //
+              // ----------------------------------------
 
-              const sections = [];
+              const parsedSections = [];
 
               let currentSection = null;
 
-              let courseRowsRecognized = 0;
-
-              let continuationRows =
-                0;
+              let continuationRows = 0;
 
               let unrecognizedRows = 0;
 
@@ -320,72 +285,49 @@ jobs:
                   values.push(value);
                 }
 
-                // --------------------------------------
-                // TRY TO IDENTIFY A NEW COURSE ROW
-                // --------------------------------------
+                // ----------------------------------------
+                // TRY TO IDENTIFY A COURSE ROW
+                // ----------------------------------------
 
-                let courseText = '';
-
-                if (
+                const courseText =
                   values.length >= 2
-                ) {
-
-                  courseText =
-                    values[1] || '';
-
-                }
+                    ? values[1] || ''
+                    : '';
 
                 const section =
                   extractSection(
                     courseText
                   );
 
-                // --------------------------------------
+                // ----------------------------------------
                 // NEW COURSE SECTION
-                // --------------------------------------
+                // ----------------------------------------
 
                 if (section) {
 
-                  courseRowsRecognized++;
-
                   currentSection = {
                     section,
-                    location: '',
-                    schedule: '',
-                    instructor: '',
-                    enrolled: '',
-                    available: null,
-                    offer: ''
+                    location:
+                      values[3] || '',
+                    schedule:
+                      values[4] || '',
+                    instructor:
+                      values[5] || '',
+                    enrolled:
+                      '',
+                    available:
+                      null,
+                    offer:
+                      ''
                   };
 
-                  // ------------------------------------
-                  // NORMAL 9-COLUMN COURSE ROW
-                  // ------------------------------------
-                  //
-                  // 0 = icon/blank
-                  // 1 = course
-                  // 2 = credits
-                  // 3 = location
-                  // 4 = schedule
-                  // 5 = instructor
-                  // 6 = offer
-                  // 7 = available
-                  // 8 = details/PDF
-                  //
-                  // ------------------------------------
+                  // --------------------------------------
+                  // NORMAL COURSE ROW
+                  // --------------------------------------
 
                   if (
                     values.length >= 8
                   ) {
-
-                    currentSection.location =
-                      values[3] || '';
-
-                    currentSection.schedule =
-                      values[4] || '';
-
-                    currentSection.instructor =
-                      values[5] || '';
 
                     currentSection.offer =
                       values[6] || '';
@@ -409,32 +351,10 @@ jobs:
 
                   }
 
-                  // ------------------------------------
-                  // SIX-COLUMN COURSE ROW
-                  // ------------------------------------
-                  //
-                  // These are courses with additional
-                  // meeting-time rows.
-                  //
-                  // Availability will be picked up
-                  // from the following continuation row.
-                  //
-                  // ------------------------------------
-
-                  else if (
-                    values.length === 6
-                  ) {
-
-                    currentSection.location =
-                      values[3] || '';
-
-                    currentSection.schedule =
-                      values[4] || '';
-
-                    currentSection.instructor =
-                      values[5] || '';
-
-                  }
+                  // Save the section immediately.
+                  parsedSections.push(
+                    currentSection
+                  );
 
                   continue;
                 }
@@ -443,22 +363,8 @@ jobs:
                 // CONTINUATION ROW
                 // ----------------------------------------
                 //
-                // FCC uses these for additional meeting
-                // times when a course has multiple
-                // meeting periods.
-                //
-                // Example:
-                //
-                // [blank]
-                // SBLOCK S329
-                // start:...
-                // Instructor
-                // 35
-                // 0
-                // [blank]
-                //
-                // The final numeric fields contain the
-                // offer/capacity and available seats.
+                // These belong to the preceding course
+                // and may contain its availability.
                 //
                 // ----------------------------------------
 
@@ -466,12 +372,6 @@ jobs:
                   currentSection &&
                   values.length === 7
                 ) {
-
-                  const possibleOffer =
-                    parseInt(
-                      values[4],
-                      10
-                    );
 
                   const possibleAvailable =
                     parseInt(
@@ -487,12 +387,9 @@ jobs:
 
                     continuationRows++;
 
-                    // If the main course row did
-                    // not contain availability,
-                    // use the continuation row.
-
                     if (
-                      currentSection.available === null
+                      currentSection.available ===
+                      null
                     ) {
 
                       currentSection.available =
@@ -509,7 +406,7 @@ jobs:
                 }
 
                 // ----------------------------------------
-                // UNRECOGNIZED NON-EMPTY ROW
+                // UNRECOGNIZED ROW
                 // ----------------------------------------
 
                 const rowText =
@@ -529,16 +426,17 @@ jobs:
               }
 
               // ----------------------------------------
-              // FINALIZE SECTIONS
+              // DEDUPLICATE SECTIONS
               // ----------------------------------------
 
-              const uniqueSections = [];
+              const finalSections = [];
 
               const seenSections =
                 new Set();
 
               for (
-                const section of sections
+                const section
+                  of parsedSections
               ) {
 
                 if (
@@ -555,187 +453,6 @@ jobs:
                   section.section
                 );
 
-                uniqueSections.push(
-                  section
-                );
-
-              }
-
-              // ----------------------------------------
-              // IMPORTANT:
-              // CURRENT PARSER BUILDS SECTIONS DIRECTLY
-              // ----------------------------------------
-              //
-              // The loop above stores currentSection
-              // objects, so finalize them here by using
-              // a second clean pass.
-              //
-              // ----------------------------------------
-
-              const parsedSections = [];
-
-              currentSection = null;
-
-              for (
-                let i = 0;
-                i < rowCount;
-                i++
-              ) {
-
-                const row =
-                  rows.nth(i);
-
-                const columns =
-                  row.locator(
-                    'div[class*="ui-grid-col-"]'
-                  );
-
-                const columnCount =
-                  await columns.count();
-
-                const values = [];
-
-                for (
-                  let c = 0;
-                  c < columnCount;
-                  c++
-                ) {
-
-                  const value =
-                    (
-                      await columns
-                        .nth(c)
-                        .innerText()
-                    )
-                      .replace(/\u00a0/g, ' ')
-                      .replace(/\s+/g, ' ')
-                      .trim();
-
-                  values.push(value);
-
-                }
-
-                const courseText =
-                  values.length >= 2
-                    ? values[1] || ''
-                    : '';
-
-                const section =
-                  extractSection(
-                    courseText
-                  );
-
-                if (section) {
-
-                  currentSection = {
-                    section,
-                    location:
-                      values[3] || '',
-                    schedule:
-                      values[4] || '',
-                    instructor:
-                      values[5] || '',
-                    enrolled: '',
-                    offer: '',
-                    available: null
-                  };
-
-                  if (
-                    values.length >= 8
-                  ) {
-
-                    currentSection.offer =
-                      values[6] || '';
-
-                    const available =
-                      parseInt(
-                        values[7],
-                        10
-                      );
-
-                    if (
-                      !Number.isNaN(
-                        available
-                      )
-                    ) {
-
-                      currentSection.available =
-                        available;
-
-                    }
-
-                  }
-
-                  parsedSections.push(
-                    currentSection
-                  );
-
-                  continue;
-                }
-
-                // Continuation meeting row
-
-                if (
-                  currentSection &&
-                  values.length === 7
-                ) {
-
-                  const available =
-                    parseInt(
-                      values[5],
-                      10
-                    );
-
-                  if (
-                    !Number.isNaN(
-                      available
-                    ) &&
-                    currentSection.available === null
-                  ) {
-
-                    currentSection.available =
-                      available;
-
-                    currentSection.offer =
-                      values[4] || '';
-
-                  }
-
-                }
-
-              }
-
-              // ----------------------------------------
-              // DEDUPLICATE
-              // ----------------------------------------
-
-              const finalSections = [];
-
-              const finalSeen =
-                new Set();
-
-              for (
-                const section
-                  of parsedSections
-              ) {
-
-                if (
-                  finalSeen.has(
-                    section.section
-                  )
-                ) {
-
-                  continue;
-
-                }
-
-                finalSeen.add(
-                  section.section
-                );
-
-                // If no availability was found,
-                // safely treat it as zero.
-
                 if (
                   section.available === null
                 ) {
@@ -751,7 +468,7 @@ jobs:
               }
 
               // ----------------------------------------
-              // PRINT RESULTS
+              // PARSING RESULTS
               // ----------------------------------------
 
               console.log('');
@@ -764,7 +481,7 @@ jobs:
               );
 
               console.log(
-                `Course rows recognized: ${finalSections.length}`
+                `Unique catalogue sections: ${finalSections.length}`
               );
 
               console.log(
@@ -773,10 +490,6 @@ jobs:
 
               console.log(
                 `Unrecognized non-empty rows: ${unrecognizedRows}`
-              );
-
-              console.log(
-                `Unique catalogue sections: ${finalSections.length}`
               );
 
               // ----------------------------------------
@@ -835,17 +548,6 @@ jobs:
               // ----------------------------------------
               // PARSER VERSION
               // ----------------------------------------
-              //
-              // Version 2 is the corrected parser.
-              //
-              // The existing state was created by the
-              // old parser, which missed 93 sections.
-              //
-              // Therefore the first run of this version
-              // establishes a clean 910-section baseline
-              // without sending false alerts.
-              //
-              // ----------------------------------------
 
               const PARSER_VERSION = 2;
 
@@ -891,12 +593,12 @@ jobs:
               // SAFETY CHECK
               // ----------------------------------------
               //
-              // Do NOT overwrite a valid state if the
-              // catalogue suddenly collapses.
+              // Never overwrite a good state if a normal
+              // run suddenly returns less than 80% of the
+              // previous catalogue.
               //
-              // This check is skipped during the parser
-              // migration because we intentionally expect
-              // the section count to change from 817 to 910.
+              // Parser migration is exempt because the
+              // section count is intentionally changing.
               //
               // ----------------------------------------
 
@@ -965,14 +667,8 @@ jobs:
 
               let newlyAvailable = [];
 
-              // IMPORTANT:
-              //
-              // During parser migration we do NOT
-              // compare against the old state.
-              //
-              // This prevents the 93 previously missed
-              // sections from generating false alerts.
-              //
+              // During parser migration, establish the
+              // corrected baseline without alerts.
 
               if (
                 previousState &&
@@ -1003,9 +699,8 @@ jobs:
 
                   }
 
-                  // Existing section changed
-                  // from zero available seats
-                  // to one or more.
+                  // Existing section went from
+                  // 0 available seats to >0.
 
                   if (
                     previous &&
@@ -1278,18 +973,6 @@ jobs:
             git commit -m "Update FCC catalogue monitoring state"
             git push
           fi
-
-      # ----------------------------------------
-      # SAVE RAW FCC HTML
-      # ----------------------------------------
-
-      - name: Save raw FCC catalogue HTML
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: fcc-catalogue-html
-          path: fcc-catalogue-response.html
-          retention-days: 3
 
       # ----------------------------------------
       # SAVE COURSE RESULTS SCREENSHOT
