@@ -1,13 +1,13 @@
-name: FCC Catalogue Parser Test 2
+name: FCC Full Catalogue Monitor
 
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  parse:
+  monitor:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -35,18 +35,23 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install playwright cheerio
+          npm install playwright cheerio nodemailer
           npx playwright install --with-deps chromium
 
       # ----------------------------------------
-      # CAPTURE + PARSE FCC CATALOGUE
+      # CHECK FCC CATALOGUE
       # ----------------------------------------
 
-      - name: Parse FCC catalogue
+      - name: Check FCC catalogue
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
         run: |
           node - <<'EOF'
           const { chromium } = require('playwright');
           const cheerio = require('cheerio');
+          const nodemailer = require('nodemailer');
           const fs = require('fs');
 
           (async () => {
@@ -65,7 +70,7 @@ jobs:
             try {
 
               console.log('========================================');
-              console.log('FCC CATALOGUE PARSER TEST 2');
+              console.log('FCC FULL CATALOGUE MONITOR');
               console.log('========================================');
 
               // ----------------------------------------
@@ -102,15 +107,20 @@ jobs:
               await page.waitForTimeout(1500);
 
               // ----------------------------------------
-              // LEAVE DEPARTMENT + COURSE BLANK
+              // DEPARTMENT + COURSE
               // ----------------------------------------
 
               console.log('✓ Department: ALL');
               console.log('✓ Course: ALL');
 
               // ----------------------------------------
-              // WAIT FOR GETLIST RESPONSE
+              // CAPTURE GETLIST RESPONSE
               // ----------------------------------------
+
+              console.log('');
+              console.log(
+                'Waiting for FCC catalogue response...'
+              );
 
               const responsePromise =
                 page.waitForResponse(
@@ -138,7 +148,7 @@ jobs:
                 await responsePromise;
 
               console.log(
-                `✓ GetList response received`
+                '✓ GetList response received'
               );
 
               console.log(
@@ -186,20 +196,7 @@ jobs:
               );
 
               // ----------------------------------------
-              // SAVE RAW HTML
-              // ----------------------------------------
-
-              fs.writeFileSync(
-                'fcc-catalogue-response.html',
-                html
-              );
-
-              console.log(
-                '✓ Raw catalogue HTML saved.'
-              );
-
-              // ----------------------------------------
-              // LOAD HTML
+              // PARSE HTML
               // ----------------------------------------
 
               const $ =
@@ -208,13 +205,8 @@ jobs:
               const rows =
                 $('div.ui-grid-row');
 
-              console.log('');
-              console.log('========================================');
-              console.log('CATALOGUE STRUCTURE');
-              console.log('========================================');
-
               console.log(
-                `Grid rows found: ${rows.length}`
+                `Raw catalogue rows: ${rows.length}`
               );
 
               // ----------------------------------------
@@ -261,25 +253,16 @@ jobs:
 
               }
 
-              function isCourseRow(columns, text) {
-
-                if (
-                  !columns[1] ||
-                  !text
-                ) {
-
-                  return false;
-
-                }
+              function isCourseRow(columns) {
 
                 return !!extractCourse(
-                  columns[1]
+                  columns[1] || ''
                 );
 
               }
 
               // ----------------------------------------
-              // READ ALL ROWS
+              // READ ROWS
               // ----------------------------------------
 
               const parsedRows = [];
@@ -305,28 +288,13 @@ jobs:
                       columns[1] || ''
                     ),
                   isCourse:
-                    isCourseRow(
-                      columns,
-                      text
-                    )
+                    isCourseRow(columns)
                 });
 
               });
 
-              console.log(
-                `Non-empty rows: ${parsedRows.length}`
-              );
-
-              console.log(
-                `Course rows: ${
-                  parsedRows.filter(
-                    row => row.isCourse
-                  ).length
-                }`
-              );
-
               // ----------------------------------------
-              // GROUP CONTINUATION ROWS
+              // GROUP COURSE + CONTINUATION ROWS
               // ----------------------------------------
 
               const records = [];
@@ -358,13 +326,8 @@ jobs:
                 records.push(current);
               }
 
-              console.log('');
-              console.log('========================================');
-              console.log('SECTION GROUPING');
-              console.log('========================================');
-
               console.log(
-                `Sections detected: ${records.length}`
+                `Catalogue sections detected: ${records.length}`
               );
 
               // ----------------------------------------
@@ -380,30 +343,6 @@ jobs:
 
                 const main =
                   mainRow.columns;
-
-                /*
-                 * MAIN ROW
-                 *
-                 * 0 = icon
-                 * 1 = course
-                 * 2 = credits
-                 * 3 = classroom
-                 * 4 = schedule
-                 * 5 = instructor
-                 * 6 = enrolled
-                 * 7 = available
-                 * 8 = offer
-                 *
-                 * CONTINUATION ROW
-                 *
-                 * 0 = icon / blank
-                 * 1 = classroom
-                 * 2 = schedule
-                 * 3 = instructor
-                 * 4 = enrolled
-                 * 5 = available
-                 * 6 = offer
-                 */
 
                 const section = {
 
@@ -463,19 +402,6 @@ jobs:
                   const columns =
                     record.rows[r].columns;
 
-                  /*
-                   * Continuation rows observed
-                   * in the FCC response:
-                   *
-                   * 0 = blank/icon
-                   * 1 = classroom
-                   * 2 = schedule
-                   * 3 = instructor
-                   * 4 = enrolled
-                   * 5 = available
-                   * 6 = offer
-                   */
-
                   const classroom =
                     clean(columns[1]);
 
@@ -509,10 +435,6 @@ jobs:
 
                   }
 
-                  // ----------------------------------------
-                  // FILL SECTION-LEVEL VALUES
-                  // ----------------------------------------
-
                   if (
                     instructor &&
                     !section.instructor
@@ -522,13 +444,6 @@ jobs:
                       instructor;
 
                   }
-
-                  /*
-                   * Only use continuation-row
-                   * enrollment/availability when
-                   * the main row doesn't already
-                   * provide them.
-                   */
 
                   if (
                     !section.enrolled &&
@@ -566,194 +481,392 @@ jobs:
 
               }
 
-              // ----------------------------------------
-              // PRINT FIRST 20 SECTIONS
-              // ----------------------------------------
-
               console.log('');
               console.log('========================================');
-              console.log('FIRST 20 PARSED SECTIONS');
+              console.log('CURRENT CATALOGUE');
               console.log('========================================');
-
-              for (
-                let i = 0;
-                i < Math.min(
-                  20,
-                  sections.length
-                );
-                i++
-              ) {
-
-                const section =
-                  sections[i];
-
-                console.log('');
-                console.log(
-                  `---------- SECTION ${i + 1} ----------`
-                );
-
-                console.log(
-                  `Course: ${section.section}`
-                );
-
-                console.log(
-                  `Credits: ${section.credits}`
-                );
-
-                console.log(
-                  `Instructor: ${section.instructor}`
-                );
-
-                console.log(
-                  `Enrolled: ${section.enrolled}`
-                );
-
-                console.log(
-                  `Available: ${section.available}`
-                );
-
-                console.log(
-                  `Offer: ${section.offer}`
-                );
-
-                console.log(
-                  `Meetings: ${section.meetings.length}`
-                );
-
-                for (
-                  const meeting of section.meetings
-                ) {
-
-                  console.log(
-                    `  Classroom: ${
-                      meeting.classroom
-                    }`
-                  );
-
-                  console.log(
-                    `  Schedule: ${
-                      meeting.schedule
-                    }`
-                  );
-
-                }
-
-              }
-
-              // ----------------------------------------
-              // SPECIFIC BIOL 100 CHECK
-              // ----------------------------------------
-
-              console.log('');
-              console.log('========================================');
-              console.log('BIOL 100 CHECK');
-              console.log('========================================');
-
-              const biol100 =
-                sections.filter(
-                  section =>
-                    /^BIOL\s*100\b/i.test(
-                      section.section
-                    )
-                );
 
               console.log(
-                `BIOL 100 sections found: ${biol100.length}`
+                `Total sections: ${sections.length}`
               );
 
-              for (
-                const section of biol100.slice(0, 5)
-              ) {
+              // ----------------------------------------
+              // LOAD PREVIOUS STATE
+              // ----------------------------------------
 
-                console.log('');
-                console.log(
-                  section.section
-                );
+              const stateFile =
+                'fcc-catalogue-state.json';
 
-                console.log(
-                  `Instructor: ${
-                    section.instructor
-                  }`
-                );
+              let previousState = null;
 
-                console.log(
-                  `Enrolled: ${
-                    section.enrolled
-                  }`
-                );
+              if (fs.existsSync(stateFile)) {
 
-                console.log(
-                  `Available: ${
-                    section.available
-                  }`
-                );
+                try {
 
-                console.log(
-                  `Meetings:`
-                );
-
-                for (
-                  const meeting of section.meetings
-                ) {
+                  previousState =
+                    JSON.parse(
+                      fs.readFileSync(
+                        stateFile,
+                        'utf8'
+                      )
+                    );
 
                   console.log(
-                    `  ${
-                      meeting.classroom
-                    } | ${
-                      meeting.schedule
-                    }`
+                    '✓ Previous state loaded.'
                   );
+
+                } catch {
+
+                  console.log(
+                    '⚠ Previous state could not be read.'
+                  );
+
+                }
+
+              } else {
+
+                console.log(
+                  'No previous state found. Establishing baseline.'
+                );
+
+              }
+
+              // ----------------------------------------
+              // BUILD CURRENT STATE
+              // ----------------------------------------
+
+              const currentState = {
+                term: '2026 Fall',
+                sections: {}
+              };
+
+              for (const section of sections) {
+
+                const available =
+                  parseInt(
+                    section.available,
+                    10
+                  ) || 0;
+
+                const enrolled =
+                  parseInt(
+                    section.enrolled,
+                    10
+                  ) || 0;
+
+                currentState.sections[
+                  section.section
+                ] = {
+
+                  available,
+
+                  enrolled,
+
+                  credits:
+                    section.credits,
+
+                  instructor:
+                    section.instructor,
+
+                  offer:
+                    section.offer,
+
+                  meetings:
+                    section.meetings
+
+                };
+
+              }
+
+              // ----------------------------------------
+              // DETECT CHANGES
+              // ----------------------------------------
+
+              const newSections = [];
+              const newlyAvailable = [];
+
+              if (previousState) {
+
+                for (const section of sections) {
+
+                  const available =
+                    parseInt(
+                      section.available,
+                      10
+                    ) || 0;
+
+                  const previous =
+                    previousState.sections?.[
+                      section.section
+                    ];
+
+                  // ----------------------------------------
+                  // COMPLETELY NEW SECTION
+                  // ----------------------------------------
+
+                  if (!previous) {
+
+                    newSections.push(section);
+
+                    continue;
+
+                  }
+
+                  // ----------------------------------------
+                  // 0 → >0 AVAILABLE
+                  // ----------------------------------------
+
+                  if (
+                    previous.available === 0 &&
+                    available > 0
+                  ) {
+
+                    newlyAvailable.push(section);
+
+                  }
 
                 }
 
               }
 
+              console.log('');
+              console.log('========================================');
+              console.log('CHANGES');
+              console.log('========================================');
+
+              console.log(
+                `New sections: ${newSections.length}`
+              );
+
+              console.log(
+                `Newly available: ${newlyAvailable.length}`
+              );
+
               // ----------------------------------------
-              // SAVE STRUCTURED JSON
+              // SEND EMAIL ALERT
+              // ----------------------------------------
+
+              if (
+                newSections.length > 0 ||
+                newlyAvailable.length > 0
+              ) {
+
+                const alertSections = [];
+
+                // ----------------------------------------
+                // NEW SECTIONS
+                // ----------------------------------------
+
+                for (
+                  const section of newSections
+                ) {
+
+                  alertSections.push({
+
+                    ...section,
+
+                    reason:
+                      'NEW SECTION'
+
+                  });
+
+                }
+
+                // ----------------------------------------
+                // NEWLY AVAILABLE
+                // ----------------------------------------
+
+                for (
+                  const section of newlyAvailable
+                ) {
+
+                  const alreadyIncluded =
+                    alertSections.some(
+                      item =>
+                        item.section ===
+                        section.section
+                    );
+
+                  if (!alreadyIncluded) {
+
+                    alertSections.push({
+
+                      ...section,
+
+                      reason:
+                        'SEATS AVAILABLE'
+
+                    });
+
+                  }
+
+                }
+
+                let emailText =
+                  'FCC COURSE ALERT\n\n';
+
+                emailText +=
+                  '2026 Fall - Course Catalogue\n\n';
+
+                emailText +=
+                  `Updates detected: ${
+                    alertSections.length
+                  }\n\n`;
+
+                for (
+                  const section of alertSections
+                ) {
+
+                  emailText +=
+                    '----------------------------------------\n';
+
+                  emailText +=
+                    `${section.reason}\n`;
+
+                  emailText +=
+                    `${section.section}\n`;
+
+                  emailText +=
+                    `Credits: ${
+                      section.credits
+                    }\n`;
+
+                  emailText +=
+                    `Instructor: ${
+                      section.instructor
+                    }\n`;
+
+                  emailText +=
+                    `Enrolled: ${
+                      section.enrolled
+                    }\n`;
+
+                  emailText +=
+                    `Available: ${
+                      section.available
+                    }\n`;
+
+                  emailText +=
+                    `Offer: ${
+                      section.offer
+                    }\n`;
+
+                  emailText +=
+                    'Meetings:\n';
+
+                  for (
+                    const meeting of
+                    section.meetings
+                  ) {
+
+                    emailText +=
+                      `  ${
+                        meeting.classroom
+                      } | ${
+                        meeting.schedule
+                      }\n`;
+
+                  }
+
+                  emailText += '\n';
+
+                }
+
+                emailText +=
+                  'Check the FCC course catalogue now.';
+
+                // ----------------------------------------
+                // GMAIL
+                // ----------------------------------------
+
+                console.log('');
+                console.log(
+                  'Sending alert email...'
+                );
+
+                const transporter =
+                  nodemailer.createTransport({
+
+                    service: 'gmail',
+
+                    auth: {
+
+                      user:
+                        process.env.SMTP_USER,
+
+                      pass:
+                        process.env.SMTP_PASSWORD
+
+                    }
+
+                  });
+
+                await transporter.sendMail({
+
+                  from:
+                    process.env.SMTP_USER,
+
+                  to:
+                    process.env.ALERT_EMAIL,
+
+                  subject:
+                    '🚨 FCC Alert: Course catalogue update',
+
+                  text:
+                    emailText
+
+                });
+
+                console.log(
+                  '✓ Alert email sent successfully.'
+                );
+
+              } else {
+
+                console.log('');
+                console.log(
+                  'No new sections or newly available seats.'
+                );
+
+              }
+
+              // ----------------------------------------
+              // SAVE CURRENT STATE
               // ----------------------------------------
 
               fs.writeFileSync(
-                'fcc-sections.json',
+
+                stateFile,
+
                 JSON.stringify(
-                  sections,
+                  currentState,
                   null,
                   2
                 )
+
               );
 
-              console.log('');
               console.log(
-                '✓ Structured sections saved.'
+                '✓ Current state saved.'
               );
 
               // ----------------------------------------
-              // SUMMARY
+              // SAVE CATALOGUE HTML
               // ----------------------------------------
 
-              const multiMeeting =
-                sections.filter(
-                  section =>
-                    section.meetings.length > 1
-                );
+              fs.writeFileSync(
+                'fcc-catalogue-response.html',
+                html
+              );
+
+              console.log(
+                '✓ Catalogue HTML saved.'
+              );
 
               console.log('');
               console.log('========================================');
-              console.log('PARSER TEST 2 COMPLETE');
+              console.log('MONITOR COMPLETE');
               console.log('========================================');
-
-              console.log(
-                `Raw rows: ${rows.length}`
-              );
-
-              console.log(
-                `Parsed sections: ${sections.length}`
-              );
-
-              console.log(
-                `Sections with multiple meetings: ${
-                  multiMeeting.length
-                }`
-              );
 
             } catch (error) {
 
@@ -763,6 +876,15 @@ jobs:
               console.error('========================================');
 
               console.error(error);
+
+              try {
+
+                await page.screenshot({
+                  path: 'fcc-error.png',
+                  fullPage: true
+                });
+
+              } catch {}
 
               process.exit(1);
 
@@ -776,25 +898,43 @@ jobs:
           EOF
 
       # ----------------------------------------
-      # SAVE RAW HTML
+      # COMMIT UPDATED STATE
       # ----------------------------------------
 
-      - name: Save raw catalogue HTML
+      - name: Save monitoring state
+        run: |
+          git config user.name "FCC Course Monitor"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add fcc-catalogue-state.json
+
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "Update FCC catalogue monitoring state"
+            git push
+          fi
+
+      # ----------------------------------------
+      # SAVE CATALOGUE HTML
+      # ----------------------------------------
+
+      - name: Save catalogue HTML
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-catalogue-response-test-2
+          name: fcc-catalogue
           path: fcc-catalogue-response.html
           retention-days: 3
 
       # ----------------------------------------
-      # SAVE PARSED JSON
+      # SAVE ERROR SCREENSHOT
       # ----------------------------------------
 
-      - name: Save parsed sections
+      - name: Save error screenshot
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-parsed-sections-test-2
-          path: fcc-sections.json
+          name: fcc-error
+          path: fcc-error.png
           retention-days: 3
