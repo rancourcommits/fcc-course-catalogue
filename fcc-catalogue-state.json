@@ -1,9 +1,9 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T20:22:03.024Z",
+  "updatedAt": "2026-08-11T20:32:17.317Z",
   "sections": {
     "ARTS 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S008",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -1963,7 +1963,7 @@
       "offer": "25"
     },
     "COMP 213 C": {
-      "available": 22,
+      "available": 20,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/02/2026 W F 11:00 - 12:50",
@@ -2107,7 +2107,7 @@
       "offer": "35"
     },
     "COMP 360 B": {
-      "available": 2,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/02/2026 W 11:00 - 12:50",
@@ -3747,7 +3747,7 @@
       "offer": "35"
     },
     "ENGL 201 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
