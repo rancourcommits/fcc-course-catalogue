@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T18:52:12.592Z",
+  "updatedAt": "2026-08-11T19:12:16.214Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -243,7 +243,7 @@
       "offer": "35"
     },
     "BIOT 307 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -1227,7 +1227,7 @@
       "offer": "35"
     },
     "BUSN 460 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -1563,7 +1563,7 @@
       "offer": "35"
     },
     "CHEM 100 E": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -1603,7 +1603,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -2859,7 +2859,7 @@
       "offer": "15"
     },
     "DATA 207 C": {
-      "available": 8,
+      "available": 9,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -3155,7 +3155,7 @@
       "offer": "35"
     },
     "ECON 307 B": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3163,7 +3163,7 @@
       "offer": "35"
     },
     "ECON 311 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3211,7 +3211,7 @@
       "offer": "35"
     },
     "ECON 401 A": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -3355,7 +3355,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3587,7 +3587,7 @@
       "offer": "25"
     },
     "ENGL 108 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4035,7 +4035,7 @@
       "offer": "25"
     },
     "ENVR 240 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4075,7 +4075,7 @@
       "offer": "35"
     },
     "ENVR 345 A": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4091,7 +4091,7 @@
       "offer": "35"
     },
     "ENVR 411 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:09/01/2026 T R 09:00 - 10:50",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4859,7 +4859,7 @@
       "offer": "15"
     },
     "MATH 107 B": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4867,7 +4867,7 @@
       "offer": "15"
     },
     "MATH 107 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S115",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5891,7 +5891,7 @@
       "offer": "35"
     },
     "PLSC 330 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
