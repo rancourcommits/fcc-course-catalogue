@@ -132,6 +132,33 @@ jobs:
               await page.waitForTimeout(5000);
 
               // ----------------------------------------
+              // SAVE FULL HTML SNAPSHOT
+              // ----------------------------------------
+              //
+              // This captures the complete HTML currently
+              // loaded in the browser after the catalogue
+              // search has completed.
+              //
+              // We are saving this temporarily so we can
+              // inspect FCC's actual catalogue structure
+              // and make the parser more reliable.
+              //
+              // ----------------------------------------
+
+              const catalogueHtml =
+                await page.content();
+
+              fs.writeFileSync(
+                'fcc-catalogue-response.html',
+                catalogueHtml,
+                'utf8'
+              );
+
+              console.log(
+                `✓ Full catalogue HTML saved (${catalogueHtml.length} characters)`
+              );
+
+              // ----------------------------------------
               // FIND ALL CATALOGUE ROWS
               // ----------------------------------------
 
@@ -193,11 +220,6 @@ jobs:
                   .replace(/\s+/g, ' ')
                   .trim();
 
-                // Skip rows that clearly aren't course rows.
-                //
-                // A course row normally contains a course
-                // code followed by a section identifier.
-
                 const columns = row.locator(
                   'div[class*="ui-grid-col-"]'
                 );
@@ -236,7 +258,8 @@ jobs:
                  * 10 = details
                  */
 
-                const courseText = values[1] || '';
+                const courseText =
+                  values[1] || '';
 
                 const location =
                   values[3] || '';
@@ -266,9 +289,9 @@ jobs:
                 if (!course) {
 
                   /*
-                   * Only count rows containing something
-                   * that looks like a course code as
-                   * unrecognized.
+                   * Count rows that look like they may
+                   * contain course information but could
+                   * not be parsed.
                    */
 
                   if (
@@ -351,15 +374,7 @@ jobs:
               );
 
               // ----------------------------------------
-              // SAFETY CHECK
-              // ----------------------------------------
-              //
-              // Never overwrite a known-good state if
-              // the scraper suddenly returns dramatically
-              // fewer sections.
-              //
-              // There is NO hard-coded catalogue size.
-              //
+              // LOAD PREVIOUS STATE
               // ----------------------------------------
 
               const stateFile =
@@ -411,13 +426,17 @@ jobs:
                     ).length
                   : 0;
 
-              /*
-               * If we previously had a substantial
-               * catalogue and the current scan suddenly
-               * contains less than 80% of it, treat this
-               * as a suspicious scrape rather than
-               * overwriting the state.
-               */
+              // ----------------------------------------
+              // SAFETY CHECK
+              // ----------------------------------------
+              //
+              // No fixed catalogue size is assumed.
+              //
+              // If the current scan suddenly contains
+              // less than 80% of the previous catalogue,
+              // treat it as a bad/suspicious scrape.
+              //
+              // ----------------------------------------
 
               if (
                 previousState &&
@@ -781,6 +800,18 @@ jobs:
             git commit -m "Update FCC catalogue monitoring state"
             git push
           fi
+
+      # ----------------------------------------
+      # SAVE RAW FCC HTML
+      # ----------------------------------------
+
+      - name: Save raw FCC catalogue HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fcc-catalogue-html
+          path: fcc-catalogue-response.html
+          retention-days: 3
 
       # ----------------------------------------
       # SAVE SCREENSHOT
