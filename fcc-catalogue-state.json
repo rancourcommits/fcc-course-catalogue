@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T19:52:22.564Z",
+  "updatedAt": "2026-08-11T20:02:08.829Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1211,7 +1211,7 @@
       "offer": "35"
     },
     "BUSN 460 E": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -2979,7 +2979,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
