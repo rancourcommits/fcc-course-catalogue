@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T17:22:05.133Z",
+  "updatedAt": "2026-08-11T17:32:08.138Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2211,7 +2211,7 @@
       "offer": "35"
     },
     "CPPG 111 A": {
-      "available": 32,
+      "available": 33,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4883,7 +4883,7 @@
       "offer": "15"
     },
     "MATH 107 E": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5907,7 +5907,7 @@
       "offer": "35"
     },
     "PLSC 340 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6355,7 +6355,7 @@
       "offer": "35"
     },
     "PSYC 375 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
