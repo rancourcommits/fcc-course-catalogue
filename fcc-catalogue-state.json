@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T10:10:35.832Z",
+  "updatedAt": "2026-08-11T10:19:32.674Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3018,7 +3018,7 @@
       "offer": ""
     },
     "EDUC 360 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "35",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
