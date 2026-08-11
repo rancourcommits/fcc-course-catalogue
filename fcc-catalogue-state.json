@@ -3665,7 +3665,7 @@
       ]
     },
     "CPPG 101 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "W Azim",
@@ -8226,7 +8226,7 @@
       ]
     },
     "MCOM 202 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "S A Naeem",
@@ -9817,7 +9817,7 @@
       ]
     },
     "PSYC 160 A": {
-      "available": 7,
+      "available": 6,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "A aziz",
@@ -10193,7 +10193,7 @@
       ]
     },
     "PSYC 354 B": {
-      "available": 26,
+      "available": 25,
       "enrolled": 30,
       "credits": "4.00",
       "instructor": "S Jabeen",
@@ -10740,7 +10740,7 @@
       ]
     },
     "SOCL 100 I": {
-      "available": 26,
+      "available": 25,
       "enrolled": 35,
       "credits": "3.00",
       "instructor": "T Fatima",
@@ -11104,7 +11104,7 @@
       ]
     },
     "STAT 101 D": {
-      "available": 10,
+      "available": 11,
       "enrolled": 15,
       "credits": "3.00",
       "instructor": "R Butt",
@@ -11312,7 +11312,7 @@
       ]
     },
     "STAT 414 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": 25,
       "credits": "3.00",
       "instructor": "N Mushtaq",
