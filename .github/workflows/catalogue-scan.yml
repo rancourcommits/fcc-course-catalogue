@@ -1,4 +1,4 @@
-name: FCC Catalogue Network Test
+name: FCC Catalogue Parser Test
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: read
 
 jobs:
-  inspect:
+  parse:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -30,22 +30,24 @@ jobs:
           node-version: 24
 
       # ----------------------------------------
-      # INSTALL PLAYWRIGHT
+      # INSTALL DEPENDENCIES
       # ----------------------------------------
 
-      - name: Install Playwright
+      - name: Install dependencies
         run: |
-          npm install playwright
+          npm install playwright cheerio
           npx playwright install --with-deps chromium
 
       # ----------------------------------------
-      # INSPECT FCC NETWORK REQUESTS
+      # CAPTURE + PARSE FCC CATALOGUE
       # ----------------------------------------
 
-      - name: Inspect FCC catalogue requests
+      - name: Parse FCC catalogue
         run: |
           node - <<'EOF'
           const { chromium } = require('playwright');
+          const cheerio = require('cheerio');
+          const fs = require('fs');
 
           (async () => {
 
@@ -60,68 +62,10 @@ jobs:
               }
             });
 
-            const requests = [];
-            const responses = [];
-
-            // ----------------------------------------
-            // CAPTURE REQUESTS
-            // ----------------------------------------
-
-            page.on('request', request => {
-
-              const type = request.resourceType();
-
-              if (
-                type === 'xhr' ||
-                type === 'fetch'
-              ) {
-
-                requests.push({
-                  method: request.method(),
-                  url: request.url(),
-                  postData: request.postData()
-                });
-
-              }
-
-            });
-
-            // ----------------------------------------
-            // CAPTURE RESPONSES
-            // ----------------------------------------
-
-            page.on('response', async response => {
-
-              const request = response.request();
-              const type = request.resourceType();
-
-              if (
-                type === 'xhr' ||
-                type === 'fetch'
-              ) {
-
-                let body = '';
-
-                try {
-                  body = await response.text();
-                } catch {}
-
-                responses.push({
-                  status: response.status(),
-                  url: response.url(),
-                  contentType:
-                    response.headers()['content-type'] || '',
-                  body: body.slice(0, 5000)
-                });
-
-              }
-
-            });
-
             try {
 
               console.log('========================================');
-              console.log('FCC CATALOGUE NETWORK TEST');
+              console.log('FCC CATALOGUE PARSER TEST');
               console.log('========================================');
 
               // ----------------------------------------
@@ -147,11 +91,9 @@ jobs:
               // SELECT TERM
               // ----------------------------------------
 
-              const term = page.locator(
+              await page.locator(
                 'select[name="empower_global_term_id"]'
-              );
-
-              await term.selectOption({
+              ).selectOption({
                 label: '2026 Fall'
               });
 
@@ -159,104 +101,565 @@ jobs:
 
               await page.waitForTimeout(1500);
 
-              // ----------------------------------------
-              // LEAVE DEPARTMENT BLANK
-              // ----------------------------------------
-
               console.log('✓ Department: ALL');
-
-              // ----------------------------------------
-              // LEAVE COURSE BLANK
-              // ----------------------------------------
-
               console.log('✓ Course: ALL');
 
               // ----------------------------------------
-              // CLEAR ANY REQUESTS FROM PAGE LOAD
+              // CAPTURE GETLIST RESPONSE
               // ----------------------------------------
-
-              requests.length = 0;
-              responses.length = 0;
 
               console.log('');
               console.log(
-                '✓ Network log cleared before Search.'
+                'Waiting for FCC catalogue response...'
               );
+
+              const responsePromise =
+                page.waitForResponse(
+                  response => {
+
+                    return response.url()
+                      .includes(
+                        '/cfcs/courseCatalog.cfc?method=GetList'
+                      );
+
+                  },
+                  {
+                    timeout: 60000
+                  }
+                );
 
               // ----------------------------------------
               // SEARCH
               // ----------------------------------------
 
-              const search = page.locator(
+              await page.locator(
                 'button[name="search"]'
-              );
-
-              await search.waitFor({
-                state: 'visible',
-                timeout: 30000
-              });
-
-              console.log('');
-              console.log('Clicking Search...');
-
-              await search.click();
+              ).click();
 
               console.log('✓ Search clicked');
 
+              const response =
+                await responsePromise;
+
+              console.log(
+                `✓ GetList response received`
+              );
+
+              console.log(
+                `Status: ${response.status()}`
+              );
+
               // ----------------------------------------
-              // WAIT FOR NETWORK + RESULTS
+              // READ RESPONSE
               // ----------------------------------------
 
-              await page.waitForTimeout(7000);
+              const responseText =
+                await response.text();
+
+              console.log(
+                `Response size: ${responseText.length} characters`
+              );
+
+              let payload;
+
+              try {
+
+                payload =
+                  JSON.parse(responseText);
+
+              } catch (error) {
+
+                throw new Error(
+                  'FCC response was not valid JSON.'
+                );
+
+              }
+
+              if (
+                !payload.SUCCESS ||
+                typeof payload.html !== 'string'
+              ) {
+
+                throw new Error(
+                  'FCC response did not contain the expected SUCCESS/html structure.'
+                );
+
+              }
+
+              const html = payload.html;
+
+              console.log(
+                `Catalogue HTML size: ${html.length} characters`
+              );
 
               // ----------------------------------------
-              // REQUEST RESULTS
+              // SAVE RAW CATALOGUE HTML
+              // ----------------------------------------
+
+              fs.writeFileSync(
+                'fcc-catalogue-response.html',
+                html
+              );
+
+              console.log(
+                '✓ Raw catalogue HTML saved.'
+              );
+
+              // ----------------------------------------
+              // PARSE HTML
+              // ----------------------------------------
+
+              const $ =
+                cheerio.load(html);
+
+              const rows =
+                $('div.ui-grid-row');
+
+              console.log('');
+              console.log('========================================');
+              console.log('CATALOGUE STRUCTURE');
+              console.log('========================================');
+
+              console.log(
+                `Grid rows found: ${rows.length}`
+              );
+
+              // ----------------------------------------
+              // HELPER
+              // ----------------------------------------
+
+              function clean(value) {
+
+                return String(value || '')
+                  .replace(/\u00a0/g, ' ')
+                  .replace(/\s+/g, ' ')
+                  .trim();
+
+              }
+
+              function getColumns(row) {
+
+                const values = [];
+
+                $(row)
+                  .find('div[class*="ui-grid-col-"]')
+                  .each((index, element) => {
+
+                    values.push(
+                      clean($(element).text())
+                    );
+
+                  });
+
+                return values;
+
+              }
+
+              function looksLikeCourse(value) {
+
+                return /\b[A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+\b/
+                  .test(value);
+
+              }
+
+              function extractCourse(value) {
+
+                const match =
+                  value.match(
+                    /\b([A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+)\b/
+                  );
+
+                return match
+                  ? clean(match[1])
+                  : null;
+
+              }
+
+              // ----------------------------------------
+              // BUILD RAW ROW OBJECTS
+              // ----------------------------------------
+
+              const parsedRows = [];
+
+              rows.each((index, element) => {
+
+                const columns =
+                  getColumns(element);
+
+                const text =
+                  clean($(element).text());
+
+                if (!text) {
+                  return;
+                }
+
+                parsedRows.push({
+                  index,
+                  text,
+                  columns,
+                  isCourse:
+                    looksLikeCourse(text),
+                  course:
+                    extractCourse(text)
+                });
+
+              });
+
+              console.log(
+                `Non-empty rows: ${parsedRows.length}`
+              );
+
+              console.log(
+                `Course-start rows: ${
+                  parsedRows.filter(
+                    row => row.isCourse
+                  ).length
+                }`
+              );
+
+              // ----------------------------------------
+              // GROUP CONTINUATION ROWS
+              // ----------------------------------------
+
+              const records = [];
+
+              let current = null;
+
+              for (const row of parsedRows) {
+
+                if (row.isCourse) {
+
+                  if (current) {
+                    records.push(current);
+                  }
+
+                  current = {
+                    sourceRow: row.index,
+                    course: row.course,
+                    rows: [
+                      row
+                    ]
+                  };
+
+                } else if (current) {
+
+                  current.rows.push(row);
+
+                }
+
+              }
+
+              if (current) {
+                records.push(current);
+              }
+
+              console.log('');
+              console.log('========================================');
+              console.log('SECTION GROUPING');
+              console.log('========================================');
+
+              console.log(
+                `Sections detected: ${records.length}`
+              );
+
+              const multiRowRecords =
+                records.filter(
+                  record =>
+                    record.rows.length > 1
+                );
+
+              console.log(
+                `Sections with continuation rows: ${
+                  multiRowRecords.length
+                }`
+              );
+
+              // ----------------------------------------
+              // CONVERT GROUPS INTO STRUCTURED RECORDS
+              // ----------------------------------------
+
+              const sections = [];
+
+              for (const record of records) {
+
+                const first =
+                  record.rows[0];
+
+                const firstColumns =
+                  first.columns;
+
+                /*
+                 * Normal FCC row observed in the
+                 * network test:
+                 *
+                 * 1 = icon
+                 * 2 = course
+                 * 3 = credits
+                 * 4 = location
+                 * 5 = schedule
+                 * 6 = instructor
+                 * 7 = enrolled
+                 * 8 = available
+                 * 9 = offer
+                 * 10 = details
+                 */
+
+                const section = {
+                  section: record.course,
+                  credits:
+                    firstColumns[2] || '',
+                  location:
+                    firstColumns[3] || '',
+                  schedules: [],
+                  instructor:
+                    firstColumns[5] || '',
+                  enrolled:
+                    firstColumns[6] || '',
+                  available:
+                    firstColumns[7] || '',
+                  offer:
+                    firstColumns[8] || '',
+                  sourceRows:
+                    record.rows.map(
+                      row => row.index
+                    )
+                };
+
+                // ----------------------------------------
+                // EXTRACT DATA FROM EVERY ROW
+                // ----------------------------------------
+
+                for (
+                  let r = 0;
+                  r < record.rows.length;
+                  r++
+                ) {
+
+                  const row =
+                    record.rows[r];
+
+                  const columns =
+                    row.columns;
+
+                  // Normal row schedule
+                  if (
+                    columns[4] &&
+                    !section.schedules.includes(
+                      columns[4]
+                    )
+                  ) {
+
+                    section.schedules.push(
+                      columns[4]
+                    );
+
+                  }
+
+                  // Continuation row
+                  //
+                  // These commonly have:
+                  // location + schedule + instructor
+                  // and may also contain offer/available.
+                  //
+
+                  if (r > 0) {
+
+                    if (
+                      columns[0] &&
+                      !section.location
+                    ) {
+
+                      section.location =
+                        columns[0];
+
+                    }
+
+                    if (
+                      columns[1] &&
+                      !section.schedules.includes(
+                        columns[1]
+                      )
+                    ) {
+
+                      section.schedules.push(
+                        columns[1]
+                      );
+
+                    }
+
+                    if (
+                      columns[2] &&
+                      !section.instructor
+                    ) {
+
+                      section.instructor =
+                        columns[2];
+
+                    }
+
+                    // If the continuation row contains
+                    // numeric enrollment/availability
+                    // values, retain them.
+                    for (
+                      let c = 0;
+                      c < columns.length;
+                      c++
+                    ) {
+
+                      const value =
+                        columns[c];
+
+                      if (
+                        /^\d+$/.test(value)
+                      ) {
+
+                        if (
+                          section.available === ''
+                        ) {
+
+                          section.available =
+                            value;
+
+                        } else if (
+                          section.enrolled === ''
+                        ) {
+
+                          section.enrolled =
+                            value;
+
+                        }
+
+                      }
+
+                    }
+
+                  }
+
+                }
+
+                sections.push(section);
+
+              }
+
+              // ----------------------------------------
+              // PRINT FIRST 20 SECTIONS
               // ----------------------------------------
 
               console.log('');
               console.log('========================================');
-              console.log('NETWORK REQUESTS');
+              console.log('FIRST 20 PARSED SECTIONS');
               console.log('========================================');
-
-              console.log(
-                `XHR/fetch requests captured: ${requests.length}`
-              );
 
               for (
                 let i = 0;
-                i < requests.length;
+                i < Math.min(20, sections.length);
                 i++
               ) {
 
-                const request = requests[i];
+                const section =
+                  sections[i];
 
                 console.log('');
                 console.log(
-                  `---------- REQUEST ${i + 1} ----------`
+                  `---------- SECTION ${i + 1} ----------`
                 );
 
                 console.log(
-                  `METHOD: ${request.method}`
+                  `Course: ${section.section}`
                 );
 
                 console.log(
-                  `URL: ${request.url}`
+                  `Credits: ${section.credits}`
                 );
 
-                if (request.postData) {
+                console.log(
+                  `Location: ${section.location}`
+                );
+
+                console.log(
+                  `Schedules: ${
+                    section.schedules.join(
+                      ' | '
+                    )
+                  }`
+                );
+
+                console.log(
+                  `Instructor: ${section.instructor}`
+                );
+
+                console.log(
+                  `Enrolled: ${section.enrolled}`
+                );
+
+                console.log(
+                  `Available: ${section.available}`
+                );
+
+                console.log(
+                  `Offer: ${section.offer}`
+                );
+
+                console.log(
+                  `Source rows: ${
+                    section.sourceRows.join(
+                      ', '
+                    )
+                  }`
+                );
+
+              }
+
+              // ----------------------------------------
+              // PRINT MULTI-ROW EXAMPLES
+              // ----------------------------------------
+
+              console.log('');
+              console.log('========================================');
+              console.log('MULTI-ROW SECTION EXAMPLES');
+              console.log('========================================');
+
+              for (
+                let i = 0;
+                i < Math.min(
+                  10,
+                  multiRowRecords.length
+                );
+                i++
+              ) {
+
+                const record =
+                  multiRowRecords[i];
+
+                console.log('');
+                console.log(
+                  `---------- MULTI-ROW ${i + 1} ----------`
+                );
+
+                console.log(
+                  `Course: ${record.course}`
+                );
+
+                console.log(
+                  `Rows: ${
+                    record.rows
+                      .map(
+                        row => row.index
+                      )
+                      .join(', ')
+                  }`
+                );
+
+                for (
+                  const row of record.rows
+                ) {
 
                   console.log(
-                    'POST DATA:'
-                  );
-
-                  console.log(
-                    request.postData
-                  );
-
-                } else {
-
-                  console.log(
-                    'POST DATA: <none>'
+                    `ROW ${row.index}: ${
+                      row.columns.join(
+                        ' | '
+                      )
+                    }`
                   );
 
                 }
@@ -264,113 +667,57 @@ jobs:
               }
 
               // ----------------------------------------
-              // RESPONSE RESULTS
+              // SAVE STRUCTURED JSON
+              // ----------------------------------------
+
+              fs.writeFileSync(
+                'fcc-sections.json',
+                JSON.stringify(
+                  sections,
+                  null,
+                  2
+                )
+              );
+
+              console.log('');
+              console.log(
+                '✓ Structured sections saved.'
+              );
+
+              // ----------------------------------------
+              // SUMMARY
               // ----------------------------------------
 
               console.log('');
               console.log('========================================');
-              console.log('NETWORK RESPONSES');
+              console.log('PARSER TEST COMPLETE');
               console.log('========================================');
 
               console.log(
-                `XHR/fetch responses captured: ${responses.length}`
-              );
-
-              for (
-                let i = 0;
-                i < responses.length;
-                i++
-              ) {
-
-                const response = responses[i];
-
-                console.log('');
-                console.log(
-                  `---------- RESPONSE ${i + 1} ----------`
-                );
-
-                console.log(
-                  `STATUS: ${response.status}`
-                );
-
-                console.log(
-                  `URL: ${response.url}`
-                );
-
-                console.log(
-                  `CONTENT TYPE: ${response.contentType}`
-                );
-
-                console.log(
-                  'BODY PREVIEW:'
-                );
-
-                console.log(
-                  response.body || '<empty>'
-                );
-
-              }
-
-              // ----------------------------------------
-              // CONFIRM RESULTS
-              // ----------------------------------------
-
-              const courses =
-                page.locator('#courses');
-
-              const courseHtml =
-                await courses.innerHTML();
-
-              console.log('');
-              console.log('========================================');
-              console.log('RESULT CONTAINER');
-              console.log('========================================');
-
-              console.log(
-                `#courses HTML length: ${courseHtml.length}`
+                `Raw rows: ${rows.length}`
               );
 
               console.log(
-                `#courses text length: ${
-                  (await courses.innerText()).length
+                `Non-empty rows: ${parsedRows.length}`
+              );
+
+              console.log(
+                `Course starts: ${
+                  parsedRows.filter(
+                    row => row.isCourse
+                  ).length
                 }`
               );
 
               console.log(
-                `ui-grid-row count: ${
-                  await page.locator(
-                    'div.ui-grid-row'
-                  ).count()
+                `Parsed sections: ${sections.length}`
+              );
+
+              console.log(
+                `Multi-row sections: ${
+                  multiRowRecords.length
                 }`
               );
-
-              // ----------------------------------------
-              // SAVE LIVE RESULTS HTML
-              // ----------------------------------------
-
-              await require('fs').promises.writeFile(
-                'fcc-live-courses.html',
-                courseHtml
-              );
-
-              console.log('');
-              console.log(
-                '✓ Saved live #courses HTML.'
-              );
-
-              // ----------------------------------------
-              // SAVE SCREENSHOT
-              // ----------------------------------------
-
-              await page.screenshot({
-                path: 'fcc-network-test.png',
-                fullPage: true
-              });
-
-              console.log('');
-              console.log('========================================');
-              console.log('NETWORK TEST COMPLETE');
-              console.log('========================================');
 
             } catch (error) {
 
@@ -380,15 +727,6 @@ jobs:
               console.error('========================================');
 
               console.error(error);
-
-              try {
-
-                await page.screenshot({
-                  path: 'fcc-error.png',
-                  fullPage: true
-                });
-
-              } catch {}
 
               process.exit(1);
 
@@ -402,37 +740,25 @@ jobs:
           EOF
 
       # ----------------------------------------
-      # SAVE LIVE HTML
+      # SAVE RAW HTML
       # ----------------------------------------
 
-      - name: Save live catalogue HTML
+      - name: Save raw catalogue HTML
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-live-courses-html
-          path: fcc-live-courses.html
+          name: fcc-catalogue-response
+          path: fcc-catalogue-response.html
           retention-days: 3
 
       # ----------------------------------------
-      # SAVE SCREENSHOT
+      # SAVE STRUCTURED JSON
       # ----------------------------------------
 
-      - name: Save network test screenshot
+      - name: Save parsed sections
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-network-test
-          path: fcc-network-test.png
-          retention-days: 3
-
-      # ----------------------------------------
-      # SAVE ERROR SCREENSHOT
-      # ----------------------------------------
-
-      - name: Save error screenshot
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: fcc-error
-          path: fcc-error.png
+          name: fcc-parsed-sections
+          path: fcc-sections.json
           retention-days: 3
