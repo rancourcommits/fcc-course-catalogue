@@ -1,4 +1,4 @@
-name: FCC Catalogue Parser Test
+name: FCC Catalogue Parser Test 2
 
 on:
   workflow_dispatch:
@@ -65,7 +65,7 @@ jobs:
             try {
 
               console.log('========================================');
-              console.log('FCC CATALOGUE PARSER TEST');
+              console.log('FCC CATALOGUE PARSER TEST 2');
               console.log('========================================');
 
               // ----------------------------------------
@@ -101,27 +101,23 @@ jobs:
 
               await page.waitForTimeout(1500);
 
+              // ----------------------------------------
+              // LEAVE DEPARTMENT + COURSE BLANK
+              // ----------------------------------------
+
               console.log('✓ Department: ALL');
               console.log('✓ Course: ALL');
 
               // ----------------------------------------
-              // CAPTURE GETLIST RESPONSE
+              // WAIT FOR GETLIST RESPONSE
               // ----------------------------------------
-
-              console.log('');
-              console.log(
-                'Waiting for FCC catalogue response...'
-              );
 
               const responsePromise =
                 page.waitForResponse(
                   response => {
-
-                    return response.url()
-                      .includes(
-                        '/cfcs/courseCatalog.cfc?method=GetList'
-                      );
-
+                    return response.url().includes(
+                      '/cfcs/courseCatalog.cfc?method=GetList'
+                    );
                   },
                   {
                     timeout: 60000
@@ -156,10 +152,6 @@ jobs:
               const responseText =
                 await response.text();
 
-              console.log(
-                `Response size: ${responseText.length} characters`
-              );
-
               let payload;
 
               try {
@@ -167,7 +159,7 @@ jobs:
                 payload =
                   JSON.parse(responseText);
 
-              } catch (error) {
+              } catch {
 
                 throw new Error(
                   'FCC response was not valid JSON.'
@@ -186,14 +178,15 @@ jobs:
 
               }
 
-              const html = payload.html;
+              const html =
+                payload.html;
 
               console.log(
                 `Catalogue HTML size: ${html.length} characters`
               );
 
               // ----------------------------------------
-              // SAVE RAW CATALOGUE HTML
+              // SAVE RAW HTML
               // ----------------------------------------
 
               fs.writeFileSync(
@@ -206,7 +199,7 @@ jobs:
               );
 
               // ----------------------------------------
-              // PARSE HTML
+              // LOAD HTML
               // ----------------------------------------
 
               const $ =
@@ -225,7 +218,7 @@ jobs:
               );
 
               // ----------------------------------------
-              // HELPER
+              // HELPERS
               // ----------------------------------------
 
               function clean(value) {
@@ -255,13 +248,6 @@ jobs:
 
               }
 
-              function looksLikeCourse(value) {
-
-                return /\b[A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+\b/
-                  .test(value);
-
-              }
-
               function extractCourse(value) {
 
                 const match =
@@ -275,8 +261,25 @@ jobs:
 
               }
 
+              function isCourseRow(columns, text) {
+
+                if (
+                  !columns[1] ||
+                  !text
+                ) {
+
+                  return false;
+
+                }
+
+                return !!extractCourse(
+                  columns[1]
+                );
+
+              }
+
               // ----------------------------------------
-              // BUILD RAW ROW OBJECTS
+              // READ ALL ROWS
               // ----------------------------------------
 
               const parsedRows = [];
@@ -295,12 +298,17 @@ jobs:
 
                 parsedRows.push({
                   index,
-                  text,
                   columns,
-                  isCourse:
-                    looksLikeCourse(text),
+                  text,
                   course:
-                    extractCourse(text)
+                    extractCourse(
+                      columns[1] || ''
+                    ),
+                  isCourse:
+                    isCourseRow(
+                      columns,
+                      text
+                    )
                 });
 
               });
@@ -310,7 +318,7 @@ jobs:
               );
 
               console.log(
-                `Course-start rows: ${
+                `Course rows: ${
                   parsedRows.filter(
                     row => row.isCourse
                   ).length
@@ -334,11 +342,8 @@ jobs:
                   }
 
                   current = {
-                    sourceRow: row.index,
                     course: row.course,
-                    rows: [
-                      row
-                    ]
+                    rows: [row]
                   };
 
                 } else if (current) {
@@ -362,176 +367,196 @@ jobs:
                 `Sections detected: ${records.length}`
               );
 
-              const multiRowRecords =
-                records.filter(
-                  record =>
-                    record.rows.length > 1
-                );
-
-              console.log(
-                `Sections with continuation rows: ${
-                  multiRowRecords.length
-                }`
-              );
-
               // ----------------------------------------
-              // CONVERT GROUPS INTO STRUCTURED RECORDS
+              // BUILD STRUCTURED SECTIONS
               // ----------------------------------------
 
               const sections = [];
 
               for (const record of records) {
 
-                const first =
+                const mainRow =
                   record.rows[0];
 
-                const firstColumns =
-                  first.columns;
+                const main =
+                  mainRow.columns;
 
                 /*
-                 * Normal FCC row observed in the
-                 * network test:
+                 * MAIN ROW
                  *
-                 * 1 = icon
-                 * 2 = course
-                 * 3 = credits
-                 * 4 = location
-                 * 5 = schedule
-                 * 6 = instructor
-                 * 7 = enrolled
-                 * 8 = available
-                 * 9 = offer
-                 * 10 = details
+                 * 0 = icon
+                 * 1 = course
+                 * 2 = credits
+                 * 3 = classroom
+                 * 4 = schedule
+                 * 5 = instructor
+                 * 6 = enrolled
+                 * 7 = available
+                 * 8 = offer
+                 *
+                 * CONTINUATION ROW
+                 *
+                 * 0 = icon / blank
+                 * 1 = classroom
+                 * 2 = schedule
+                 * 3 = instructor
+                 * 4 = enrolled
+                 * 5 = available
+                 * 6 = offer
                  */
 
                 const section = {
-                  section: record.course,
+
+                  section:
+                    record.course,
+
                   credits:
-                    firstColumns[2] || '',
-                  location:
-                    firstColumns[3] || '',
-                  schedules: [],
+                    clean(main[2]),
+
+                  meetings: [],
+
                   instructor:
-                    firstColumns[5] || '',
+                    clean(main[5]),
+
                   enrolled:
-                    firstColumns[6] || '',
+                    clean(main[6]),
+
                   available:
-                    firstColumns[7] || '',
+                    clean(main[7]),
+
                   offer:
-                    firstColumns[8] || '',
-                  sourceRows:
-                    record.rows.map(
-                      row => row.index
-                    )
+                    clean(main[8])
+
                 };
 
                 // ----------------------------------------
-                // EXTRACT DATA FROM EVERY ROW
+                // MAIN MEETING
+                // ----------------------------------------
+
+                if (
+                  main[3] ||
+                  main[4]
+                ) {
+
+                  section.meetings.push({
+
+                    classroom:
+                      clean(main[3]),
+
+                    schedule:
+                      clean(main[4])
+
+                  });
+
+                }
+
+                // ----------------------------------------
+                // CONTINUATION MEETINGS
                 // ----------------------------------------
 
                 for (
-                  let r = 0;
+                  let r = 1;
                   r < record.rows.length;
                   r++
                 ) {
 
-                  const row =
-                    record.rows[r];
-
                   const columns =
-                    row.columns;
+                    record.rows[r].columns;
 
-                  // Normal row schedule
+                  /*
+                   * Continuation rows observed
+                   * in the FCC response:
+                   *
+                   * 0 = blank/icon
+                   * 1 = classroom
+                   * 2 = schedule
+                   * 3 = instructor
+                   * 4 = enrolled
+                   * 5 = available
+                   * 6 = offer
+                   */
+
+                  const classroom =
+                    clean(columns[1]);
+
+                  const schedule =
+                    clean(columns[2]);
+
+                  const instructor =
+                    clean(columns[3]);
+
+                  const enrolled =
+                    clean(columns[4]);
+
+                  const available =
+                    clean(columns[5]);
+
+                  const offer =
+                    clean(columns[6]);
+
                   if (
-                    columns[4] &&
-                    !section.schedules.includes(
-                      columns[4]
-                    )
+                    classroom ||
+                    schedule
                   ) {
 
-                    section.schedules.push(
-                      columns[4]
-                    );
+                    section.meetings.push({
+
+                      classroom,
+
+                      schedule
+
+                    });
 
                   }
 
-                  // Continuation row
-                  //
-                  // These commonly have:
-                  // location + schedule + instructor
-                  // and may also contain offer/available.
-                  //
+                  // ----------------------------------------
+                  // FILL SECTION-LEVEL VALUES
+                  // ----------------------------------------
 
-                  if (r > 0) {
+                  if (
+                    instructor &&
+                    !section.instructor
+                  ) {
 
-                    if (
-                      columns[0] &&
-                      !section.location
-                    ) {
+                    section.instructor =
+                      instructor;
 
-                      section.location =
-                        columns[0];
+                  }
 
-                    }
+                  /*
+                   * Only use continuation-row
+                   * enrollment/availability when
+                   * the main row doesn't already
+                   * provide them.
+                   */
 
-                    if (
-                      columns[1] &&
-                      !section.schedules.includes(
-                        columns[1]
-                      )
-                    ) {
+                  if (
+                    !section.enrolled &&
+                    /^\d+$/.test(enrolled)
+                  ) {
 
-                      section.schedules.push(
-                        columns[1]
-                      );
+                    section.enrolled =
+                      enrolled;
 
-                    }
+                  }
 
-                    if (
-                      columns[2] &&
-                      !section.instructor
-                    ) {
+                  if (
+                    !section.available &&
+                    /^\d+$/.test(available)
+                  ) {
 
-                      section.instructor =
-                        columns[2];
+                    section.available =
+                      available;
 
-                    }
+                  }
 
-                    // If the continuation row contains
-                    // numeric enrollment/availability
-                    // values, retain them.
-                    for (
-                      let c = 0;
-                      c < columns.length;
-                      c++
-                    ) {
+                  if (
+                    !section.offer &&
+                    offer
+                  ) {
 
-                      const value =
-                        columns[c];
-
-                      if (
-                        /^\d+$/.test(value)
-                      ) {
-
-                        if (
-                          section.available === ''
-                        ) {
-
-                          section.available =
-                            value;
-
-                        } else if (
-                          section.enrolled === ''
-                        ) {
-
-                          section.enrolled =
-                            value;
-
-                        }
-
-                      }
-
-                    }
+                    section.offer =
+                      offer;
 
                   }
 
@@ -552,7 +577,10 @@ jobs:
 
               for (
                 let i = 0;
-                i < Math.min(20, sections.length);
+                i < Math.min(
+                  20,
+                  sections.length
+                );
                 i++
               ) {
 
@@ -573,18 +601,6 @@ jobs:
                 );
 
                 console.log(
-                  `Location: ${section.location}`
-                );
-
-                console.log(
-                  `Schedules: ${
-                    section.schedules.join(
-                      ' | '
-                    )
-                  }`
-                );
-
-                console.log(
                   `Instructor: ${section.instructor}`
                 );
 
@@ -601,64 +617,90 @@ jobs:
                 );
 
                 console.log(
-                  `Source rows: ${
-                    section.sourceRows.join(
-                      ', '
-                    )
-                  }`
+                  `Meetings: ${section.meetings.length}`
                 );
+
+                for (
+                  const meeting of section.meetings
+                ) {
+
+                  console.log(
+                    `  Classroom: ${
+                      meeting.classroom
+                    }`
+                  );
+
+                  console.log(
+                    `  Schedule: ${
+                      meeting.schedule
+                    }`
+                  );
+
+                }
 
               }
 
               // ----------------------------------------
-              // PRINT MULTI-ROW EXAMPLES
+              // SPECIFIC BIOL 100 CHECK
               // ----------------------------------------
 
               console.log('');
               console.log('========================================');
-              console.log('MULTI-ROW SECTION EXAMPLES');
+              console.log('BIOL 100 CHECK');
               console.log('========================================');
 
-              for (
-                let i = 0;
-                i < Math.min(
-                  10,
-                  multiRowRecords.length
+              const biol100 =
+                sections.filter(
+                  section =>
+                    /^BIOL\s*100\b/i.test(
+                      section.section
+                    )
                 );
-                i++
-              ) {
 
-                const record =
-                  multiRowRecords[i];
+              console.log(
+                `BIOL 100 sections found: ${biol100.length}`
+              );
+
+              for (
+                const section of biol100.slice(0, 5)
+              ) {
 
                 console.log('');
                 console.log(
-                  `---------- MULTI-ROW ${i + 1} ----------`
+                  section.section
                 );
 
                 console.log(
-                  `Course: ${record.course}`
-                );
-
-                console.log(
-                  `Rows: ${
-                    record.rows
-                      .map(
-                        row => row.index
-                      )
-                      .join(', ')
+                  `Instructor: ${
+                    section.instructor
                   }`
                 );
 
+                console.log(
+                  `Enrolled: ${
+                    section.enrolled
+                  }`
+                );
+
+                console.log(
+                  `Available: ${
+                    section.available
+                  }`
+                );
+
+                console.log(
+                  `Meetings:`
+                );
+
                 for (
-                  const row of record.rows
+                  const meeting of section.meetings
                 ) {
 
                   console.log(
-                    `ROW ${row.index}: ${
-                      row.columns.join(
-                        ' | '
-                      )
+                    `  ${
+                      meeting.classroom
+                    } | ${
+                      meeting.schedule
                     }`
                   );
 
@@ -688,9 +730,15 @@ jobs:
               // SUMMARY
               // ----------------------------------------
 
+              const multiMeeting =
+                sections.filter(
+                  section =>
+                    section.meetings.length > 1
+                );
+
               console.log('');
               console.log('========================================');
-              console.log('PARSER TEST COMPLETE');
+              console.log('PARSER TEST 2 COMPLETE');
               console.log('========================================');
 
               console.log(
@@ -698,24 +746,12 @@ jobs:
               );
 
               console.log(
-                `Non-empty rows: ${parsedRows.length}`
-              );
-
-              console.log(
-                `Course starts: ${
-                  parsedRows.filter(
-                    row => row.isCourse
-                  ).length
-                }`
-              );
-
-              console.log(
                 `Parsed sections: ${sections.length}`
               );
 
               console.log(
-                `Multi-row sections: ${
-                  multiRowRecords.length
+                `Sections with multiple meetings: ${
+                  multiMeeting.length
                 }`
               );
 
@@ -747,18 +783,18 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-catalogue-response
+          name: fcc-catalogue-response-test-2
           path: fcc-catalogue-response.html
           retention-days: 3
 
       # ----------------------------------------
-      # SAVE STRUCTURED JSON
+      # SAVE PARSED JSON
       # ----------------------------------------
 
       - name: Save parsed sections
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-parsed-sections
+          name: fcc-parsed-sections-test-2
           path: fcc-sections.json
           retention-days: 3
