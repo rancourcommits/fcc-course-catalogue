@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T18:02:21.969Z",
+  "updatedAt": "2026-08-11T18:11:59.961Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -747,7 +747,7 @@
       "offer": "35"
     },
     "BUSN 280 J": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -763,7 +763,7 @@
       "offer": "35"
     },
     "BUSN 280 L": {
-      "available": 3,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -827,7 +827,7 @@
       "offer": "33"
     },
     "BUSN 321 C": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -835,7 +835,7 @@
       "offer": "35"
     },
     "BUSN 321 D": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -939,7 +939,7 @@
       "offer": "35"
     },
     "BUSN 360 C": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -3395,7 +3395,7 @@
       "offer": "35"
     },
     "EDUC 120 B": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4307,7 +4307,7 @@
       "offer": "10"
     },
     "GEOG 240 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4699,7 +4699,7 @@
       "offer": "35"
     },
     "LING 217 B": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -6627,7 +6627,7 @@
       "offer": "20"
     },
     "SOCL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6875,7 +6875,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 11,
+      "available": 9,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
