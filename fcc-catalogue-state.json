@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T12:22:08.503Z",
+  "updatedAt": "2026-08-11T12:32:04.970Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -635,7 +635,7 @@
       "offer": "33"
     },
     "BUSN 230 J": {
-      "available": 24,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4875,7 +4875,7 @@
       "offer": "15"
     },
     "MATH 107 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
