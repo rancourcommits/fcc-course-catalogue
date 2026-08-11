@@ -9,7 +9,7 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
 
     steps:
 
@@ -18,7 +18,7 @@ jobs:
       # ----------------------------------------
 
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       # ----------------------------------------
       # SET UP NODE
@@ -35,14 +35,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install playwright cheerio nodemailer
+          npm install playwright nodemailer
           npx playwright install --with-deps chromium
 
       # ----------------------------------------
-      # CHECK FCC CATALOGUE
+      # CHECK FCC
       # ----------------------------------------
 
-      - name: Check FCC catalogue
+      - name: Check FCC course availability
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
@@ -50,7 +50,6 @@ jobs:
         run: |
           node - <<'EOF'
           const { chromium } = require('playwright');
-          const cheerio = require('cheerio');
           const nodemailer = require('nodemailer');
           const fs = require('fs');
 
@@ -77,7 +76,6 @@ jobs:
               // OPEN FCC
               // ----------------------------------------
 
-              console.log('');
               console.log('Opening FCC...');
 
               await page.goto(
@@ -96,9 +94,11 @@ jobs:
               // SELECT TERM
               // ----------------------------------------
 
-              await page.locator(
+              const term = page.locator(
                 'select[name="empower_global_term_id"]'
-              ).selectOption({
+              );
+
+              await term.selectOption({
                 label: '2026 Fall'
               });
 
@@ -107,391 +107,259 @@ jobs:
               await page.waitForTimeout(1500);
 
               // ----------------------------------------
-              // DEPARTMENT + COURSE
+              // SEARCH FULL CATALOGUE
+              // ----------------------------------------
+              //
+              // Department and course are intentionally
+              // left blank so the entire catalogue is
+              // returned.
+              //
               // ----------------------------------------
 
-              console.log('✓ Department: ALL');
-              console.log('✓ Course: ALL');
-
-              // ----------------------------------------
-              // CAPTURE GETLIST RESPONSE
-              // ----------------------------------------
-
-              console.log('');
-              console.log(
-                'Waiting for FCC catalogue response...'
-              );
-
-              const responsePromise =
-                page.waitForResponse(
-                  response => {
-                    return response.url().includes(
-                      '/cfcs/courseCatalog.cfc?method=GetList'
-                    );
-                  },
-                  {
-                    timeout: 60000
-                  }
-                );
-
-              // ----------------------------------------
-              // SEARCH
-              // ----------------------------------------
-
-              await page.locator(
+              const search = page.locator(
                 'button[name="search"]'
-              ).click();
-
-              console.log('✓ Search clicked');
-
-              const response =
-                await responsePromise;
-
-              console.log(
-                '✓ GetList response received'
               );
 
-              console.log(
-                `Status: ${response.status()}`
+              await search.waitFor({
+                state: 'visible',
+                timeout: 30000
+              });
+
+              await search.click();
+
+              console.log('✓ Full catalogue search clicked');
+
+              await page.waitForTimeout(5000);
+
+              // ----------------------------------------
+              // FIND ALL CATALOGUE ROWS
+              // ----------------------------------------
+
+              const rows = page.locator(
+                'div.ui-grid-row'
               );
 
-              // ----------------------------------------
-              // READ RESPONSE
-              // ----------------------------------------
-
-              const responseText =
-                await response.text();
-
-              let payload;
-
-              try {
-
-                payload =
-                  JSON.parse(responseText);
-
-              } catch {
-
-                throw new Error(
-                  'FCC response was not valid JSON.'
-                );
-
-              }
-
-              if (
-                !payload.SUCCESS ||
-                typeof payload.html !== 'string'
-              ) {
-
-                throw new Error(
-                  'FCC response did not contain the expected SUCCESS/html structure.'
-                );
-
-              }
-
-              const html =
-                payload.html;
+              const rowCount = await rows.count();
 
               console.log(
-                `Catalogue HTML size: ${html.length} characters`
+                `Raw catalogue rows: ${rowCount}`
               );
 
-              // ----------------------------------------
-              // PARSE HTML
-              // ----------------------------------------
-
-              const $ =
-                cheerio.load(html);
-
-              const rows =
-                $('div.ui-grid-row');
-
-              console.log(
-                `Raw catalogue rows: ${rows.length}`
-              );
+              const sections = [];
+              let courseRowsRecognized = 0;
+              let courseRowsUnrecognized = 0;
 
               // ----------------------------------------
-              // HELPERS
+              // PARSE COURSE CODE
               // ----------------------------------------
-
-              function clean(value) {
-
-                return String(value || '')
-                  .replace(/\u00a0/g, ' ')
-                  .replace(/\s+/g, ' ')
-                  .trim();
-
-              }
-
-              function getColumns(row) {
-
-                const values = [];
-
-                $(row)
-                  .find('div[class*="ui-grid-col-"]')
-                  .each((index, element) => {
-
-                    values.push(
-                      clean($(element).text())
-                    );
-
-                  });
-
-                return values;
-
-              }
+              //
+              // Supports:
+              //
+              // ARTS 101 A
+              // BIOT 699A A
+              // CHEM 799E B
+              // COMP 497A A
+              // PHYS COMP A
+              //
+              // No fixed total number of sections.
+              //
+              // ----------------------------------------
 
               function extractCourse(value) {
 
                 const match =
                   value.match(
-                    /\b([A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+)\b/
+                    /\b([A-Z]{2,6}\s+[A-Z0-9]{3,6}\s+[A-Za-z0-9]+)\b/i
                   );
 
                 return match
-                  ? clean(match[1])
+                  ? match[1]
+                      .replace(/\s+/g, ' ')
+                      .trim()
+                      .toUpperCase()
                   : null;
-
               }
 
-              function isCourseRow(columns) {
+              // ----------------------------------------
+              // PARSE ALL ROWS
+              // ----------------------------------------
 
-                return !!extractCourse(
-                  columns[1] || ''
+              for (let i = 0; i < rowCount; i++) {
+
+                const row = rows.nth(i);
+
+                const text = (await row.innerText())
+                  .replace(/\u00a0/g, ' ')
+                  .replace(/\s+/g, ' ')
+                  .trim();
+
+                // Skip rows that clearly aren't course rows.
+                //
+                // A course row normally contains a course
+                // code followed by a section identifier.
+
+                const columns = row.locator(
+                  'div[class*="ui-grid-col-"]'
                 );
 
-              }
+                const columnCount = await columns.count();
 
-              // ----------------------------------------
-              // READ ROWS
-              // ----------------------------------------
-
-              const parsedRows = [];
-
-              rows.each((index, element) => {
-
-                const columns =
-                  getColumns(element);
-
-                const text =
-                  clean($(element).text());
-
-                if (!text) {
-                  return;
+                if (columnCount < 8) {
+                  continue;
                 }
 
-                parsedRows.push({
-                  index,
-                  columns,
-                  text,
-                  course:
-                    extractCourse(
-                      columns[1] || ''
-                    ),
-                  isCourse:
-                    isCourseRow(columns)
-                });
+                const values = [];
 
-              });
+                for (let c = 0; c < columnCount; c++) {
 
-              // ----------------------------------------
-              // GROUP COURSE + CONTINUATION ROWS
-              // ----------------------------------------
+                  const value =
+                    (await columns.nth(c).innerText())
+                      .replace(/\u00a0/g, ' ')
+                      .replace(/\s+/g, ' ')
+                      .trim();
 
-              const records = [];
+                  values.push(value);
+                }
 
-              let current = null;
+                /*
+                 * FCC structure:
+                 *
+                 * 1 = icon
+                 * 2 = course
+                 * 3 = credits
+                 * 4 = location
+                 * 5 = schedule
+                 * 6 = instructor
+                 * 7 = enrolled
+                 * 8 = available
+                 * 9 = offer
+                 * 10 = details
+                 */
 
-              for (const row of parsedRows) {
+                const courseText = values[1] || '';
 
-                if (row.isCourse) {
+                const location =
+                  values[3] || '';
 
-                  if (current) {
-                    records.push(current);
+                const schedule =
+                  values[4] || '';
+
+                const instructor =
+                  values[5] || '';
+
+                const enrolled =
+                  values[6] || '';
+
+                const available =
+                  values[7] || '';
+
+                const offer =
+                  values[8] || '';
+
+                // ----------------------------------------
+                // EXTRACT COURSE + SECTION
+                // ----------------------------------------
+
+                const course =
+                  extractCourse(courseText);
+
+                if (!course) {
+
+                  /*
+                   * Only count rows containing something
+                   * that looks like a course code as
+                   * unrecognized.
+                   */
+
+                  if (
+                    /^[A-Z]{2,6}\s+[A-Z0-9]{3,6}/i.test(
+                      courseText.trim()
+                    )
+                  ) {
+
+                    courseRowsUnrecognized++;
+
                   }
 
-                  current = {
-                    course: row.course,
-                    rows: [row]
-                  };
-
-                } else if (current) {
-
-                  current.rows.push(row);
-
+                  continue;
                 }
 
+                courseRowsRecognized++;
+
+                sections.push({
+                  section: course,
+                  location,
+                  schedule,
+                  instructor,
+                  enrolled,
+                  available,
+                  offer
+                });
               }
 
-              if (current) {
-                records.push(current);
-              }
-
-              console.log(
-                `Catalogue sections detected: ${records.length}`
-              );
-
               // ----------------------------------------
-              // BUILD STRUCTURED SECTIONS
+              // REMOVE DUPLICATE SECTIONS
               // ----------------------------------------
 
-              const sections = [];
+              const uniqueSections = [];
 
-              for (const record of records) {
+              const seenSections =
+                new Set();
 
-                const mainRow =
-                  record.rows[0];
-
-                const main =
-                  mainRow.columns;
-
-                const section = {
-
-                  section:
-                    record.course,
-
-                  credits:
-                    clean(main[2]),
-
-                  meetings: [],
-
-                  instructor:
-                    clean(main[5]),
-
-                  enrolled:
-                    clean(main[6]),
-
-                  available:
-                    clean(main[7]),
-
-                  offer:
-                    clean(main[8])
-
-                };
-
-                // ----------------------------------------
-                // MAIN MEETING
-                // ----------------------------------------
+              for (const section of sections) {
 
                 if (
-                  main[3] ||
-                  main[4]
+                  seenSections.has(
+                    section.section
+                  )
                 ) {
-
-                  section.meetings.push({
-
-                    classroom:
-                      clean(main[3]),
-
-                    schedule:
-                      clean(main[4])
-
-                  });
-
+                  continue;
                 }
 
-                // ----------------------------------------
-                // CONTINUATION MEETINGS
-                // ----------------------------------------
+                seenSections.add(
+                  section.section
+                );
 
-                for (
-                  let r = 1;
-                  r < record.rows.length;
-                  r++
-                ) {
-
-                  const columns =
-                    record.rows[r].columns;
-
-                  const classroom =
-                    clean(columns[1]);
-
-                  const schedule =
-                    clean(columns[2]);
-
-                  const instructor =
-                    clean(columns[3]);
-
-                  const enrolled =
-                    clean(columns[4]);
-
-                  const available =
-                    clean(columns[5]);
-
-                  const offer =
-                    clean(columns[6]);
-
-                  if (
-                    classroom ||
-                    schedule
-                  ) {
-
-                    section.meetings.push({
-
-                      classroom,
-
-                      schedule
-
-                    });
-
-                  }
-
-                  if (
-                    instructor &&
-                    !section.instructor
-                  ) {
-
-                    section.instructor =
-                      instructor;
-
-                  }
-
-                  if (
-                    !section.enrolled &&
-                    /^\d+$/.test(enrolled)
-                  ) {
-
-                    section.enrolled =
-                      enrolled;
-
-                  }
-
-                  if (
-                    !section.available &&
-                    /^\d+$/.test(available)
-                  ) {
-
-                    section.available =
-                      available;
-
-                  }
-
-                  if (
-                    !section.offer &&
-                    offer
-                  ) {
-
-                    section.offer =
-                      offer;
-
-                  }
-
-                }
-
-                sections.push(section);
-
+                uniqueSections.push(
+                  section
+                );
               }
+
+              // ----------------------------------------
+              // PRINT CURRENT RESULTS
+              // ----------------------------------------
 
               console.log('');
               console.log('========================================');
-              console.log('CURRENT CATALOGUE');
+              console.log('CATALOGUE PARSING RESULTS');
               console.log('========================================');
 
               console.log(
-                `Total sections: ${sections.length}`
+                `Raw catalogue rows: ${rowCount}`
+              );
+
+              console.log(
+                `Course rows recognized: ${courseRowsRecognized}`
+              );
+
+              console.log(
+                `Course rows unrecognized: ${courseRowsUnrecognized}`
+              );
+
+              console.log(
+                `Unique catalogue sections: ${uniqueSections.length}`
               );
 
               // ----------------------------------------
-              // LOAD PREVIOUS STATE
+              // SAFETY CHECK
+              // ----------------------------------------
+              //
+              // Never overwrite a known-good state if
+              // the scraper suddenly returns dramatically
+              // fewer sections.
+              //
+              // There is NO hard-coded catalogue size.
+              //
               // ----------------------------------------
 
               const stateFile =
@@ -499,7 +367,9 @@ jobs:
 
               let previousState = null;
 
-              if (fs.existsSync(stateFile)) {
+              if (
+                fs.existsSync(stateFile)
+              ) {
 
                 try {
 
@@ -511,12 +381,14 @@ jobs:
                       )
                     );
 
+                  console.log('');
                   console.log(
                     '✓ Previous state loaded.'
                   );
 
                 } catch {
 
+                  console.log('');
                   console.log(
                     '⚠ Previous state could not be read.'
                   );
@@ -525,8 +397,37 @@ jobs:
 
               } else {
 
+                console.log('');
                 console.log(
-                  'No previous state found. Establishing baseline.'
+                  'No previous state found. This run will establish the baseline.'
+                );
+
+              }
+
+              const previousSectionCount =
+                previousState
+                  ? Object.keys(
+                      previousState.sections || {}
+                    ).length
+                  : 0;
+
+              /*
+               * If we previously had a substantial
+               * catalogue and the current scan suddenly
+               * contains less than 80% of it, treat this
+               * as a suspicious scrape rather than
+               * overwriting the state.
+               */
+
+              if (
+                previousState &&
+                previousSectionCount >= 100 &&
+                uniqueSections.length <
+                  previousSectionCount * 0.8
+              ) {
+
+                throw new Error(
+                  `Suspicious catalogue drop detected. Previous sections: ${previousSectionCount}. Current sections: ${uniqueSections.length}. State file will NOT be overwritten.`
                 );
 
               }
@@ -536,11 +437,15 @@ jobs:
               // ----------------------------------------
 
               const currentState = {
-                term: '2026 Fall',
+                updatedAt:
+                  new Date().toISOString(),
+
                 sections: {}
               };
 
-              for (const section of sections) {
+              for (
+                const section of uniqueSections
+              ) {
 
                 const available =
                   parseInt(
@@ -548,32 +453,20 @@ jobs:
                     10
                   ) || 0;
 
-                const enrolled =
-                  parseInt(
-                    section.enrolled,
-                    10
-                  ) || 0;
-
                 currentState.sections[
                   section.section
                 ] = {
-
                   available,
-
-                  enrolled,
-
-                  credits:
-                    section.credits,
-
+                  enrolled:
+                    section.enrolled,
+                  location:
+                    section.location,
+                  schedule:
+                    section.schedule,
                   instructor:
                     section.instructor,
-
                   offer:
-                    section.offer,
-
-                  meetings:
-                    section.meetings
-
+                    section.offer
                 };
 
               }
@@ -582,12 +475,15 @@ jobs:
               // DETECT CHANGES
               // ----------------------------------------
 
-              const newSections = [];
-              const newlyAvailable = [];
+              let newSections = [];
+              let newlyAvailable = [];
 
               if (previousState) {
 
-                for (const section of sections) {
+                for (
+                  const section
+                    of uniqueSections
+                ) {
 
                   const available =
                     parseInt(
@@ -600,28 +496,28 @@ jobs:
                       section.section
                     ];
 
-                  // ----------------------------------------
-                  // COMPLETELY NEW SECTION
-                  // ----------------------------------------
+                  // Completely new section
 
                   if (!previous) {
 
-                    newSections.push(section);
-
-                    continue;
+                    newSections.push(
+                      section
+                    );
 
                   }
 
-                  // ----------------------------------------
-                  // 0 → >0 AVAILABLE
-                  // ----------------------------------------
+                  // Existing section went
+                  // from 0 to >0
 
                   if (
+                    previous &&
                     previous.available === 0 &&
                     available > 0
                   ) {
 
-                    newlyAvailable.push(section);
+                    newlyAvailable.push(
+                      section
+                    );
 
                   }
 
@@ -629,10 +525,22 @@ jobs:
 
               }
 
+              // ----------------------------------------
+              // DISPLAY CHANGES
+              // ----------------------------------------
+
               console.log('');
               console.log('========================================');
               console.log('CHANGES');
               console.log('========================================');
+
+              console.log(
+                `Previous sections: ${previousSectionCount}`
+              );
+
+              console.log(
+                `Current sections: ${uniqueSections.length}`
+              );
 
               console.log(
                 `New sections: ${newSections.length}`
@@ -643,7 +551,7 @@ jobs:
               );
 
               // ----------------------------------------
-              // SEND EMAIL ALERT
+              // SEND ALERT
               // ----------------------------------------
 
               if (
@@ -653,31 +561,25 @@ jobs:
 
                 const alertSections = [];
 
-                // ----------------------------------------
-                // NEW SECTIONS
-                // ----------------------------------------
+                // New sections
 
                 for (
-                  const section of newSections
+                  const section
+                    of newSections
                 ) {
 
                   alertSections.push({
-
                     ...section,
-
-                    reason:
-                      'NEW SECTION'
-
+                    reason: 'NEW SECTION'
                   });
 
                 }
 
-                // ----------------------------------------
-                // NEWLY AVAILABLE
-                // ----------------------------------------
+                // Newly available seats
 
                 for (
-                  const section of newlyAvailable
+                  const section
+                    of newlyAvailable
                 ) {
 
                   const alreadyIncluded =
@@ -687,15 +589,14 @@ jobs:
                         section.section
                     );
 
-                  if (!alreadyIncluded) {
+                  if (
+                    !alreadyIncluded
+                  ) {
 
                     alertSections.push({
-
                       ...section,
-
                       reason:
                         'SEATS AVAILABLE'
-
                     });
 
                   }
@@ -706,15 +607,11 @@ jobs:
                   'FCC COURSE ALERT\n\n';
 
                 emailText +=
-                  '2026 Fall - Course Catalogue\n\n';
-
-                emailText +=
-                  `Updates detected: ${
-                    alertSections.length
-                  }\n\n`;
+                  '2026 Fall - Full Catalogue\n\n';
 
                 for (
-                  const section of alertSections
+                  const section
+                    of alertSections
                 ) {
 
                   emailText +=
@@ -727,48 +624,22 @@ jobs:
                     `${section.section}\n`;
 
                   emailText +=
-                    `Credits: ${
-                      section.credits
-                    }\n`;
+                    `Location: ${section.location}\n`;
 
                   emailText +=
-                    `Instructor: ${
-                      section.instructor
-                    }\n`;
+                    `Schedule: ${section.schedule}\n`;
 
                   emailText +=
-                    `Enrolled: ${
-                      section.enrolled
-                    }\n`;
+                    `Instructor: ${section.instructor}\n`;
 
                   emailText +=
-                    `Available: ${
-                      section.available
-                    }\n`;
+                    `Enrolled: ${section.enrolled}\n`;
 
                   emailText +=
-                    `Offer: ${
-                      section.offer
-                    }\n`;
+                    `Available: ${section.available}\n`;
 
                   emailText +=
-                    'Meetings:\n';
-
-                  for (
-                    const meeting of
-                    section.meetings
-                  ) {
-
-                    emailText +=
-                      `  ${
-                        meeting.classroom
-                      } | ${
-                        meeting.schedule
-                      }\n`;
-
-                  }
-
-                  emailText += '\n';
+                    `Offer: ${section.offer}\n\n`;
 
                 }
 
@@ -786,19 +657,14 @@ jobs:
 
                 const transporter =
                   nodemailer.createTransport({
-
                     service: 'gmail',
-
                     auth: {
-
                       user:
                         process.env.SMTP_USER,
 
                       pass:
                         process.env.SMTP_PASSWORD
-
                     }
-
                   });
 
                 await transporter.sendMail({
@@ -835,15 +701,12 @@ jobs:
               // ----------------------------------------
 
               fs.writeFileSync(
-
                 stateFile,
-
                 JSON.stringify(
                   currentState,
                   null,
                   2
                 )
-
               );
 
               console.log(
@@ -851,17 +714,16 @@ jobs:
               );
 
               // ----------------------------------------
-              // SAVE CATALOGUE HTML
+              // SCREENSHOT
               // ----------------------------------------
 
-              fs.writeFileSync(
-                'fcc-catalogue-response.html',
-                html
-              );
+              await page.screenshot({
+                path:
+                  'fcc-course-results.png',
 
-              console.log(
-                '✓ Catalogue HTML saved.'
-              );
+                fullPage:
+                  true
+              });
 
               console.log('');
               console.log('========================================');
@@ -875,13 +737,18 @@ jobs:
               console.error('ERROR');
               console.error('========================================');
 
-              console.error(error);
+              console.error(
+                error
+              );
 
               try {
 
                 await page.screenshot({
-                  path: 'fcc-error.png',
-                  fullPage: true
+                  path:
+                    'fcc-error.png',
+
+                  fullPage:
+                    true
                 });
 
               } catch {}
@@ -916,15 +783,15 @@ jobs:
           fi
 
       # ----------------------------------------
-      # SAVE CATALOGUE HTML
+      # SAVE SCREENSHOT
       # ----------------------------------------
 
-      - name: Save catalogue HTML
+      - name: Save course results screenshot
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-catalogue
-          path: fcc-catalogue-response.html
+          name: fcc-course-results
+          path: fcc-course-results.png
           retention-days: 3
 
       # ----------------------------------------
@@ -932,7 +799,7 @@ jobs:
       # ----------------------------------------
 
       - name: Save error screenshot
-        if: always()
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: fcc-error
