@@ -1,4 +1,4 @@
-name: FCC Catalogue Structure Test
+name: FCC Catalogue Network Test
 
 on:
   workflow_dispatch:
@@ -39,10 +39,10 @@ jobs:
           npx playwright install --with-deps chromium
 
       # ----------------------------------------
-      # INSPECT FCC CATALOGUE
+      # INSPECT FCC NETWORK REQUESTS
       # ----------------------------------------
 
-      - name: Inspect FCC catalogue structure
+      - name: Inspect FCC catalogue requests
         run: |
           node - <<'EOF'
           const { chromium } = require('playwright');
@@ -60,10 +60,68 @@ jobs:
               }
             });
 
+            const requests = [];
+            const responses = [];
+
+            // ----------------------------------------
+            // CAPTURE REQUESTS
+            // ----------------------------------------
+
+            page.on('request', request => {
+
+              const type = request.resourceType();
+
+              if (
+                type === 'xhr' ||
+                type === 'fetch'
+              ) {
+
+                requests.push({
+                  method: request.method(),
+                  url: request.url(),
+                  postData: request.postData()
+                });
+
+              }
+
+            });
+
+            // ----------------------------------------
+            // CAPTURE RESPONSES
+            // ----------------------------------------
+
+            page.on('response', async response => {
+
+              const request = response.request();
+              const type = request.resourceType();
+
+              if (
+                type === 'xhr' ||
+                type === 'fetch'
+              ) {
+
+                let body = '';
+
+                try {
+                  body = await response.text();
+                } catch {}
+
+                responses.push({
+                  status: response.status(),
+                  url: response.url(),
+                  contentType:
+                    response.headers()['content-type'] || '',
+                  body: body.slice(0, 5000)
+                });
+
+              }
+
+            });
+
             try {
 
               console.log('========================================');
-              console.log('FCC CATALOGUE STRUCTURE TEST');
+              console.log('FCC CATALOGUE NETWORK TEST');
               console.log('========================================');
 
               // ----------------------------------------
@@ -114,6 +172,18 @@ jobs:
               console.log('✓ Course: ALL');
 
               // ----------------------------------------
+              // CLEAR ANY REQUESTS FROM PAGE LOAD
+              // ----------------------------------------
+
+              requests.length = 0;
+              responses.length = 0;
+
+              console.log('');
+              console.log(
+                '✓ Network log cleared before Search.'
+              );
+
+              // ----------------------------------------
               // SEARCH
               // ----------------------------------------
 
@@ -126,264 +196,180 @@ jobs:
                 timeout: 30000
               });
 
+              console.log('');
+              console.log('Clicking Search...');
+
               await search.click();
 
               console.log('✓ Search clicked');
 
-              // Give FCC time to populate everything.
-              await page.waitForTimeout(5000);
-
               // ----------------------------------------
-              // FIND ALL GRID ROWS
+              // WAIT FOR NETWORK + RESULTS
               // ----------------------------------------
 
-              const rows = page.locator(
-                'div.ui-grid-row'
-              );
+              await page.waitForTimeout(7000);
 
-              const rowCount = await rows.count();
+              // ----------------------------------------
+              // REQUEST RESULTS
+              // ----------------------------------------
 
               console.log('');
               console.log('========================================');
-              console.log('RAW GRID INFORMATION');
+              console.log('NETWORK REQUESTS');
               console.log('========================================');
 
               console.log(
-                `Total ui-grid-row elements: ${rowCount}`
-              );
-
-              // ----------------------------------------
-              // INSPECT FIRST 30 ROWS
-              // ----------------------------------------
-              //
-              // We deliberately only print the first
-              // 30 rows so the GitHub log remains usable.
-              //
-              // ----------------------------------------
-
-              const rowsToInspect =
-                Math.min(rowCount, 30);
-
-              console.log('');
-              console.log(
-                `Inspecting first ${rowsToInspect} grid rows...`
-              );
-
-              for (let i = 0; i < rowsToInspect; i++) {
-
-                const row = rows.nth(i);
-
-                const text = (await row.innerText())
-                  .replace(/\u00a0/g, ' ')
-                  .replace(/\s+/g, ' ')
-                  .trim();
-
-                console.log('');
-                console.log(
-                  `========== GRID ROW ${i + 1} ==========`
-                );
-
-                console.log(
-                  `TEXT: ${text}`
-                );
-
-                // ----------------------------------------
-                // FIND CHILD GRID COLUMNS
-                // ----------------------------------------
-
-                const columns = row.locator(
-                  'div[class*="ui-grid-col-"]'
-                );
-
-                const columnCount =
-                  await columns.count();
-
-                console.log(
-                  `COLUMN COUNT: ${columnCount}`
-                );
-
-                for (
-                  let c = 0;
-                  c < columnCount;
-                  c++
-                ) {
-
-                  const value =
-                    (await columns.nth(c).innerText())
-                      .replace(/\u00a0/g, ' ')
-                      .replace(/\s+/g, ' ')
-                      .trim();
-
-                  console.log(
-                    `COLUMN ${c + 1}: ${value}`
-                  );
-
-                }
-
-              }
-
-              // ----------------------------------------
-              // FIND COURSE-LIKE ROWS
-              // ----------------------------------------
-              //
-              // This checks how many grid rows contain
-              // something that looks like a course code.
-              //
-              // We are NOT using this as the final parser.
-              //
-              // ----------------------------------------
-
-              let courseLikeRows = 0;
-
-              const courseSamples = [];
-
-              for (let i = 0; i < rowCount; i++) {
-
-                const row = rows.nth(i);
-
-                const text = (await row.innerText())
-                  .replace(/\u00a0/g, ' ')
-                  .replace(/\s+/g, ' ')
-                  .trim();
-
-                if (
-                  /\b[A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+\b/
-                    .test(text)
-                ) {
-
-                  courseLikeRows++;
-
-                  if (courseSamples.length < 20) {
-
-                    courseSamples.push(text);
-
-                  }
-
-                }
-
-              }
-
-              console.log('');
-              console.log('========================================');
-              console.log('COURSE-LIKE ROW TEST');
-              console.log('========================================');
-
-              console.log(
-                `Rows containing a course-like code: ${courseLikeRows}`
-              );
-
-              console.log('');
-
-              console.log(
-                'Sample course-like rows:'
+                `XHR/fetch requests captured: ${requests.length}`
               );
 
               for (
                 let i = 0;
-                i < courseSamples.length;
+                i < requests.length;
                 i++
               ) {
 
+                const request = requests[i];
+
+                console.log('');
                 console.log(
-                  `${i + 1}. ${courseSamples[i]}`
+                  `---------- REQUEST ${i + 1} ----------`
                 );
+
+                console.log(
+                  `METHOD: ${request.method}`
+                );
+
+                console.log(
+                  `URL: ${request.url}`
+                );
+
+                if (request.postData) {
+
+                  console.log(
+                    'POST DATA:'
+                  );
+
+                  console.log(
+                    request.postData
+                  );
+
+                } else {
+
+                  console.log(
+                    'POST DATA: <none>'
+                  );
+
+                }
 
               }
 
               // ----------------------------------------
-              // INSPECT THE RESULT CONTAINER HIERARCHY
+              // RESPONSE RESULTS
               // ----------------------------------------
 
               console.log('');
               console.log('========================================');
-              console.log('RESULT CONTAINER INSPECTION');
+              console.log('NETWORK RESPONSES');
               console.log('========================================');
 
-              const firstCourseRow =
-                rows.filter({
-                  hasText: /\b[A-Z]{2,6}\s*\d{3,4}\s+[A-Za-z0-9]+\b/
-                }).first();
+              console.log(
+                `XHR/fetch responses captured: ${responses.length}`
+              );
 
-              if (
-                await firstCourseRow.count() > 0
+              for (
+                let i = 0;
+                i < responses.length;
+                i++
               ) {
 
+                const response = responses[i];
+
+                console.log('');
                 console.log(
-                  '✓ Found a course-like grid row.'
-                );
-
-                const tagName =
-                  await firstCourseRow.evaluate(
-                    element => element.tagName
-                  );
-
-                console.log(
-                  `Row tag: ${tagName}`
-                );
-
-                const className =
-                  await firstCourseRow.getAttribute(
-                    'class'
-                  );
-
-                console.log(
-                  `Row class: ${className}`
-                );
-
-                const parentInfo =
-                  await firstCourseRow.evaluate(
-                    element => {
-
-                      const parent =
-                        element.parentElement;
-
-                      if (!parent) {
-                        return null;
-                      }
-
-                      return {
-                        tag: parent.tagName,
-                        className:
-                          parent.className,
-                        childCount:
-                          parent.children.length
-                      };
-
-                    }
-                  );
-
-                console.log(
-                  'Parent information:'
+                  `---------- RESPONSE ${i + 1} ----------`
                 );
 
                 console.log(
-                  JSON.stringify(
-                    parentInfo,
-                    null,
-                    2
-                  )
+                  `STATUS: ${response.status}`
                 );
 
-              } else {
+                console.log(
+                  `URL: ${response.url}`
+                );
 
                 console.log(
-                  '⚠ No course-like row found.'
+                  `CONTENT TYPE: ${response.contentType}`
+                );
+
+                console.log(
+                  'BODY PREVIEW:'
+                );
+
+                console.log(
+                  response.body || '<empty>'
                 );
 
               }
+
+              // ----------------------------------------
+              // CONFIRM RESULTS
+              // ----------------------------------------
+
+              const courses =
+                page.locator('#courses');
+
+              const courseHtml =
+                await courses.innerHTML();
+
+              console.log('');
+              console.log('========================================');
+              console.log('RESULT CONTAINER');
+              console.log('========================================');
+
+              console.log(
+                `#courses HTML length: ${courseHtml.length}`
+              );
+
+              console.log(
+                `#courses text length: ${
+                  (await courses.innerText()).length
+                }`
+              );
+
+              console.log(
+                `ui-grid-row count: ${
+                  await page.locator(
+                    'div.ui-grid-row'
+                  ).count()
+                }`
+              );
+
+              // ----------------------------------------
+              // SAVE LIVE RESULTS HTML
+              // ----------------------------------------
+
+              await require('fs').promises.writeFile(
+                'fcc-live-courses.html',
+                courseHtml
+              );
+
+              console.log('');
+              console.log(
+                '✓ Saved live #courses HTML.'
+              );
 
               // ----------------------------------------
               // SAVE SCREENSHOT
               // ----------------------------------------
 
               await page.screenshot({
-                path: 'fcc-catalogue-structure.png',
+                path: 'fcc-network-test.png',
                 fullPage: true
               });
 
               console.log('');
               console.log('========================================');
-              console.log('STRUCTURE TEST COMPLETE');
+              console.log('NETWORK TEST COMPLETE');
               console.log('========================================');
 
             } catch (error) {
@@ -416,15 +402,27 @@ jobs:
           EOF
 
       # ----------------------------------------
-      # SAVE CATALOGUE SCREENSHOT
+      # SAVE LIVE HTML
       # ----------------------------------------
 
-      - name: Save catalogue screenshot
+      - name: Save live catalogue HTML
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fcc-catalogue-structure
-          path: fcc-catalogue-structure.png
+          name: fcc-live-courses-html
+          path: fcc-live-courses.html
+          retention-days: 3
+
+      # ----------------------------------------
+      # SAVE SCREENSHOT
+      # ----------------------------------------
+
+      - name: Save network test screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fcc-network-test
+          path: fcc-network-test.png
           retention-days: 3
 
       # ----------------------------------------
