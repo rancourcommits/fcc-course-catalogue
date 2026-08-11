@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-11T14:52:07.313Z",
+  "updatedAt": "2026-08-11T15:02:27.641Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3043,7 +3043,7 @@
       "offer": "35"
     },
     "ECON 201 B": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3075,7 +3075,7 @@
       "offer": "35"
     },
     "ECON 203 B": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3123,7 +3123,7 @@
       "offer": "35"
     },
     "ECON 303 B": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3195,7 +3195,7 @@
       "offer": "35"
     },
     "ECON 323 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4691,7 +4691,7 @@
       "offer": "35"
     },
     "LING 217 A": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
