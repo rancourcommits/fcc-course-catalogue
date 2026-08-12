@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T15:32:18.065Z",
+  "updatedAt": "2026-08-12T15:42:17.863Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1971,7 +1971,7 @@
       "offer": "35"
     },
     "COMP 220 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2107,7 +2107,7 @@
       "offer": "35"
     },
     "COMP 360 B": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/02/2026 W 11:00 - 12:50",
@@ -4075,7 +4075,7 @@
       "offer": "35"
     },
     "ENVR 345 A": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4083,7 +4083,7 @@
       "offer": "35"
     },
     "ENVR 406 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4091,7 +4091,7 @@
       "offer": "35"
     },
     "ENVR 411 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:09/01/2026 T R 09:00 - 10:50",
@@ -5803,7 +5803,7 @@
       "offer": "35"
     },
     "PLSC 212 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5915,7 +5915,7 @@
       "offer": "35"
     },
     "PLSC 400 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -6659,7 +6659,7 @@
       "offer": "35"
     },
     "SOCL 100 I": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6683,7 +6683,7 @@
       "offer": "35"
     },
     "SOCL 100 O": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6747,7 +6747,7 @@
       "offer": "35"
     },
     "SOCL 301 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
