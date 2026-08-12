@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T10:26:55.727Z",
+  "updatedAt": "2026-08-12T10:32:18.625Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1971,7 +1971,7 @@
       "offer": "35"
     },
     "COMP 220 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2203,7 +2203,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -2587,7 +2587,7 @@
       "offer": "35"
     },
     "CSCS 203 A": {
-      "available": 10,
+      "available": 11,
       "enrolled": "",
       "location": "SBLOCK S312",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -3635,7 +3635,7 @@
       "offer": "25"
     },
     "ENGL 108 H": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S316",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3683,7 +3683,7 @@
       "offer": "25"
     },
     "ENGL 108 P": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
