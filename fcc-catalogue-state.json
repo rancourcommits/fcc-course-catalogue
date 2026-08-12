@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T03:12:01.633Z",
+  "updatedAt": "2026-08-12T03:21:55.956Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3675,7 +3675,7 @@
       "offer": "25"
     },
     "ENGL 108 N": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4731,7 +4731,7 @@
       "offer": "35"
     },
     "LING 410 A": {
-      "available": 31,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -5835,7 +5835,7 @@
       "offer": "35"
     },
     "PLSC 303 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6163,7 +6163,7 @@
       "offer": "35"
     },
     "PSYC 280 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
