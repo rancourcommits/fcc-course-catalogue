@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T05:41:59.955Z",
+  "updatedAt": "2026-08-12T05:51:55.834Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -4291,7 +4291,7 @@
       "offer": "35"
     },
     "GEOG 201 A": {
-      "available": 34,
+      "available": 33,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
