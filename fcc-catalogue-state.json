@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T01:32:34.412Z",
+  "updatedAt": "2026-08-12T01:41:56.620Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3419,7 +3419,7 @@
       "offer": "35"
     },
     "EDUC 120 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
