@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T14:12:02.951Z",
+  "updatedAt": "2026-08-12T14:22:04.444Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -763,7 +763,7 @@
       "offer": "35"
     },
     "BUSN 280 L": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4291,7 +4291,7 @@
       "offer": "35"
     },
     "GEOG 201 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5755,7 +5755,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5787,7 +5787,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 21,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6219,7 +6219,7 @@
       "offer": "35"
     },
     "PSYC 300 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6835,7 +6835,7 @@
       "offer": "25"
     },
     "STAT 100 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
