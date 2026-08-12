@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T15:21:55.391Z",
+  "updatedAt": "2026-08-12T15:32:18.065Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1259,7 +1259,7 @@
       "offer": "35"
     },
     "BUSN 461 A": {
-      "available": 16,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -2611,7 +2611,7 @@
       "offer": "35"
     },
     "CSCS 290 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 15:00 - 16:50",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5755,7 +5755,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6659,7 +6659,7 @@
       "offer": "35"
     },
     "SOCL 100 I": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6683,7 +6683,7 @@
       "offer": "35"
     },
     "SOCL 100 O": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
