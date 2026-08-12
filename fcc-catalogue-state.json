@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T17:02:15.553Z",
+  "updatedAt": "2026-08-12T17:12:03.154Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -99,7 +99,7 @@
       "offer": "35"
     },
     "BIOL 105 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -2203,7 +2203,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3115,7 +3115,7 @@
       "offer": "35"
     },
     "ECON 303 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3123,7 +3123,7 @@
       "offer": "35"
     },
     "ECON 303 B": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3163,7 +3163,7 @@
       "offer": "35"
     },
     "ECON 311 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3171,7 +3171,7 @@
       "offer": "35"
     },
     "ECON 311 B": {
-      "available": 8,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -5435,7 +5435,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5819,7 +5819,7 @@
       "offer": "35"
     },
     "PLSC 301 B": {
-      "available": 27,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
