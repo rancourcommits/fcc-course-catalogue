@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T05:02:29.656Z",
+  "updatedAt": "2026-08-12T05:12:03.256Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -4699,7 +4699,7 @@
       "offer": "35"
     },
     "LING 217 B": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
