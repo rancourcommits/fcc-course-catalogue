@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T11:02:14.308Z",
+  "updatedAt": "2026-08-12T11:12:13.608Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -91,7 +91,7 @@
       "offer": "35"
     },
     "BIOL 102 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -1275,7 +1275,7 @@
       "offer": "35"
     },
     "BUSN 464 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -1283,7 +1283,7 @@
       "offer": "35"
     },
     "BUSN 464 B": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -2123,7 +2123,7 @@
       "offer": "35"
     },
     "COMP 401 B": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/02/2026 W 15:00 - 15:50",
@@ -2163,7 +2163,7 @@
       "offer": "35"
     },
     "COMP 421 B": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "SBLOCK S316",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -2195,7 +2195,7 @@
       "offer": "150"
     },
     "COMP 497B A": {
-      "available": 127,
+      "available": 126,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -2691,7 +2691,7 @@
       "offer": "35"
     },
     "CSCS 453 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3051,7 +3051,7 @@
       "offer": "35"
     },
     "ECON 202 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5475,7 +5475,7 @@
       "offer": "10"
     },
     "PHYS 103 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "SBLOCK S029",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
