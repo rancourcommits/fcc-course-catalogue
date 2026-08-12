@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T19:02:09.615Z",
+  "updatedAt": "2026-08-12T19:12:12.263Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -163,7 +163,7 @@
       "offer": "35"
     },
     "BIOL 319 A": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S329",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -307,7 +307,7 @@
       "offer": "35"
     },
     "BIOT 408 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M 14:00 - 15:50",
@@ -1571,7 +1571,7 @@
       "offer": "35"
     },
     "CHEM 100 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:08/31/2026 M W 11:00 - 11:50",
@@ -3667,7 +3667,7 @@
       "offer": "25"
     },
     "ENGL 108 M": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4067,7 +4067,7 @@
       "offer": "35"
     },
     "ENVR 340 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -4411,7 +4411,7 @@
       "offer": "35"
     },
     "HIST 204 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4843,7 +4843,7 @@
       "offer": "5"
     },
     "MATH 105 C": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -5755,7 +5755,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
