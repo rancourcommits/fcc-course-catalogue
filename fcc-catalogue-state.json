@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T23:02:07.881Z",
+  "updatedAt": "2026-08-12T23:12:10.862Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2931,7 +2931,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2939,7 +2939,7 @@
       "offer": "35"
     },
     "ECON 100 I": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
