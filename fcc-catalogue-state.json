@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T11:12:13.608Z",
+  "updatedAt": "2026-08-12T11:17:02.357Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -4891,7 +4891,7 @@
       "offer": "15"
     },
     "MATH 108 C": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5027,7 +5027,7 @@
       "offer": "35"
     },
     "MCOM 105 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
