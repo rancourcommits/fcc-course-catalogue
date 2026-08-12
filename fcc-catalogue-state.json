@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T21:22:06.694Z",
+  "updatedAt": "2026-08-12T21:32:06.677Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -907,7 +907,7 @@
       "offer": "35"
     },
     "BUSN 321 M": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E345",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -971,7 +971,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -1203,7 +1203,7 @@
       "offer": "35"
     },
     "BUSN 460 D": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -2203,7 +2203,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 7,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -2211,7 +2211,7 @@
       "offer": "35"
     },
     "CPPG 111 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -2979,7 +2979,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 17,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3187,7 +3187,7 @@
       "offer": "35"
     },
     "ECON 322 A": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3419,7 +3419,7 @@
       "offer": "35"
     },
     "EDUC 120 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3755,7 +3755,7 @@
       "offer": "35"
     },
     "ENGL 201 B": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4811,7 +4811,7 @@
       "offer": "35"
     },
     "MATH 102 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4835,7 +4835,7 @@
       "offer": "5"
     },
     "MATH 105 B": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6963,7 +6963,7 @@
       "offer": "20"
     },
     "STAT 206 C": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
