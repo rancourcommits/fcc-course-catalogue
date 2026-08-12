@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T18:11:59.670Z",
+  "updatedAt": "2026-08-12T18:22:28.935Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -587,7 +587,7 @@
       "offer": "35"
     },
     "BUSN 230 D": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E332",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -643,7 +643,7 @@
       "offer": "35"
     },
     "BUSN 230 K": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4275,7 +4275,7 @@
       "offer": "35"
     },
     "GEOG 133 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4539,7 +4539,7 @@
       "offer": "25"
     },
     "HPED 105 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "VCOURT VCOURT",
       "schedule": "start:09/01/2026 T R 15:00 - 16:00",
@@ -4795,7 +4795,7 @@
       "offer": "35"
     },
     "MATH 102 A": {
-      "available": 31,
+      "available": 30,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4835,7 +4835,7 @@
       "offer": "5"
     },
     "MATH 105 B": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4851,7 +4851,7 @@
       "offer": "5"
     },
     "MATH 107 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5043,7 +5043,7 @@
       "offer": "35"
     },
     "MCOM 200 B": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5067,7 +5067,7 @@
       "offer": "35"
     },
     "MCOM 202 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -5419,7 +5419,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S007",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
@@ -5435,7 +5435,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
