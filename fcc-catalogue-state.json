@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T10:42:37.231Z",
+  "updatedAt": "2026-08-12T10:51:59.455Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3635,7 +3635,7 @@
       "offer": "25"
     },
     "ENGL 108 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S316",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5787,7 +5787,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6867,7 +6867,7 @@
       "offer": "15"
     },
     "STAT 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
