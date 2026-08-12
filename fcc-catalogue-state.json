@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T12:51:57.141Z",
+  "updatedAt": "2026-08-12T13:02:20.710Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -963,7 +963,7 @@
       "offer": "35"
     },
     "BUSN 360 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E345",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -1611,7 +1611,7 @@
       "offer": "35"
     },
     "CHEM 150 E": {
-      "available": 31,
+      "available": 30,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3835,7 +3835,7 @@
       "offer": "35"
     },
     "ENGL 318 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "EBLOCK E222",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4427,7 +4427,7 @@
       "offer": "35"
     },
     "HIST 255 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4747,7 +4747,7 @@
       "offer": "35"
     },
     "LING 415 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "EBLOCK E222",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5075,7 +5075,7 @@
       "offer": "35"
     },
     "MCOM 202 B": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5723,7 +5723,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5731,7 +5731,7 @@
       "offer": "35"
     },
     "PLSC 101 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6883,7 +6883,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
