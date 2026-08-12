@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T10:02:03.816Z",
+  "updatedAt": "2026-08-12T10:12:15.731Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1963,7 +1963,7 @@
       "offer": "25"
     },
     "COMP 213 C": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/02/2026 W F 11:00 - 12:50",
@@ -2107,7 +2107,7 @@
       "offer": "35"
     },
     "COMP 360 B": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/02/2026 W 11:00 - 12:50",
@@ -2411,7 +2411,7 @@
       "offer": "35"
     },
     "CRST 391 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5435,7 +5435,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5787,7 +5787,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5867,7 +5867,7 @@
       "offer": "35"
     },
     "PLSC 321 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
