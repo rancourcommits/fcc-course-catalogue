@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T19:42:00.632Z",
+  "updatedAt": "2026-08-12T19:52:15.472Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3187,7 +3187,7 @@
       "offer": "35"
     },
     "ECON 322 A": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6963,7 +6963,7 @@
       "offer": "20"
     },
     "STAT 206 C": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
