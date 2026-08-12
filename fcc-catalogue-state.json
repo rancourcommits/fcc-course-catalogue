@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T14:22:04.444Z",
+  "updatedAt": "2026-08-12T14:32:09.991Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -499,7 +499,7 @@
       "offer": "35"
     },
     "BUSN 201 G": {
-      "available": 10,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -555,7 +555,7 @@
       "offer": "35"
     },
     "BUSN 201 N": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4035,7 +4035,7 @@
       "offer": "25"
     },
     "ENVR 240 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4291,7 +4291,7 @@
       "offer": "35"
     },
     "GEOG 201 A": {
-      "available": 32,
+      "available": 33,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4315,7 +4315,7 @@
       "offer": "10"
     },
     "GEOG 323 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5435,7 +5435,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6219,7 +6219,7 @@
       "offer": "35"
     },
     "PSYC 300 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
