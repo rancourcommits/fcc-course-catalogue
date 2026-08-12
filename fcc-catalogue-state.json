@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T04:52:00.777Z",
+  "updatedAt": "2026-08-12T05:02:29.656Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1507,7 +1507,7 @@
       "offer": "35"
     },
     "BUSN 622 A": {
-      "available": 31,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E324",
       "schedule": "start:09/04/2026 F 09:00 - 12:00",
