@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T09:42:08.850Z",
+  "updatedAt": "2026-08-12T09:52:09.975Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2979,7 +2979,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3459,7 +3459,7 @@
       "offer": "35"
     },
     "EDUC 300 A": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4027,7 +4027,7 @@
       "offer": "35"
     },
     "ENVR 210 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -5227,7 +5227,7 @@
       "offer": "35"
     },
     "MCOM 414 A": {
-      "available": 32,
+      "available": 33,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -5235,7 +5235,7 @@
       "offer": "35"
     },
     "MCOM 414 B": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5835,7 +5835,7 @@
       "offer": "35"
     },
     "PLSC 303 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6018,6 +6018,14 @@
       "instructor": "S Sindhu",
       "offer": "35"
     },
+    "PLSC 699B A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "S Sindhu",
+      "offer": "35"
+    },
     "PLSC 699E A": {
       "available": 23,
       "enrolled": "",
@@ -6163,7 +6171,7 @@
       "offer": "35"
     },
     "PSYC 280 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6323,7 +6331,7 @@
       "offer": "30"
     },
     "PSYC 354 B": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E241",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -7011,7 +7019,7 @@
       "offer": "25"
     },
     "STAT 414 B": {
-      "available": 10,
+      "available": 11,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
