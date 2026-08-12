@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T16:11:58.645Z",
+  "updatedAt": "2026-08-12T16:22:12.202Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3403,7 +3403,7 @@
       "offer": "35"
     },
     "EDUC 120 C": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4275,7 +4275,7 @@
       "offer": "35"
     },
     "GEOG 133 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
