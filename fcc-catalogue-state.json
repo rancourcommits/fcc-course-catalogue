@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T13:22:12.758Z",
+  "updatedAt": "2026-08-12T13:32:04.421Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -6835,7 +6835,7 @@
       "offer": "25"
     },
     "STAT 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
