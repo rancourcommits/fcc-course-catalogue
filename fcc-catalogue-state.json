@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T02:42:27.290Z",
+  "updatedAt": "2026-08-12T02:52:06.370Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3627,7 +3627,7 @@
       "offer": "25"
     },
     "ENGL 108 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
