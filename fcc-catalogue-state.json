@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T00:21:55.145Z",
+  "updatedAt": "2026-08-12T00:32:36.459Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -5419,7 +5419,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S007",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
