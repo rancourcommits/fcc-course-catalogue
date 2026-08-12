@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T19:52:15.472Z",
+  "updatedAt": "2026-08-12T20:02:18.141Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1179,7 +1179,7 @@
       "offer": "35"
     },
     "BUSN 460 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E346",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -1187,7 +1187,7 @@
       "offer": "35"
     },
     "BUSN 460 B": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -2203,7 +2203,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -2651,7 +2651,7 @@
       "offer": "25"
     },
     "CSCS 342 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 13:00 - 14:50",
@@ -3355,7 +3355,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3771,7 +3771,7 @@
       "offer": "35"
     },
     "ENGL 209 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E222",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -4011,7 +4011,7 @@
       "offer": "35"
     },
     "ENVR 101 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:08/31/2026 M 14:00 - 15:50",
@@ -6667,7 +6667,7 @@
       "offer": "35"
     },
     "SOCL 100 K": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
