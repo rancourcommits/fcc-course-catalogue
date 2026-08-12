@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T06:52:20.647Z",
+  "updatedAt": "2026-08-12T07:02:20.634Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -915,7 +915,7 @@
       "offer": "35"
     },
     "BUSN 350 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -2955,7 +2955,7 @@
       "offer": "35"
     },
     "ECON 100 O": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4163,12 +4163,12 @@
       "offer": "15"
     },
     "ENVR 696 A": {
-      "available": 0,
+      "available": 10,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
       "instructor": "S Ilyas",
-      "offer": "15"
+      "offer": "25"
     },
     "ENVR 699A A": {
       "available": 15,
@@ -4851,7 +4851,7 @@
       "offer": "5"
     },
     "MATH 107 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
