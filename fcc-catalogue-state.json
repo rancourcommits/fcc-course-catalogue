@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T08:42:13.474Z",
+  "updatedAt": "2026-08-12T08:52:04.609Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -539,7 +539,7 @@
       "offer": "35"
     },
     "BUSN 201 L": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -843,7 +843,7 @@
       "offer": "35"
     },
     "BUSN 321 E": {
-      "available": 31,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E345",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -1187,7 +1187,7 @@
       "offer": "35"
     },
     "BUSN 460 B": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -1227,7 +1227,7 @@
       "offer": "35"
     },
     "BUSN 460 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3171,7 +3171,7 @@
       "offer": "35"
     },
     "ECON 311 B": {
-      "available": 9,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -3467,7 +3467,7 @@
       "offer": "35"
     },
     "EDUC 310 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5747,7 +5747,7 @@
       "offer": "35"
     },
     "PLSC 101 H": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -5851,7 +5851,7 @@
       "offer": "35"
     },
     "PLSC 311 A": {
-      "available": 21,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5915,7 +5915,7 @@
       "offer": "35"
     },
     "PLSC 400 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -6651,7 +6651,7 @@
       "offer": "35"
     },
     "SOCL 100 I": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6859,7 +6859,7 @@
       "offer": "15"
     },
     "STAT 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
