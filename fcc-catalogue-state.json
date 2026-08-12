@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T17:22:14.872Z",
+  "updatedAt": "2026-08-12T17:32:31.787Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1619,7 +1619,7 @@
       "offer": "35"
     },
     "CHEM 160 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -2739,7 +2739,7 @@
       "offer": "5"
     },
     "DATA 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3395,7 +3395,7 @@
       "offer": "35"
     },
     "EDUC 120 B": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4107,7 +4107,7 @@
       "offer": "35"
     },
     "ENVR 418 A": {
-      "available": 34,
+      "available": 35,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M F 10:00 - 10:50",
@@ -4259,7 +4259,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5427,7 +5427,7 @@
       "offer": "35"
     },
     "PHYS 100 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 11:00 - 11:50",
