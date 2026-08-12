@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T09:32:03.913Z",
+  "updatedAt": "2026-08-12T09:42:08.850Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1619,7 +1619,7 @@
       "offer": "35"
     },
     "CHEM 160 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -1627,7 +1627,7 @@
       "offer": "20"
     },
     "CHEM 160 B": {
-      "available": 23,
+      "available": 24,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -3915,7 +3915,7 @@
       "offer": "35"
     },
     "ENGL 526 A": {
-      "available": 33,
+      "available": 34,
       "enrolled": "",
       "location": "EBLOCK E206",
       "schedule": "start:09/01/2026 T 16:00 - 19:00",
@@ -3955,7 +3955,7 @@
       "offer": "35"
     },
     "ENGL 690 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M 16:00 - 19:00",
@@ -4275,7 +4275,7 @@
       "offer": "35"
     },
     "GEOG 133 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4395,7 +4395,7 @@
       "offer": "35"
     },
     "HIST 103 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
