@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T07:12:19.460Z",
+  "updatedAt": "2026-08-12T07:22:21.395Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3395,7 +3395,7 @@
       "offer": "35"
     },
     "EDUC 120 B": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3747,7 +3747,7 @@
       "offer": "35"
     },
     "ENGL 201 A": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -7163,7 +7163,7 @@
       "offer": "35"
     },
     "URDU 101 P": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
