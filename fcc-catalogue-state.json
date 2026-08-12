@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T16:52:07.774Z",
+  "updatedAt": "2026-08-12T17:02:15.553Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2611,7 +2611,7 @@
       "offer": "35"
     },
     "CSCS 290 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 15:00 - 16:50",
@@ -4811,7 +4811,7 @@
       "offer": "35"
     },
     "MATH 102 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4891,7 +4891,7 @@
       "offer": "15"
     },
     "MATH 108 C": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
