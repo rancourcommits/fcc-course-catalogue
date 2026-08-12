@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T22:52:13.049Z",
+  "updatedAt": "2026-08-12T23:02:07.881Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -83,7 +83,7 @@
       "offer": "35"
     },
     "BIOL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:09/01/2026 T R 09:30 - 10:20",
@@ -419,7 +419,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
