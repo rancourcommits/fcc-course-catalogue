@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T04:02:24.000Z",
+  "updatedAt": "2026-08-12T04:11:57.249Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1579,7 +1579,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
