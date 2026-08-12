@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T12:02:14.277Z",
+  "updatedAt": "2026-08-12T12:12:00.056Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -5363,7 +5363,7 @@
       "offer": "35"
     },
     "MUSC 250 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E137",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6867,7 +6867,7 @@
       "offer": "15"
     },
     "STAT 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
