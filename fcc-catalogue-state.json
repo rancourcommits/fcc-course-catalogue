@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T11:17:02.357Z",
+  "updatedAt": "2026-08-12T11:22:13.447Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2059,7 +2059,7 @@
       "offer": "35"
     },
     "COMP 303 B": {
-      "available": 16,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2611,7 +2611,7 @@
       "offer": "35"
     },
     "CSCS 290 A": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 15:00 - 16:50",
@@ -5027,7 +5027,7 @@
       "offer": "35"
     },
     "MCOM 105 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
