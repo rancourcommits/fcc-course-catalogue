@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T02:52:06.370Z",
+  "updatedAt": "2026-08-12T03:02:15.334Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -7011,7 +7011,7 @@
       "offer": "25"
     },
     "STAT 414 B": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
