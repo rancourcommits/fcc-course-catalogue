@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T08:52:04.609Z",
+  "updatedAt": "2026-08-12T09:02:09.033Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -59,7 +59,7 @@
       "offer": "35"
     },
     "ARTS 203 A": {
-      "available": 9,
+      "available": 8,
       "enrolled": "",
       "location": "SBLOCK S008",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6859,7 +6859,7 @@
       "offer": "15"
     },
     "STAT 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6883,7 +6883,7 @@
       "offer": "15"
     },
     "STAT 101 E": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
