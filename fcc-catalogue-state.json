@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T15:42:17.863Z",
+  "updatedAt": "2026-08-12T15:52:17.957Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2019,7 +2019,7 @@
       "offer": "35"
     },
     "COMP 301 C": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/01/2026 T 11:00 - 12:50",
@@ -2611,7 +2611,7 @@
       "offer": "35"
     },
     "CSCS 290 A": {
-      "available": 27,
+      "available": 28,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 15:00 - 16:50",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
