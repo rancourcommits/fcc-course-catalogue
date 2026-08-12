@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T14:32:09.991Z",
+  "updatedAt": "2026-08-12T14:42:07.686Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -4315,7 +4315,7 @@
       "offer": "10"
     },
     "GEOG 323 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5867,7 +5867,7 @@
       "offer": "35"
     },
     "PLSC 321 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6115,7 +6115,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
