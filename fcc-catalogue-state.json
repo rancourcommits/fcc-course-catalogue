@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T15:02:12.278Z",
+  "updatedAt": "2026-08-12T15:12:26.237Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1259,7 +1259,7 @@
       "offer": "35"
     },
     "BUSN 461 A": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4059,7 +4059,7 @@
       "offer": "35"
     },
     "ENVR 323 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4627,7 +4627,7 @@
       "offer": "35"
     },
     "ISLM 101 O": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -5419,7 +5419,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S007",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
@@ -6747,7 +6747,7 @@
       "offer": "35"
     },
     "SOCL 301 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6771,7 +6771,7 @@
       "offer": "35"
     },
     "SOCL 425 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6779,7 +6779,7 @@
       "offer": "35"
     },
     "SOCL 465 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
