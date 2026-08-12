@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T05:22:08.981Z",
+  "updatedAt": "2026-08-12T05:32:01.030Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2955,7 +2955,7 @@
       "offer": "35"
     },
     "ECON 100 O": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5115,7 +5115,7 @@
       "offer": "35"
     },
     "MCOM 301 B": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -5131,7 +5131,7 @@
       "offer": "35"
     },
     "MCOM 302 B": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5155,7 +5155,7 @@
       "offer": "35"
     },
     "MCOM 304 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
