@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T16:32:27.866Z",
+  "updatedAt": "2026-08-12T16:42:07.801Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2739,7 +2739,7 @@
       "offer": "5"
     },
     "DATA 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3187,7 +3187,7 @@
       "offer": "35"
     },
     "ECON 322 A": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4283,7 +4283,7 @@
       "offer": "35"
     },
     "GEOG 133 B": {
-      "available": 35,
+      "available": 34,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4371,7 +4371,7 @@
       "offer": "20"
     },
     "GRMN 102 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4643,7 +4643,7 @@
       "offer": "35"
     },
     "ISLM 201 A": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -7051,7 +7051,7 @@
       "offer": "25"
     },
     "STAT 519 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 17:30 - 19:00",
