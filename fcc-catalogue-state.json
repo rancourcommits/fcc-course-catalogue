@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T07:52:19.997Z",
+  "updatedAt": "2026-08-12T08:02:09.029Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1635,7 +1635,7 @@
       "offer": "35"
     },
     "CHEM 170 A": {
-      "available": 31,
+      "available": 30,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -2923,7 +2923,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -7163,7 +7163,7 @@
       "offer": "35"
     },
     "URDU 101 P": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
