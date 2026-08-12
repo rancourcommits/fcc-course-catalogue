@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T20:32:12.642Z",
+  "updatedAt": "2026-08-12T20:42:16.220Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -555,7 +555,7 @@
       "offer": "35"
     },
     "BUSN 201 N": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -1995,7 +1995,7 @@
       "offer": "35"
     },
     "COMP 300 B": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T 11:00 - 12:50",
@@ -2539,7 +2539,7 @@
       "offer": "25"
     },
     "CSCS 201 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3603,7 +3603,7 @@
       "offer": "25"
     },
     "ENGL 108 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6035,7 +6035,7 @@
       "offer": "25"
     },
     "PSYC 100 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
