@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T07:22:21.395Z",
+  "updatedAt": "2026-08-12T07:32:20.479Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -595,7 +595,7 @@
       "offer": "35"
     },
     "BUSN 230 E": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3747,7 +3747,7 @@
       "offer": "35"
     },
     "ENGL 201 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
