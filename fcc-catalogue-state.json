@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T17:52:03.121Z",
+  "updatedAt": "2026-08-12T18:02:16.033Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -83,7 +83,7 @@
       "offer": "35"
     },
     "BIOL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:09/01/2026 T R 09:30 - 10:20",
@@ -595,7 +595,7 @@
       "offer": "35"
     },
     "BUSN 230 E": {
-      "available": 2,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -643,7 +643,7 @@
       "offer": "35"
     },
     "BUSN 230 K": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -2539,7 +2539,7 @@
       "offer": "25"
     },
     "CSCS 201 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4267,7 +4267,7 @@
       "offer": "35"
     },
     "GEOG 101 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4915,7 +4915,7 @@
       "offer": "35"
     },
     "MATH 111 B": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5435,7 +5435,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
