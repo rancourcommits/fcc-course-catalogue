@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T11:32:01.630Z",
+  "updatedAt": "2026-08-12T11:42:11.146Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -147,7 +147,7 @@
       "offer": "35"
     },
     "BIOL 313 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S312",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -291,7 +291,7 @@
       "offer": "35"
     },
     "BIOT 317 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:08/31/2026 M W 10:00 - 10:50",
@@ -539,7 +539,7 @@
       "offer": "35"
     },
     "BUSN 201 L": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3755,7 +3755,7 @@
       "offer": "35"
     },
     "ENGL 201 B": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5723,7 +5723,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 9,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5787,7 +5787,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6867,7 +6867,7 @@
       "offer": "15"
     },
     "STAT 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
