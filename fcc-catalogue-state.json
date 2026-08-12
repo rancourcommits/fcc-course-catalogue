@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T14:42:07.686Z",
+  "updatedAt": "2026-08-12T14:51:45.806Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -3675,7 +3675,7 @@
       "offer": "25"
     },
     "ENGL 108 N": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -5755,7 +5755,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5867,7 +5867,7 @@
       "offer": "35"
     },
     "PLSC 321 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5899,7 +5899,7 @@
       "offer": "35"
     },
     "PLSC 335 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
