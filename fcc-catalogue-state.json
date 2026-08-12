@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T21:32:06.677Z",
+  "updatedAt": "2026-08-12T21:42:00.220Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -475,7 +475,7 @@
       "offer": "35"
     },
     "BUSN 201 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -555,7 +555,7 @@
       "offer": "35"
     },
     "BUSN 201 N": {
-      "available": 11,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -1219,7 +1219,7 @@
       "offer": "35"
     },
     "BUSN 460 F": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -1259,7 +1259,7 @@
       "offer": "35"
     },
     "BUSN 461 A": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -1275,7 +1275,7 @@
       "offer": "35"
     },
     "BUSN 464 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4027,7 +4027,7 @@
       "offer": "35"
     },
     "ENVR 210 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6107,7 +6107,7 @@
       "offer": "35"
     },
     "PSYC 160 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
