@@ -868,7 +868,7 @@ jobs:
                     process.env.ALERT_EMAIL,
 
                   subject:
-                    '🚨 FCC Alert: Course catalogue update',
+                    `🚨 FCC Alert: Course catalogue update — ${new Date().toLocaleString('en-PK')}`,
 
                   text:
                     emailText
