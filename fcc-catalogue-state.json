@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-12T17:32:31.787Z",
+  "updatedAt": "2026-08-12T17:42:08.490Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -699,7 +699,7 @@
       "offer": "35"
     },
     "BUSN 280 D": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -835,7 +835,7 @@
       "offer": "35"
     },
     "BUSN 321 D": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -971,7 +971,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -2771,7 +2771,7 @@
       "offer": "5"
     },
     "DATA 102 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -3587,7 +3587,7 @@
       "offer": "25"
     },
     "ENGL 108 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4803,7 +4803,7 @@
       "offer": "35"
     },
     "MATH 102 B": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6667,7 +6667,7 @@
       "offer": "35"
     },
     "SOCL 100 K": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
