@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T04:02:16.532Z",
+  "updatedAt": "2026-08-13T04:11:52.182Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2187,7 +2187,7 @@
       "offer": "35"
     },
     "COMP 497A A": {
-      "available": 55,
+      "available": 54,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -4107,7 +4107,7 @@
       "offer": "35"
     },
     "ENVR 418 A": {
-      "available": 34,
+      "available": 35,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M F 10:00 - 10:50",
