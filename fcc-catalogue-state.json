@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T01:12:09.598Z",
+  "updatedAt": "2026-08-13T01:22:02.694Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -83,7 +83,7 @@
       "offer": "35"
     },
     "BIOL 100 E": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:09/01/2026 T R 09:30 - 10:20",
