@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T03:22:07.080Z",
+  "updatedAt": "2026-08-13T03:32:11.412Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1995,7 +1995,7 @@
       "offer": "35"
     },
     "COMP 300 B": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T 11:00 - 12:50",
@@ -2075,7 +2075,7 @@
       "offer": "35"
     },
     "COMP 311 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "SBLOCK S219",
       "schedule": "start:08/31/2026 M W 11:00 - 12:50",
