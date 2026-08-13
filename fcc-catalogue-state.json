@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T16:22:07.192Z",
+  "updatedAt": "2026-08-13T16:32:36.768Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -75,7 +75,7 @@
       "offer": "35"
     },
     "BIOL 100 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S312",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -6155,7 +6155,7 @@
       "offer": "30"
     },
     "PSYC 240 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6355,7 +6355,7 @@
       "offer": "30"
     },
     "PSYC 370 A": {
-      "available": 22,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6699,7 +6699,7 @@
       "offer": "35"
     },
     "SOCL 118 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
