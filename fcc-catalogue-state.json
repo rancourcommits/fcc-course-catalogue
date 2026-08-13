@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T10:22:08.535Z",
+  "updatedAt": "2026-08-13T10:32:07.023Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -11,7 +11,7 @@
       "offer": "35"
     },
     "ARTS 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -331,7 +331,7 @@
       "offer": "35"
     },
     "BIOT 412 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S413",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -691,7 +691,7 @@
       "offer": "35"
     },
     "BUSN 280 C": {
-      "available": 24,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -763,7 +763,7 @@
       "offer": "35"
     },
     "BUSN 280 L": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -1267,7 +1267,7 @@
       "offer": "35"
     },
     "BUSN 461 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E346",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -1843,7 +1843,7 @@
       "offer": "25"
     },
     "CHIN 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -1979,7 +1979,7 @@
       "offer": "35"
     },
     "COMP 220 B": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S316",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -2003,7 +2003,7 @@
       "offer": "35"
     },
     "COMP 301 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S218",
       "schedule": "start:08/31/2026 M 09:00 - 10:50",
@@ -2491,7 +2491,7 @@
       "offer": "35"
     },
     "CSCS 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S218",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2939,7 +2939,7 @@
       "offer": "35"
     },
     "ECON 100 I": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3627,7 +3627,7 @@
       "offer": "25"
     },
     "ENGL 108 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4051,7 +4051,7 @@
       "offer": "35"
     },
     "ENVR 305 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6355,7 +6355,7 @@
       "offer": "30"
     },
     "PSYC 370 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6915,7 +6915,7 @@
       "offer": "15"
     },
     "STAT 102 C": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
