@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T07:02:11.888Z",
+  "updatedAt": "2026-08-13T07:11:59.339Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -699,7 +699,7 @@
       "offer": "35"
     },
     "BUSN 280 D": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -731,7 +731,7 @@
       "offer": "33"
     },
     "BUSN 280 H": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -1587,7 +1587,7 @@
       "offer": "35"
     },
     "CHEM 150 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -2323,7 +2323,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2347,7 +2347,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4427,7 +4427,7 @@
       "offer": "35"
     },
     "HIST 255 A": {
-      "available": 21,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4891,7 +4891,7 @@
       "offer": "15"
     },
     "MATH 108 C": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6107,7 +6107,7 @@
       "offer": "35"
     },
     "PSYC 160 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
