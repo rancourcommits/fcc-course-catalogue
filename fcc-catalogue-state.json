@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T11:57:00.954Z",
+  "updatedAt": "2026-08-13T12:02:23.952Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -4259,7 +4259,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -7211,7 +7211,7 @@
       "offer": "35"
     },
     "URDU 201 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
