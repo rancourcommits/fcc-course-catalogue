@@ -820,8 +820,14 @@ jobs:
                   emailText +=
                     `Location: ${section.location}\n`;
 
+                 const cleanSchedule =
+                   section.schedule
+                     .replace(/Start:\s*\d{2}\/\d{2}\/\d{4}/gi, '')
+                     .replace(/\s+/g, ' ')
+                     .trim();
+                  
                   emailText +=
-                    `Schedule: ${section.schedule}\n`;
+                    `Schedule: ${cleanSchedule}\n`;
 
                   emailText +=
                     `Instructor: ${section.instructor}\n`;
