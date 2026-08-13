@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T00:52:28.042Z",
+  "updatedAt": "2026-08-13T01:02:23.340Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -6155,7 +6155,7 @@
       "offer": "30"
     },
     "PSYC 240 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
