@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T09:02:25.747Z",
+  "updatedAt": "2026-08-13T09:12:10.826Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -4195,7 +4195,7 @@
       "offer": "20"
     },
     "FREN 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4275,7 +4275,7 @@
       "offer": "35"
     },
     "GEOG 133 A": {
-      "available": 4,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4691,7 +4691,7 @@
       "offer": "35"
     },
     "LING 217 A": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5787,7 +5787,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 22,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5835,7 +5835,7 @@
       "offer": "35"
     },
     "PLSC 303 A": {
-      "available": 16,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5875,7 +5875,7 @@
       "offer": "35"
     },
     "PLSC 322 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5891,7 +5891,7 @@
       "offer": "35"
     },
     "PLSC 330 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5931,7 +5931,7 @@
       "offer": "15"
     },
     "PLSC 403 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -6683,7 +6683,7 @@
       "offer": "35"
     },
     "SOCL 100 O": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
