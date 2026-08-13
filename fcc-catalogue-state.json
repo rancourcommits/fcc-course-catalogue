@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T01:02:23.340Z",
+  "updatedAt": "2026-08-13T01:12:09.598Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -5387,7 +5387,7 @@
       "offer": "35"
     },
     "PHIL 202 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
