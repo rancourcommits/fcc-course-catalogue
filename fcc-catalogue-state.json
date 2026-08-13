@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T11:02:14.977Z",
+  "updatedAt": "2026-08-13T11:12:31.618Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1579,7 +1579,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -1587,7 +1587,7 @@
       "offer": "35"
     },
     "CHEM 150 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -2851,7 +2851,7 @@
       "offer": "15"
     },
     "DATA 207 B": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -2995,7 +2995,7 @@
       "offer": "35"
     },
     "ECON 102 B": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3003,7 +3003,7 @@
       "offer": "35"
     },
     "ECON 102 C": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -3627,7 +3627,7 @@
       "offer": "25"
     },
     "ENGL 108 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3779,7 +3779,7 @@
       "offer": "35"
     },
     "ENGL 220 A": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4267,7 +4267,7 @@
       "offer": "35"
     },
     "GEOG 101 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4835,7 +4835,7 @@
       "offer": "5"
     },
     "MATH 105 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5755,7 +5755,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 3,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5835,7 +5835,7 @@
       "offer": "35"
     },
     "PLSC 303 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5851,7 +5851,7 @@
       "offer": "35"
     },
     "PLSC 311 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5875,7 +5875,7 @@
       "offer": "35"
     },
     "PLSC 322 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5931,7 +5931,7 @@
       "offer": "15"
     },
     "PLSC 403 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -6115,7 +6115,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6155,7 +6155,7 @@
       "offer": "30"
     },
     "PSYC 240 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
