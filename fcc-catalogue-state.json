@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T08:22:10.575Z",
+  "updatedAt": "2026-08-13T08:32:11.264Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -835,7 +835,7 @@
       "offer": "35"
     },
     "BUSN 321 D": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -2355,7 +2355,7 @@
       "offer": "35"
     },
     "CRST 211 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M 12:00 - 12:50",
@@ -2491,7 +2491,7 @@
       "offer": "35"
     },
     "CSCS 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S218",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3563,7 +3563,7 @@
       "offer": "15"
     },
     "ENGL 106 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3675,7 +3675,7 @@
       "offer": "25"
     },
     "ENGL 108 N": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
