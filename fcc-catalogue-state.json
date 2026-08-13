@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T11:42:01.610Z",
+  "updatedAt": "2026-08-13T11:52:04.942Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -91,7 +91,7 @@
       "offer": "35"
     },
     "BIOL 102 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -1579,7 +1579,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -3355,7 +3355,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4259,7 +4259,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4411,7 +4411,7 @@
       "offer": "35"
     },
     "HIST 204 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
