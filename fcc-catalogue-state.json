@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T17:02:18.168Z",
+  "updatedAt": "2026-08-13T17:12:15.248Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1603,7 +1603,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -1643,7 +1643,7 @@
       "offer": "35"
     },
     "CHEM 250 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "SBLOCK S138",
       "schedule": "start:08/31/2026 M 09:00 - 10:50",
@@ -1683,7 +1683,7 @@
       "offer": "35"
     },
     "CHEM 361 A": {
-      "available": 30,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5811,7 +5811,7 @@
       "offer": "35"
     },
     "PLSC 301 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5883,7 +5883,7 @@
       "offer": "35"
     },
     "PLSC 323 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
