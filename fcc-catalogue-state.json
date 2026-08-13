@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T14:22:03.199Z",
+  "updatedAt": "2026-08-13T14:32:24.635Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2931,7 +2931,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4259,7 +4259,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
