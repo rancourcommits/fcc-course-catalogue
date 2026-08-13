@@ -3354,7 +3354,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5794,7 +5794,7 @@
       "offer": "35"
     },
     "PLSC 204 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5906,7 +5906,7 @@
       "offer": "35"
     },
     "PLSC 340 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6754,7 +6754,7 @@
       "offer": "35"
     },
     "SOCL 325 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
