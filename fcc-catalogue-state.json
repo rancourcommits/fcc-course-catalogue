@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T10:07:02.118Z",
+  "updatedAt": "2026-08-13T10:11:47.758Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2203,7 +2203,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -2939,7 +2939,7 @@
       "offer": "35"
     },
     "ECON 100 I": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2963,7 +2963,7 @@
       "offer": "35"
     },
     "ECON 101 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4395,7 +4395,7 @@
       "offer": "35"
     },
     "HIST 103 A": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5083,7 +5083,7 @@
       "offer": "35"
     },
     "MCOM 203 A": {
-      "available": 11,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5155,7 +5155,7 @@
       "offer": "35"
     },
     "MCOM 304 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
