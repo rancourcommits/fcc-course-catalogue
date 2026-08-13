@@ -1962,7 +1962,7 @@
       "offer": "25"
     },
     "COMP 213 C": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/02/2026 W F 11:00 - 12:50",
@@ -2042,7 +2042,7 @@
       "offer": "35"
     },
     "COMP 302 C": {
-      "available": 22,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S316",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2138,7 +2138,7 @@
       "offer": "35"
     },
     "COMP 410 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S316",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
