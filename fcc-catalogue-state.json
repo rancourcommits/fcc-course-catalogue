@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T13:02:34.951Z",
+  "updatedAt": "2026-08-13T13:12:16.171Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2931,7 +2931,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4891,7 +4891,7 @@
       "offer": "15"
     },
     "MATH 108 C": {
-      "available": 3,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5795,7 +5795,7 @@
       "offer": "35"
     },
     "PLSC 204 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
