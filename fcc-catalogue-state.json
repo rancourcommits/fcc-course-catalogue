@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T15:02:13.824Z",
+  "updatedAt": "2026-08-13T15:11:50.571Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1995,7 +1995,7 @@
       "offer": "35"
     },
     "COMP 300 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T 11:00 - 12:50",
@@ -4515,7 +4515,7 @@
       "offer": "35"
     },
     "HPED 101 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 M W 15:00 - 16:00",
@@ -4683,7 +4683,7 @@
       "offer": "20"
     },
     "LING 207 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6643,7 +6643,7 @@
       "offer": "35"
     },
     "SOCL 100 F": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
