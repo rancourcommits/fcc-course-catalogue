@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T00:12:03.538Z",
+  "updatedAt": "2026-08-13T00:21:37.546Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -2771,7 +2771,7 @@
       "offer": "5"
     },
     "DATA 102 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -3651,7 +3651,7 @@
       "offer": "25"
     },
     "ENGL 108 J": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
