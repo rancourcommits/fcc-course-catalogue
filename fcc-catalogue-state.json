@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T09:32:03.959Z",
+  "updatedAt": "2026-08-13T09:41:56.534Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -587,7 +587,7 @@
       "offer": "35"
     },
     "BUSN 230 D": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E332",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -2923,7 +2923,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 17,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3355,7 +3355,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3563,7 +3563,7 @@
       "offer": "15"
     },
     "ENGL 106 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3667,7 +3667,7 @@
       "offer": "25"
     },
     "ENGL 108 M": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3675,7 +3675,7 @@
       "offer": "25"
     },
     "ENGL 108 N": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4195,7 +4195,7 @@
       "offer": "20"
     },
     "FREN 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4395,7 +4395,7 @@
       "offer": "35"
     },
     "HIST 103 A": {
-      "available": 2,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4563,7 +4563,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4691,7 +4691,7 @@
       "offer": "35"
     },
     "LING 217 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5083,7 +5083,7 @@
       "offer": "35"
     },
     "MCOM 203 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5771,7 +5771,7 @@
       "offer": "35"
     },
     "PLSC 202 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5787,7 +5787,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 23,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5795,7 +5795,7 @@
       "offer": "35"
     },
     "PLSC 204 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6107,7 +6107,7 @@
       "offer": "35"
     },
     "PSYC 160 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -7099,7 +7099,7 @@
       "offer": "35"
     },
     "URDU 101 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
