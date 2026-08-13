@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T15:16:20.779Z",
+  "updatedAt": "2026-08-13T15:22:16.412Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1883,7 +1883,7 @@
       "offer": "35"
     },
     "COMP 113 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3403,7 +3403,7 @@
       "offer": "35"
     },
     "EDUC 120 C": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
