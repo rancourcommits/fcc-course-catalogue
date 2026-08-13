@@ -1,6 +1,6 @@
 {
   "parserVersion": 2,
-  "updatedAt": "2026-08-13T08:32:11.264Z",
+  "updatedAt": "2026-08-13T08:42:09.608Z",
   "sections": {
     "ARTS 101 A": {
       "available": 0,
@@ -1579,7 +1579,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4395,7 +4395,7 @@
       "offer": "35"
     },
     "HIST 103 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5475,7 +5475,7 @@
       "offer": "10"
     },
     "PHYS 103 A": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S029",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5915,7 +5915,7 @@
       "offer": "35"
     },
     "PLSC 400 A": {
-      "available": 22,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -6755,7 +6755,7 @@
       "offer": "35"
     },
     "SOCL 325 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
