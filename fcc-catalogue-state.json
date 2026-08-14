@@ -2378,7 +2378,7 @@
       "offer": "35"
     },
     "CRST 271 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4882,7 +4882,7 @@
       "offer": "15"
     },
     "MATH 107 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
