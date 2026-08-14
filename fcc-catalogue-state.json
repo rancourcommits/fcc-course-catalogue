@@ -3650,7 +3650,7 @@
       "offer": "25"
     },
     "ENGL 108 J": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4450,7 +4450,7 @@
       "offer": "35"
     },
     "HIST 302 B": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S008",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4458,7 +4458,7 @@
       "offer": "35"
     },
     "HIST 306 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
