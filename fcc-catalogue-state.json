@@ -986,7 +986,7 @@
       "offer": "35"
     },
     "BUSN 360 I": {
-      "available": 27,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E332",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -5418,7 +5418,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S007",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
