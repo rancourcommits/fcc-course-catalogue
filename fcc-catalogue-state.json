@@ -2506,7 +2506,7 @@
       "offer": "35"
     },
     "CSCS 100 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
