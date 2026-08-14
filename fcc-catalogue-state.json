@@ -4658,7 +4658,7 @@
       "offer": "35"
     },
     "ISLM 306 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E137",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -5722,7 +5722,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6882,7 +6882,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
