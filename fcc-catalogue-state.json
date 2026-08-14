@@ -290,7 +290,7 @@
       "offer": "35"
     },
     "BIOT 317 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:08/31/2026 M W 10:00 - 10:50",
@@ -930,7 +930,7 @@
       "offer": "35"
     },
     "BUSN 360 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -978,7 +978,7 @@
       "offer": "35"
     },
     "BUSN 360 H": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
