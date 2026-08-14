@@ -970,7 +970,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 17,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -1506,7 +1506,7 @@
       "offer": "35"
     },
     "BUSN 622 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E324",
       "schedule": "start:09/04/2026 F 09:00 - 12:00",
@@ -1514,7 +1514,7 @@
       "offer": "35"
     },
     "BUSN 630 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E321",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -1522,7 +1522,7 @@
       "offer": "35"
     },
     "BUSN 640 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E321",
       "schedule": "start:08/31/2026 M W 10:00 - 11:15",
@@ -1530,7 +1530,7 @@
       "offer": "35"
     },
     "BUSN 650 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E324",
       "schedule": "start:08/31/2026 M W 15:30 - 16:45",
