@@ -5754,7 +5754,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6058,7 +6058,7 @@
       "offer": "35"
     },
     "PSYC 100 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6882,7 +6882,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
