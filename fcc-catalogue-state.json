@@ -6962,7 +6962,7 @@
       "offer": "20"
     },
     "STAT 206 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
