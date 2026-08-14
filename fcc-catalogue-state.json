@@ -1674,7 +1674,7 @@
       "offer": "35"
     },
     "CHEM 350 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S213",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -1690,7 +1690,7 @@
       "offer": "35"
     },
     "CHEM 370 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S148",
       "schedule": "start:08/31/2026 M 11:00 - 12:50",
@@ -4546,7 +4546,7 @@
       "offer": "25"
     },
     "HPED 112 A": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 M W 15:00 - 16:00",
@@ -4658,7 +4658,7 @@
       "offer": "35"
     },
     "ISLM 306 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E137",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
