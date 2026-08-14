@@ -10,7 +10,7 @@
       "offer": "35"
     },
     "ARTS 101 B": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2322,7 +2322,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2338,7 +2338,7 @@
       "offer": "35"
     },
     "CRST 152 C": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:08/31/2026 M W 11:00 - 11:50",
@@ -2938,7 +2938,7 @@
       "offer": "35"
     },
     "ECON 100 I": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -6050,7 +6050,7 @@
       "offer": "35"
     },
     "PSYC 100 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
