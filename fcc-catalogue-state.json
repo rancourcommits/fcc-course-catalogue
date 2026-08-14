@@ -3114,7 +3114,7 @@
       "offer": "35"
     },
     "ECON 303 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3122,7 +3122,7 @@
       "offer": "35"
     },
     "ECON 303 B": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3562,7 +3562,7 @@
       "offer": "15"
     },
     "ENGL 106 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
