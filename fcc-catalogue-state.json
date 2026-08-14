@@ -474,7 +474,7 @@
       "offer": "35"
     },
     "BUSN 201 D": {
-      "available": 2,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -498,7 +498,7 @@
       "offer": "35"
     },
     "BUSN 201 G": {
-      "available": 9,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -2202,7 +2202,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -2210,7 +2210,7 @@
       "offer": "35"
     },
     "CPPG 111 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
