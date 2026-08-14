@@ -90,7 +90,7 @@
       "offer": "35"
     },
     "BIOL 102 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -1386,7 +1386,7 @@
       "offer": "35"
     },
     "BUSN 485 F": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
