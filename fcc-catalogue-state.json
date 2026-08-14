@@ -6634,7 +6634,7 @@
       "offer": "20"
     },
     "SOCL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
