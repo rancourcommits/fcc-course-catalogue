@@ -498,7 +498,7 @@
       "offer": "35"
     },
     "BUSN 201 G": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4554,7 +4554,7 @@
       "offer": "25"
     },
     "HPED 150 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
