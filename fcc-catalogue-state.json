@@ -1554,7 +1554,7 @@
       "offer": "35"
     },
     "CHEM 100 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 12:30 - 13:20",
