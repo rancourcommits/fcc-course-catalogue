@@ -610,7 +610,7 @@
       "offer": "33"
     },
     "BUSN 230 G": {
-      "available": 27,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -6010,7 +6010,7 @@
       "offer": "25"
     },
     "PLSC 699A A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -6642,7 +6642,7 @@
       "offer": "35"
     },
     "SOCL 100 F": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
