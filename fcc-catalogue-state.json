@@ -4554,7 +4554,7 @@
       "offer": "25"
     },
     "HPED 150 A": {
-      "available": 22,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5722,7 +5722,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
