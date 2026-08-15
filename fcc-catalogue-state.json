@@ -3370,7 +3370,7 @@
       "offer": "35"
     },
     "EDUC 110 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4306,7 +4306,7 @@
       "offer": "10"
     },
     "GEOG 240 A": {
-      "available": 4,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4314,7 +4314,7 @@
       "offer": "10"
     },
     "GEOG 323 A": {
-      "available": 28,
+      "available": 29,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
