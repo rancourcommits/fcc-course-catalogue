@@ -5250,7 +5250,7 @@
       "offer": "35"
     },
     "MCOM 499 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -5298,7 +5298,7 @@
       "offer": "35"
     },
     "MCOM 699A A": {
-      "available": 34,
+      "available": 35,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -6634,7 +6634,7 @@
       "offer": "20"
     },
     "SOCL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6658,7 +6658,7 @@
       "offer": "35"
     },
     "SOCL 100 I": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
