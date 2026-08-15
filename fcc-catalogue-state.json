@@ -1578,7 +1578,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
