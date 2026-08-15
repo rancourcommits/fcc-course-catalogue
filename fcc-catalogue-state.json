@@ -242,7 +242,7 @@
       "offer": "35"
     },
     "BIOT 307 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -314,7 +314,7 @@
       "offer": "35"
     },
     "BIOT 409 A": {
-      "available": 11,
+      "available": 12,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -5754,7 +5754,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 3,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
