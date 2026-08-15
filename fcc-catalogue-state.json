@@ -3090,7 +3090,7 @@
       "offer": "35"
     },
     "ECON 300 B": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -6642,7 +6642,7 @@
       "offer": "35"
     },
     "SOCL 100 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
