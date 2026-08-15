@@ -3666,7 +3666,7 @@
       "offer": "25"
     },
     "ENGL 108 M": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6154,7 +6154,7 @@
       "offer": "30"
     },
     "PSYC 240 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
