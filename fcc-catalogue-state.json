@@ -4034,7 +4034,7 @@
       "offer": "25"
     },
     "ENVR 240 A": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4058,7 +4058,7 @@
       "offer": "35"
     },
     "ENVR 323 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4370,7 +4370,7 @@
       "offer": "20"
     },
     "GRMN 102 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5778,7 +5778,7 @@
       "offer": "35"
     },
     "PLSC 203 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
