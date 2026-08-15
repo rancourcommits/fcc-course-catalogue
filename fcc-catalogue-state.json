@@ -82,7 +82,7 @@
       "offer": "35"
     },
     "BIOL 100 E": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:09/01/2026 T R 09:30 - 10:20",
@@ -242,7 +242,7 @@
       "offer": "35"
     },
     "BIOT 307 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4570,7 +4570,7 @@
       "offer": "35"
     },
     "HPED 151 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:09/01/2026 T R 08:00 - 08:50",
