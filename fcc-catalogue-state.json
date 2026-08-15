@@ -2938,7 +2938,7 @@
       "offer": "35"
     },
     "ECON 100 I": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -5722,7 +5722,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 6,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
