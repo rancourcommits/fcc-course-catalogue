@@ -2930,7 +2930,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3426,7 +3426,7 @@
       "offer": "35"
     },
     "EDUC 120 F": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
