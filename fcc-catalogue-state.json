@@ -4418,7 +4418,7 @@
       "offer": "35"
     },
     "HIST 207 A": {
-      "available": 26,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6874,7 +6874,7 @@
       "offer": "15"
     },
     "STAT 101 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S115",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6882,7 +6882,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
