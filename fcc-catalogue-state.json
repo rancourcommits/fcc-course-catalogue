@@ -2490,7 +2490,7 @@
       "offer": "35"
     },
     "CSCS 100 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S218",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4522,7 +4522,7 @@
       "offer": "25"
     },
     "HPED 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 M W 16:00 - 17:00",
@@ -4570,7 +4570,7 @@
       "offer": "35"
     },
     "HPED 151 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:09/01/2026 T R 08:00 - 08:50",
