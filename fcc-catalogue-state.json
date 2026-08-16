@@ -2202,7 +2202,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4450,7 +4450,7 @@
       "offer": "35"
     },
     "HIST 302 B": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S008",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
