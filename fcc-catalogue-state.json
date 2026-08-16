@@ -2618,7 +2618,7 @@
       "offer": "35"
     },
     "CSCS 320 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "SBLOCK S416",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -2634,7 +2634,7 @@
       "offer": "35"
     },
     "CSCS 320 C": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4266,7 +4266,7 @@
       "offer": "35"
     },
     "GEOG 101 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
