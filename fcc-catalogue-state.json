@@ -1602,7 +1602,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -1850,7 +1850,7 @@
       "offer": "20"
     },
     "CHIN 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
