@@ -10,7 +10,7 @@
       "offer": "35"
     },
     "ARTS 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6426,7 +6426,7 @@
       "offer": "35"
     },
     "PSYC 440 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
