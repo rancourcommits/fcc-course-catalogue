@@ -4874,7 +4874,7 @@
       "offer": "15"
     },
     "MATH 107 D": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -6914,7 +6914,7 @@
       "offer": "15"
     },
     "STAT 102 C": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
