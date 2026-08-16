@@ -4258,7 +4258,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
