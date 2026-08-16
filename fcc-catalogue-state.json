@@ -2770,7 +2770,7 @@
       "offer": "5"
     },
     "DATA 102 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5890,7 +5890,7 @@
       "offer": "35"
     },
     "PLSC 330 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
