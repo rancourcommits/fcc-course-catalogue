@@ -2026,7 +2026,7 @@
       "offer": "35"
     },
     "COMP 302 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6650,7 +6650,7 @@
       "offer": "35"
     },
     "SOCL 100 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6658,7 +6658,7 @@
       "offer": "35"
     },
     "SOCL 100 I": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
