@@ -450,7 +450,7 @@
       "offer": "35"
     },
     "BUSN 201 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -610,7 +610,7 @@
       "offer": "33"
     },
     "BUSN 230 G": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -690,7 +690,7 @@
       "offer": "35"
     },
     "BUSN 280 C": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
