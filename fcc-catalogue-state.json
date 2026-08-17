@@ -3658,7 +3658,7 @@
       "offer": "25"
     },
     "ENGL 108 J": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -5426,7 +5426,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S007",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
