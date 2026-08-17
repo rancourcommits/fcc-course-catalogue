@@ -2529,6 +2529,14 @@
       "instructor": "A Atique",
       "offer": "35"
     },
+    "CSCS 105 B": {
+      "available": 25,
+      "enrolled": "",
+      "location": "SBLOCK S316",
+      "schedule": "start:09/01/2026 T R 09:30 - 10:45",
+      "instructor": "I Iqbal",
+      "offer": "25"
+    },
     "CSCS 105 C": {
       "available": 9,
       "enrolled": "",
