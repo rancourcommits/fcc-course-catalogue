@@ -3402,7 +3402,7 @@
       "offer": "35"
     },
     "EDUC 120 B": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4290,7 +4290,7 @@
       "offer": "35"
     },
     "GEOG 133 B": {
-      "available": 34,
+      "available": 33,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
