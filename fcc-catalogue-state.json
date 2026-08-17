@@ -385,6 +385,14 @@
       "instructor": "B Sadiq",
       "offer": "20"
     },
+    "BIOT 699B A": {
+      "available": 19,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "B Sadiq",
+      "offer": "20"
+    },
     "BIOT 799A A": {
       "available": 20,
       "enrolled": "",
@@ -5474,7 +5482,7 @@
       "offer": "10"
     },
     "PHYS 103 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S029",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6354,7 +6362,7 @@
       "offer": "30"
     },
     "PSYC 370 A": {
-      "available": 23,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
