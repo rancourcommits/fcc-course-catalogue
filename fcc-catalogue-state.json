@@ -6858,7 +6858,7 @@
       "offer": "35"
     },
     "STAT 100 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
