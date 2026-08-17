@@ -2946,7 +2946,7 @@
       "offer": "35"
     },
     "ECON 100 I": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4074,7 +4074,7 @@
       "offer": "35"
     },
     "ENVR 340 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -6706,7 +6706,7 @@
       "offer": "35"
     },
     "SOCL 118 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
