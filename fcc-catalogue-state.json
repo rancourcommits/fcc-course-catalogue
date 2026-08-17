@@ -2602,7 +2602,7 @@
       "offer": "35"
     },
     "CSCS 203 B": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "SBLOCK S413",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3858,7 +3858,7 @@
       "offer": "35"
     },
     "ENGL 325 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5730,7 +5730,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 3,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6858,7 +6858,7 @@
       "offer": "35"
     },
     "STAT 100 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
