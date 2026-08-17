@@ -482,7 +482,7 @@
       "offer": "35"
     },
     "BUSN 201 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -506,7 +506,7 @@
       "offer": "35"
     },
     "BUSN 201 G": {
-      "available": 8,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
