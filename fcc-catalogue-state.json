@@ -1570,7 +1570,7 @@
       "offer": "35"
     },
     "CHEM 100 E": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -6698,7 +6698,7 @@
       "offer": "35"
     },
     "SOCL 100 O": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
