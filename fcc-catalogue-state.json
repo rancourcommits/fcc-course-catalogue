@@ -2514,7 +2514,7 @@
       "offer": "35"
     },
     "CSCS 100 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5242,14 +5242,6 @@
       "offer": "35"
     },
     "MCOM 409 B": {
-      "available": 35,
-      "enrolled": "",
-      "location": "EBLOCK E041",
-      "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
-      "instructor": "F Jabeen",
-      "offer": "35"
-    },
-    "MCOM 414 A": {
       "available": 35,
       "enrolled": "",
       "location": "EBLOCK E041",
