@@ -4306,7 +4306,7 @@
       "offer": "35"
     },
     "GEOG 210 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4650,7 +4650,7 @@
       "offer": "35"
     },
     "ISLM 201 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
