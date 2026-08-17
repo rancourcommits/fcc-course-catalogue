@@ -3370,7 +3370,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 0,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4210,7 +4210,7 @@
       "offer": "20"
     },
     "FREN 101 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
