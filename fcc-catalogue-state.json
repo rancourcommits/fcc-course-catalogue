@@ -2084,7 +2084,7 @@
     "COMP 311 A": {
       "available": 13,
       "enrolled": "",
-      "location": "SBLOCK S219",
+      "location": "SBLOCK S120",
       "schedule": "start:08/31/2026 M W 11:00 - 12:50",
       "instructor": "M Mushtaq",
       "offer": "25"
@@ -2650,12 +2650,12 @@
       "offer": "35"
     },
     "CSCS 321 A": {
-      "available": 0,
+      "available": 10,
       "enrolled": "",
-      "location": "SBLOCK S120",
+      "location": "SBLOCK S219",
       "schedule": "start:08/31/2026 M W 11:00 - 12:50",
       "instructor": "M Butt",
-      "offer": "25"
+      "offer": "35"
     },
     "CSCS 342 A": {
       "available": 0,
@@ -3170,7 +3170,7 @@
       "offer": "35"
     },
     "ECON 311 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4698,7 +4698,7 @@
       "offer": "35"
     },
     "LING 217 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
