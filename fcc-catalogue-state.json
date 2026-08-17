@@ -1194,7 +1194,7 @@
       "offer": "35"
     },
     "BUSN 460 B": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -1218,7 +1218,7 @@
       "offer": "35"
     },
     "BUSN 460 E": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -3762,7 +3762,7 @@
       "offer": "35"
     },
     "ENGL 201 B": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
