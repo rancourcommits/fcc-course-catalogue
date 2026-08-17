@@ -2930,7 +2930,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -7130,7 +7130,7 @@
       "offer": "35"
     },
     "URDU 101 K": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
