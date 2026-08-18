@@ -442,7 +442,7 @@
       "offer": "35"
     },
     "BUSN 170 F": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -450,7 +450,7 @@
       "offer": "35"
     },
     "BUSN 170 M": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
