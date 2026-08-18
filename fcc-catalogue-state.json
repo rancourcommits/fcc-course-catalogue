@@ -3042,7 +3042,7 @@
       "offer": "35"
     },
     "ECON 102 B": {
-      "available": 11,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3058,7 +3058,7 @@
       "offer": "35"
     },
     "ECON 103 A": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4578,7 +4578,7 @@
       "offer": "25"
     },
     "HPED 102 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "GROUND GROUND",
       "schedule": "start:09/01/2026 T R 16:00 - 17:00",
