@@ -6018,7 +6018,7 @@
       "offer": "10"
     },
     "PLSC 506 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M 16:00 - 19:00",
@@ -6026,7 +6026,7 @@
       "offer": "25"
     },
     "PLSC 507 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/02/2026 W 16:00 - 19:00",
@@ -6034,7 +6034,7 @@
       "offer": "25"
     },
     "PLSC 508 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/04/2026 F 16:00 - 19:00",
@@ -6058,7 +6058,7 @@
       "offer": "25"
     },
     "PLSC 523 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:09/03/2026 R 16:00 - 19:00",
@@ -6722,7 +6722,7 @@
       "offer": "35"
     },
     "SOCL 100 K": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
