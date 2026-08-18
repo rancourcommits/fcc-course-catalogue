@@ -1586,7 +1586,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4818,7 +4818,7 @@
       "offer": "35"
     },
     "MATH 102 B": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
