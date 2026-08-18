@@ -3506,7 +3506,7 @@
       "offer": "35"
     },
     "EDUC 300 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3538,7 +3538,7 @@
       "offer": "35"
     },
     "EDUC 335 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3546,7 +3546,7 @@
       "offer": "15"
     },
     "EDUC 350 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
