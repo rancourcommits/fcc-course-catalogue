@@ -3618,7 +3618,7 @@
       "offer": "25"
     },
     "ENGL 108 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -4274,7 +4274,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
