@@ -2114,7 +2114,7 @@
       "offer": "35"
     },
     "COMP 303 B": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3018,7 +3018,7 @@
       "offer": "35"
     },
     "ECON 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3026,7 +3026,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3034,7 +3034,7 @@
       "offer": "35"
     },
     "ECON 102 A": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3058,7 +3058,7 @@
       "offer": "35"
     },
     "ECON 103 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4066,7 +4066,7 @@
       "offer": "35"
     },
     "ENVR 151 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -5090,7 +5090,7 @@
       "offer": "35"
     },
     "MCOM 200 B": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5098,7 +5098,7 @@
       "offer": "35"
     },
     "MCOM 201 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -5442,7 +5442,7 @@
       "offer": "35"
     },
     "PHIL 221 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -6154,7 +6154,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6322,7 +6322,7 @@
       "offer": "35"
     },
     "PSYC 330 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
