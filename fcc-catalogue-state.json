@@ -1082,7 +1082,7 @@
       "offer": "35"
     },
     "BUSN 383 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3370,7 +3370,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3410,7 +3410,7 @@
       "offer": "35"
     },
     "EDUC 120 B": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
