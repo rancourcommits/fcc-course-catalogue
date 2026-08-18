@@ -2970,7 +2970,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4466,7 +4466,7 @@
       "offer": "35"
     },
     "HIST 207 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6706,7 +6706,7 @@
       "offer": "35"
     },
     "SOCL 100 K": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
