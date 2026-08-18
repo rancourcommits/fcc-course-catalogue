@@ -698,7 +698,7 @@
       "offer": "35"
     },
     "BUSN 280 C": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E331",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -834,7 +834,7 @@
       "offer": "33"
     },
     "BUSN 321 C": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -914,7 +914,7 @@
       "offer": "35"
     },
     "BUSN 321 M": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E345",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5570,7 +5570,7 @@
       "offer": "35"
     },
     "PHYS 503 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5578,7 +5578,7 @@
       "offer": "25"
     },
     "PHYS 509 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "SBLOCK S016",
       "schedule": "start:08/31/2026 M W 15:30 - 16:50",
@@ -5586,7 +5586,7 @@
       "offer": "30"
     },
     "PHYS 511 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "SBLOCK S016",
       "schedule": "start:08/31/2026 M W 14:00 - 15:15",
@@ -5594,7 +5594,7 @@
       "offer": "30"
     },
     "PHYS 520 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "SBLOCK S016",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
