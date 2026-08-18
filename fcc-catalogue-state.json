@@ -818,7 +818,7 @@
       "offer": "35"
     },
     "BUSN 321 A": {
-      "available": 31,
+      "available": 32,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -914,7 +914,7 @@
       "offer": "35"
     },
     "BUSN 321 M": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E345",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
