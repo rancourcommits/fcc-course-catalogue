@@ -1457,6 +1457,14 @@
       "instructor": "I yusuf",
       "offer": "35"
     },
+    "BUSN 516E A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "TBD",
+      "offer": "35"
+    },
     "BUSN 521 A": {
       "available": 35,
       "enrolled": "",
@@ -1471,6 +1479,14 @@
       "location": "EBLOCK E323",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
       "instructor": "Ambreen K",
+      "offer": "35"
+    },
+    "BUSN 526E A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "TBD",
       "offer": "35"
     },
     "BUSN 535 A": {
@@ -1489,6 +1505,22 @@
       "instructor": "Afaf k",
       "offer": "35"
     },
+    "BUSN 536E A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "TBD",
+      "offer": "35"
+    },
+    "BUSN 546E A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "TBD",
+      "offer": "35"
+    },
     "BUSN 550 A": {
       "available": 35,
       "enrolled": "",
@@ -1503,6 +1535,14 @@
       "location": "EBLOCK E323",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
       "instructor": "Afaf k",
+      "offer": "35"
+    },
+    "BUSN 556E A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "TBD TBD",
+      "schedule": "start:08/31/2026 MTWRF",
+      "instructor": "TBD",
       "offer": "35"
     },
     "BUSN 580 A": {
@@ -4418,7 +4458,7 @@
       "offer": "35"
     },
     "HIST 103 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6850,7 +6890,7 @@
       "offer": "25"
     },
     "STAT 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
