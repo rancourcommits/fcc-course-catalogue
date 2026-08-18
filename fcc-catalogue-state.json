@@ -3666,7 +3666,7 @@
       "offer": "25"
     },
     "ENGL 108 J": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4554,7 +4554,7 @@
       "offer": "25"
     },
     "HPED 105 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "VCOURT VCOURT",
       "schedule": "start:09/01/2026 T R 15:00 - 16:00",
@@ -6074,7 +6074,7 @@
       "offer": "35"
     },
     "PSYC 100 I": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S116",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -7202,7 +7202,7 @@
       "offer": "35"
     },
     "URDU 104 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
