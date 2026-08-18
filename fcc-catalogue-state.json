@@ -6985,6 +6985,14 @@
       "instructor": "M Mughal",
       "offer": "20"
     },
+    "STAT 202 A": {
+      "available": 35,
+      "enrolled": "",
+      "location": "SBLOCK S420",
+      "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
+      "instructor": "S Ayub",
+      "offer": "35"
+    },
     "STAT 206 A": {
       "available": 0,
       "enrolled": "",
