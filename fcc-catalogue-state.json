@@ -1682,7 +1682,7 @@
       "offer": "35"
     },
     "CHEM 350 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "SBLOCK S213",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4090,7 +4090,7 @@
       "offer": "35"
     },
     "ENVR 345 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -6786,7 +6786,7 @@
       "offer": "35"
     },
     "SOCL 425 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
