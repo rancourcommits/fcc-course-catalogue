@@ -4610,7 +4610,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5274,7 +5274,7 @@
       "offer": "35"
     },
     "MCOM 409 B": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
