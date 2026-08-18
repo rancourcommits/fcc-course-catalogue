@@ -634,7 +634,7 @@
       "offer": "35"
     },
     "BUSN 230 I": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -714,7 +714,7 @@
       "offer": "35"
     },
     "BUSN 280 E": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4106,7 +4106,7 @@
       "offer": "35"
     },
     "ENVR 323 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
