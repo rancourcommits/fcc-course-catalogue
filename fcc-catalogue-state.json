@@ -2850,7 +2850,7 @@
       "offer": "15"
     },
     "DATA 206 C": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4546,7 +4546,7 @@
       "offer": "25"
     },
     "HPED 102 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "GROUND GROUND",
       "schedule": "start:09/01/2026 T R 16:00 - 17:00",
