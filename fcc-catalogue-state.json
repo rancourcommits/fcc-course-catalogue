@@ -4274,7 +4274,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -7066,7 +7066,7 @@
       "offer": "25"
     },
     "URDU 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
