@@ -90,7 +90,7 @@
       "offer": "35"
     },
     "BIOL 102 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5794,7 +5794,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
