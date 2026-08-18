@@ -1666,7 +1666,7 @@
       "offer": "35"
     },
     "CHEM 150 E": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4138,7 +4138,7 @@
       "offer": "35"
     },
     "ENVR 411 A": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:09/01/2026 T R 09:00 - 10:50",
@@ -4466,7 +4466,7 @@
       "offer": "35"
     },
     "HIST 207 A": {
-      "available": 26,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5794,7 +5794,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6874,7 +6874,7 @@
       "offer": "25"
     },
     "STAT 100 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
