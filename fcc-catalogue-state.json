@@ -378,7 +378,7 @@
       "offer": "20"
     },
     "BIOT 699A A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -874,7 +874,7 @@
       "offer": "35"
     },
     "BUSN 321 H": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
