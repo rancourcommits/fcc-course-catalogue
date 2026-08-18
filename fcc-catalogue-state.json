@@ -90,7 +90,7 @@
       "offer": "35"
     },
     "BIOL 102 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -2914,7 +2914,7 @@
       "offer": "15"
     },
     "DATA 300 A": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -2978,7 +2978,7 @@
       "offer": "35"
     },
     "ECON 100 H": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3002,7 +3002,7 @@
       "offer": "35"
     },
     "ECON 100 O": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3434,7 +3434,7 @@
       "offer": "35"
     },
     "EDUC 120 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
