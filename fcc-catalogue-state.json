@@ -98,7 +98,7 @@
       "offer": "35"
     },
     "BIOL 105 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -146,7 +146,7 @@
       "offer": "35"
     },
     "BIOL 313 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S312",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -442,7 +442,7 @@
       "offer": "35"
     },
     "BUSN 170 F": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -506,7 +506,7 @@
       "offer": "35"
     },
     "BUSN 201 G": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -978,7 +978,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3770,7 +3770,7 @@
       "offer": "35"
     },
     "ENGL 175 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E222",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4466,7 +4466,7 @@
       "offer": "35"
     },
     "HIST 255 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4490,7 +4490,7 @@
       "offer": "35"
     },
     "HIST 302 B": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "SBLOCK S008",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4586,7 +4586,7 @@
       "offer": "25"
     },
     "HPED 112 A": {
-      "available": 20,
+      "available": 18,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 M W 15:00 - 16:00",
@@ -5802,7 +5802,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5906,7 +5906,7 @@
       "offer": "35"
     },
     "PLSC 317 A": {
-      "available": 29,
+      "available": 30,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5914,7 +5914,7 @@
       "offer": "35"
     },
     "PLSC 321 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5930,7 +5930,7 @@
       "offer": "35"
     },
     "PLSC 323 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5938,7 +5938,7 @@
       "offer": "35"
     },
     "PLSC 330 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5994,7 +5994,7 @@
       "offer": "15"
     },
     "PLSC 407 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6330,7 +6330,7 @@
       "offer": "35"
     },
     "PSYC 330 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6458,7 +6458,7 @@
       "offer": "35"
     },
     "PSYC 425 A": {
-      "available": 26,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S111",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
