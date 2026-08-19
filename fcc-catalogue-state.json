@@ -98,7 +98,7 @@
       "offer": "35"
     },
     "BIOL 105 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3018,7 +3018,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4530,7 +4530,7 @@
       "offer": "35"
     },
     "HIST 312 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4946,7 +4946,7 @@
       "offer": "35"
     },
     "MATH 109 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
