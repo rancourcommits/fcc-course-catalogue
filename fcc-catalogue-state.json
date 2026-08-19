@@ -722,7 +722,7 @@
       "offer": "35"
     },
     "BUSN 280 F": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -754,7 +754,7 @@
       "offer": "35"
     },
     "BUSN 280 J": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -2698,7 +2698,7 @@
       "offer": "35"
     },
     "CSCS 321 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "SBLOCK S219",
       "schedule": "start:08/31/2026 M W 11:00 - 12:50",
@@ -3170,7 +3170,7 @@
       "offer": "35"
     },
     "ECON 303 C": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4738,7 +4738,7 @@
       "offer": "35"
     },
     "LING 217 B": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4986,7 +4986,7 @@
       "offer": "35"
     },
     "MATH 203 A": {
-      "available": 23,
+      "available": 24,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -7250,7 +7250,7 @@
       "offer": "35"
     },
     "URDU 104 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
