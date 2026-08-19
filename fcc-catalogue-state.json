@@ -426,7 +426,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -442,7 +442,7 @@
       "offer": "35"
     },
     "BUSN 170 F": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -3546,7 +3546,7 @@
       "offer": "15"
     },
     "EDUC 350 A": {
-      "available": 27,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4330,7 +4330,7 @@
       "offer": "35"
     },
     "GEOG 133 B": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -5762,7 +5762,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5794,7 +5794,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
