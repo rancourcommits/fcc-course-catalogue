@@ -722,7 +722,7 @@
       "offer": "35"
     },
     "BUSN 280 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -1610,7 +1610,7 @@
       "offer": "35"
     },
     "CHEM 100 D": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 12:30 - 13:20",
@@ -3730,7 +3730,7 @@
       "offer": "25"
     },
     "ENGL 108 Q": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4498,7 +4498,7 @@
       "offer": "35"
     },
     "HIST 306 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5490,7 +5490,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5770,7 +5770,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5922,7 +5922,7 @@
       "offer": "35"
     },
     "PLSC 322 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5954,7 +5954,7 @@
       "offer": "35"
     },
     "PLSC 340 A": {
-      "available": 1,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6994,7 +6994,7 @@
       "offer": "20"
     },
     "STAT 202 A": {
-      "available": 34,
+      "available": 33,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
