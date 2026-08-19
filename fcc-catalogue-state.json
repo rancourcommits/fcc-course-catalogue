@@ -6682,7 +6682,7 @@
       "offer": "35"
     },
     "SOCL 100 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -7154,7 +7154,7 @@
       "offer": "35"
     },
     "URDU 101 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
