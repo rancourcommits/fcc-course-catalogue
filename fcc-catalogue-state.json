@@ -562,7 +562,7 @@
       "offer": "35"
     },
     "BUSN 201 N": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4082,7 +4082,7 @@
       "offer": "25"
     },
     "ENVR 240 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
