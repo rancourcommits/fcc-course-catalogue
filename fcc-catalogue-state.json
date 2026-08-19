@@ -1730,7 +1730,7 @@
       "offer": "35"
     },
     "CHEM 350 A": {
-      "available": 26,
+      "available": 27,
       "enrolled": "",
       "location": "SBLOCK S111",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4874,7 +4874,7 @@
       "offer": "5"
     },
     "MATH 105 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -7042,7 +7042,7 @@
       "offer": "20"
     },
     "STAT 212 A": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
