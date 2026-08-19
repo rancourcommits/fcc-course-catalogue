@@ -98,7 +98,7 @@
       "offer": "35"
     },
     "BIOL 105 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -618,7 +618,7 @@
       "offer": "33"
     },
     "BUSN 230 G": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2138,7 +2138,7 @@
       "offer": "25"
     },
     "COMP 311 B": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S120",
       "schedule": "start:09/01/2026 T R 11:00 - 12:50",
@@ -2146,7 +2146,7 @@
       "offer": "25"
     },
     "COMP 311 C": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S218",
       "schedule": "start:09/02/2026 W 09:00 - 10:50",
@@ -4138,7 +4138,7 @@
       "offer": "35"
     },
     "ENVR 414 A": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6962,7 +6962,7 @@
       "offer": "15"
     },
     "STAT 102 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
