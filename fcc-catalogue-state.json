@@ -738,7 +738,7 @@
       "offer": "33"
     },
     "BUSN 280 H": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3610,7 +3610,7 @@
       "offer": "15"
     },
     "ENGL 106 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4082,7 +4082,7 @@
       "offer": "25"
     },
     "ENVR 240 A": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4114,7 +4114,7 @@
       "offer": "35"
     },
     "ENVR 340 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -4122,7 +4122,7 @@
       "offer": "35"
     },
     "ENVR 345 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "SBLOCK S424",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5146,7 +5146,7 @@
       "offer": "35"
     },
     "MCOM 290 B": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5468,9 +5468,9 @@
     "PHYS 100 A": {
       "available": 0,
       "enrolled": "",
-      "location": "SBLOCK S007",
+      "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
-      "instructor": "TBD",
+      "instructor": "L Kahlon",
       "offer": "35"
     },
     "PHYS 100 B": {
@@ -5604,7 +5604,7 @@
     "PHYS 503 A": {
       "available": 24,
       "enrolled": "",
-      "location": "SBLOCK S039",
+      "location": "SBLOCK S007",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
       "instructor": "TBD",
       "offer": "25"
@@ -6786,7 +6786,7 @@
       "offer": "35"
     },
     "SOCL 301 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
