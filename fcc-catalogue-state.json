@@ -1610,7 +1610,7 @@
       "offer": "35"
     },
     "CHEM 100 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 12:30 - 13:20",
@@ -5442,7 +5442,7 @@
       "offer": "35"
     },
     "PHIL 202 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5490,7 +5490,7 @@
       "offer": "35"
     },
     "PHYS 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5842,7 +5842,7 @@
       "offer": "35"
     },
     "PLSC 204 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6202,7 +6202,7 @@
       "offer": "30"
     },
     "PSYC 240 A": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6210,7 +6210,7 @@
       "offer": "35"
     },
     "PSYC 275 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S111",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -7162,7 +7162,7 @@
       "offer": "35"
     },
     "URDU 101 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
