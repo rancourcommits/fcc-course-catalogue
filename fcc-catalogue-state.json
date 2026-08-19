@@ -5962,7 +5962,7 @@
       "offer": "35"
     },
     "PLSC 400 A": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -7186,7 +7186,7 @@
       "offer": "35"
     },
     "URDU 101 K": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
