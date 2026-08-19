@@ -978,7 +978,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -1732,7 +1732,7 @@
     "CHEM 350 A": {
       "available": 26,
       "enrolled": "",
-      "location": "SBLOCK S213",
+      "location": "SBLOCK S111",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
       "instructor": "S Azeem",
       "offer": "35"
@@ -5466,7 +5466,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
@@ -6146,7 +6146,7 @@
       "offer": "35"
     },
     "PSYC 160 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6226,7 +6226,7 @@
       "offer": "35"
     },
     "PSYC 290 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6258,7 +6258,7 @@
       "offer": "35"
     },
     "PSYC 300 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
