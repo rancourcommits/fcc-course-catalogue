@@ -130,7 +130,7 @@
       "offer": "15"
     },
     "BIOL 221 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -218,7 +218,7 @@
       "offer": "35"
     },
     "BIOT 301 A": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -642,7 +642,7 @@
       "offer": "33"
     },
     "BUSN 230 J": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -2690,7 +2690,7 @@
       "offer": "35"
     },
     "CSCS 320 C": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4226,7 +4226,7 @@
       "offer": "25"
     },
     "FREN 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -6506,7 +6506,7 @@
       "offer": "30"
     },
     "PSYC 470 A": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
