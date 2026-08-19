@@ -186,7 +186,7 @@
       "offer": "35"
     },
     "BIOT 201 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:08/31/2026 M W 10:00 - 10:50",
@@ -1658,7 +1658,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -3474,7 +3474,7 @@
       "offer": "35"
     },
     "EDUC 120 F": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5434,7 +5434,7 @@
       "offer": "35"
     },
     "PHIL 202 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
