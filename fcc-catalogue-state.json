@@ -98,7 +98,7 @@
       "offer": "35"
     },
     "BIOL 105 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S313",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -2402,7 +2402,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3074,7 +3074,7 @@
       "offer": "35"
     },
     "ECON 201 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3730,7 +3730,7 @@
       "offer": "25"
     },
     "ENGL 108 Q": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5538,7 +5538,7 @@
       "offer": "35"
     },
     "PHYS 151 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6610,7 +6610,7 @@
       "offer": "30"
     },
     "PSYC 550 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:08/31/2026 M W 14:00 - 15:30",
@@ -6618,7 +6618,7 @@
       "offer": "30"
     },
     "PSYC 620 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:09/03/2026 R 14:00 - 16:00",
@@ -6626,7 +6626,7 @@
       "offer": "30"
     },
     "PSYC 671 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -6634,7 +6634,7 @@
       "offer": "30"
     },
     "PSYC 680 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:09/01/2026 T 14:00 - 16:00",
@@ -6642,7 +6642,7 @@
       "offer": "30"
     },
     "PSYC 699A A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 M W 15:30 - 17:00",
