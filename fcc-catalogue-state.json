@@ -618,7 +618,7 @@
       "offer": "33"
     },
     "BUSN 230 G": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -642,7 +642,7 @@
       "offer": "33"
     },
     "BUSN 230 J": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -1610,7 +1610,7 @@
       "offer": "35"
     },
     "CHEM 100 D": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 12:30 - 13:20",
@@ -3002,7 +3002,7 @@
       "offer": "35"
     },
     "ECON 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -3130,7 +3130,7 @@
       "offer": "35"
     },
     "ECON 300 B": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -3394,7 +3394,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4106,7 +4106,7 @@
       "offer": "35"
     },
     "ENVR 340 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -4130,7 +4130,7 @@
       "offer": "35"
     },
     "ENVR 411 A": {
-      "available": 8,
+      "available": 9,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:09/01/2026 T R 09:00 - 10:50",
@@ -4466,7 +4466,7 @@
       "offer": "35"
     },
     "HIST 255 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4682,7 +4682,7 @@
       "offer": "35"
     },
     "ISLM 201 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4874,7 +4874,7 @@
       "offer": "5"
     },
     "MATH 105 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5802,7 +5802,7 @@
       "offer": "35"
     },
     "PLSC 102 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5954,7 +5954,7 @@
       "offer": "35"
     },
     "PLSC 340 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5962,7 +5962,7 @@
       "offer": "35"
     },
     "PLSC 400 A": {
-      "available": 20,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -7250,7 +7250,7 @@
       "offer": "35"
     },
     "URDU 104 A": {
-      "available": 3,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
