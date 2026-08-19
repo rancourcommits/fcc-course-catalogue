@@ -1610,7 +1610,7 @@
       "offer": "35"
     },
     "CHEM 100 D": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 12:30 - 13:20",
@@ -2842,7 +2842,7 @@
       "offer": "15"
     },
     "DATA 102 C": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4202,7 +4202,7 @@
       "offer": "15"
     },
     "ENVR 696 A": {
-      "available": 9,
+      "available": 8,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -4210,7 +4210,7 @@
       "offer": "25"
     },
     "ENVR 699A A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -5442,7 +5442,7 @@
       "offer": "35"
     },
     "PHIL 202 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6002,7 +6002,7 @@
       "offer": "35"
     },
     "PLSC 499 A": {
-      "available": 8,
+      "available": 7,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -6330,7 +6330,7 @@
       "offer": "35"
     },
     "PSYC 330 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6442,7 +6442,7 @@
       "offer": "35"
     },
     "PSYC 415 A": {
-      "available": 9,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -7162,7 +7162,7 @@
       "offer": "35"
     },
     "URDU 101 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
