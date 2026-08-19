@@ -1634,7 +1634,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -3898,7 +3898,7 @@
       "offer": "35"
     },
     "ENGL 325 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -6738,7 +6738,7 @@
       "offer": "35"
     },
     "SOCL 118 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
