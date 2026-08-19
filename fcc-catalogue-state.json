@@ -738,7 +738,7 @@
       "offer": "33"
     },
     "BUSN 280 H": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3074,7 +3074,7 @@
       "offer": "35"
     },
     "ECON 103 C": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
