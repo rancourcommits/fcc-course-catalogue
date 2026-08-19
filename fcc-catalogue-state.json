@@ -186,7 +186,7 @@
       "offer": "35"
     },
     "BIOT 201 A": {
-      "available": 6,
+      "available": 7,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:08/31/2026 M W 10:00 - 10:50",
@@ -426,7 +426,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -2866,7 +2866,7 @@
       "offer": "15"
     },
     "DATA 202 B": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4586,7 +4586,7 @@
       "offer": "25"
     },
     "HPED 105 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "VCOURT VCOURT",
       "schedule": "start:09/01/2026 T R 15:00 - 16:00",
@@ -5746,7 +5746,7 @@
       "offer": "35"
     },
     "PKST 101 J": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W 16:00 - 16:50",
@@ -6258,7 +6258,7 @@
       "offer": "35"
     },
     "PSYC 300 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -7042,7 +7042,7 @@
       "offer": "10"
     },
     "STAT 317 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
