@@ -914,7 +914,7 @@
       "offer": "35"
     },
     "BUSN 321 M": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E345",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -1330,7 +1330,7 @@
       "offer": "35"
     },
     "BUSN 480 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -1394,7 +1394,7 @@
       "offer": "35"
     },
     "BUSN 485 F": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
