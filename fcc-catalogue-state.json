@@ -3082,7 +3082,7 @@
       "offer": "35"
     },
     "ECON 201 B": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3242,7 +3242,7 @@
       "offer": "35"
     },
     "ECON 325 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6482,7 +6482,7 @@
       "offer": "35"
     },
     "PSYC 440 B": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
