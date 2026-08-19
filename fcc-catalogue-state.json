@@ -1610,7 +1610,7 @@
       "offer": "35"
     },
     "CHEM 100 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 12:30 - 13:20",
@@ -2074,7 +2074,7 @@
       "offer": "35"
     },
     "COMP 301 C": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:09/01/2026 T 11:00 - 12:50",
@@ -2162,7 +2162,7 @@
       "offer": "35"
     },
     "COMP 360 B": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/02/2026 W 11:00 - 12:50",
@@ -2170,7 +2170,7 @@
       "offer": "35"
     },
     "COMP 401 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M 15:00 - 15:50",
