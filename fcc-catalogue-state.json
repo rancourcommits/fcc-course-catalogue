@@ -1634,7 +1634,7 @@
       "offer": "35"
     },
     "CHEM 150 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S112",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -1650,7 +1650,7 @@
       "offer": "35"
     },
     "CHEM 150 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -2162,7 +2162,7 @@
       "offer": "35"
     },
     "COMP 360 B": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/02/2026 W 11:00 - 12:50",
@@ -2402,7 +2402,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3802,7 +3802,7 @@
       "offer": "35"
     },
     "ENGL 201 C": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4945,12 +4945,28 @@
       "instructor": "B Haq",
       "offer": "35"
     },
+    "MATH 109 A": {
+      "available": 4,
+      "enrolled": "",
+      "location": "SBLOCK S410",
+      "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
+      "instructor": "G Mehak",
+      "offer": "35"
+    },
     "MATH 109 B": {
       "available": 0,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
       "instructor": "F Jamil",
+      "offer": "35"
+    },
+    "MATH 109 C": {
+      "available": 1,
+      "enrolled": "",
+      "location": "SBLOCK S410",
+      "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
+      "instructor": "G Mehak",
       "offer": "35"
     },
     "MATH 111 B": {
