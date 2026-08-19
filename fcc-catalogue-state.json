@@ -2386,7 +2386,7 @@
       "offer": "35"
     },
     "CRST 152 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -7138,7 +7138,7 @@
       "offer": "35"
     },
     "URDU 101 D": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E101",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
