@@ -178,7 +178,7 @@
       "offer": "35"
     },
     "BIOL 330 A": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "SBLOCK S413",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -250,7 +250,7 @@
       "offer": "35"
     },
     "BIOT 309 A": {
-      "available": 33,
+      "available": 34,
       "enrolled": "",
       "location": "SBLOCK S312",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4114,7 +4114,7 @@
       "offer": "35"
     },
     "ENVR 340 A": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
