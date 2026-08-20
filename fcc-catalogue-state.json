@@ -1226,7 +1226,7 @@
       "offer": "35"
     },
     "BUSN 460 F": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -1234,7 +1234,7 @@
       "offer": "35"
     },
     "BUSN 460 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5665,13 +5665,13 @@
       "instructor": "Dr H Shah",
       "offer": "30"
     },
-    "PHYS 710 A": {
-      "available": 25,
+    "PHYS 709 A": {
+      "available": 20,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:08/31/2026 M W 16:00 - 17:15",
       "instructor": "S Shah",
-      "offer": "25"
+      "offer": "20"
     },
     "PHYS 712 A": {
       "available": 35,
