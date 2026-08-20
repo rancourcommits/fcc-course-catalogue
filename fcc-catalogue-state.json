@@ -978,7 +978,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 10,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -994,7 +994,7 @@
       "offer": "35"
     },
     "BUSN 360 I": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E332",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -3426,7 +3426,7 @@
       "offer": "35"
     },
     "EDUC 120 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -3498,7 +3498,7 @@
       "offer": "35"
     },
     "EDUC 300 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3690,7 +3690,7 @@
       "offer": "25"
     },
     "ENGL 108 J": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6258,7 +6258,7 @@
       "offer": "35"
     },
     "PSYC 298 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
