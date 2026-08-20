@@ -426,7 +426,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -978,7 +978,7 @@
       "offer": "35"
     },
     "BUSN 360 G": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3050,7 +3050,7 @@
       "offer": "35"
     },
     "ECON 103 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
