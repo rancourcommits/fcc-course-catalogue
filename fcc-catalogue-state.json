@@ -618,7 +618,7 @@
       "offer": "33"
     },
     "BUSN 230 G": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -4498,7 +4498,7 @@
       "offer": "35"
     },
     "HIST 312 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
