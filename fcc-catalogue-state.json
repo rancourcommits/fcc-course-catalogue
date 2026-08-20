@@ -3194,7 +3194,7 @@
       "offer": "35"
     },
     "ECON 307 B": {
-      "available": 23,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3730,7 +3730,7 @@
       "offer": "25"
     },
     "ENGL 108 Q": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
