@@ -1938,7 +1938,7 @@
       "offer": "35"
     },
     "COMP 113 A": {
-      "available": 8,
+      "available": 9,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -1946,7 +1946,7 @@
       "offer": "35"
     },
     "COMP 113 B": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S216",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -2402,7 +2402,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 9,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6106,7 +6106,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
