@@ -3972,9 +3972,9 @@
     "ENGL 613 A": {
       "available": 15,
       "enrolled": "",
-      "location": "EBLOCK E221",
-      "schedule": "start:09/04/2026 F 16:00 - 19:00",
-      "instructor": "TBD",
+      "location": "EBLOCK E140",
+      "schedule": "start:09/03/2026 R 16:00 - 19:00",
+      "instructor": "R Wasif",
       "offer": "15"
     },
     "ENGL 616 A": {
@@ -4498,7 +4498,7 @@
       "offer": "35"
     },
     "HIST 306 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
