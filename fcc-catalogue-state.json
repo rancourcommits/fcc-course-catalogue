@@ -146,7 +146,7 @@
       "offer": "35"
     },
     "BIOL 313 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S312",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -242,7 +242,7 @@
       "offer": "35"
     },
     "BIOT 307 A": {
-      "available": 31,
+      "available": 32,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -290,7 +290,7 @@
       "offer": "35"
     },
     "BIOT 317 A": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "SBLOCK S331",
       "schedule": "start:08/31/2026 M W 10:00 - 10:50",
