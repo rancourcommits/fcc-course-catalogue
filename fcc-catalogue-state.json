@@ -1658,7 +1658,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -2882,7 +2882,7 @@
       "offer": "15"
     },
     "DATA 206 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3186,7 +3186,7 @@
       "offer": "35"
     },
     "ECON 307 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5714,7 +5714,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
