@@ -562,7 +562,7 @@
       "offer": "35"
     },
     "BUSN 201 N": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E344",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2378,7 +2378,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -2962,7 +2962,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4546,7 +4546,7 @@
       "offer": "25"
     },
     "HPED 105 A": {
-      "available": 2,
+      "available": 3,
       "enrolled": "",
       "location": "VCOURT VCOURT",
       "schedule": "start:09/01/2026 T R 15:00 - 16:00",
