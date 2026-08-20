@@ -1602,7 +1602,7 @@
       "offer": "35"
     },
     "BUSN 690 A": {
-      "available": 23,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E321",
       "schedule": "start:08/31/2026 M W 11:45 - 13:00",
@@ -2426,7 +2426,7 @@
       "offer": "35"
     },
     "CRST 231 A": {
-      "available": 28,
+      "available": 29,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 16:45 - 18:00",
@@ -2466,7 +2466,7 @@
       "offer": "35"
     },
     "CRST 391 A": {
-      "available": 10,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4602,7 +4602,7 @@
       "offer": "35"
     },
     "HPED 150 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4778,19 +4778,11 @@
       "offer": "35"
     },
     "LING 414 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
       "instructor": "A Alphonce",
-      "offer": "35"
-    },
-    "LING 422 A": {
-      "available": 33,
-      "enrolled": "",
-      "location": "EBLOCK E227",
-      "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
-      "instructor": "M Zia",
       "offer": "35"
     },
     "LING 499 A": {
@@ -7274,7 +7266,7 @@
       "offer": "35"
     },
     "URDU 212 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
