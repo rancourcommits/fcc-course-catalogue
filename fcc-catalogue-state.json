@@ -2258,7 +2258,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -4522,7 +4522,7 @@
       "offer": "35"
     },
     "HPED 101 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 M W 15:00 - 16:00",
@@ -5714,7 +5714,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5882,7 +5882,7 @@
       "offer": "35"
     },
     "PLSC 330 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6874,7 +6874,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
