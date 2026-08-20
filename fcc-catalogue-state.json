@@ -2362,7 +2362,7 @@
       "offer": "10"
     },
     "CRIM 110 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4434,7 +4434,7 @@
       "offer": "35"
     },
     "HIST 255 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
