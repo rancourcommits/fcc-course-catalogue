@@ -3686,7 +3686,7 @@
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
-      "instructor": "TBD",
+      "instructor": "A Khalid",
       "offer": "25"
     },
     "ENGL 108 J": {
@@ -3878,7 +3878,7 @@
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
-      "instructor": "TBD",
+      "instructor": "S Mir",
       "offer": "35"
     },
     "ENGL 325 A": {
@@ -5954,7 +5954,7 @@
       "offer": "10"
     },
     "PLSC 506 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M 16:00 - 19:00",
