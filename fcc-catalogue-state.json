@@ -1274,7 +1274,7 @@
       "offer": "35"
     },
     "BUSN 461 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E346",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -1282,7 +1282,7 @@
       "offer": "35"
     },
     "BUSN 464 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -1666,7 +1666,7 @@
       "offer": "35"
     },
     "CHEM 150 E": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -3194,7 +3194,7 @@
       "offer": "35"
     },
     "ECON 307 B": {
-      "available": 25,
+      "available": 24,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4970,7 +4970,7 @@
       "offer": "35"
     },
     "MATH 111 B": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
