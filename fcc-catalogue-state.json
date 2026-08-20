@@ -6682,7 +6682,7 @@
       "offer": "35"
     },
     "SOCL 100 Q": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6874,7 +6874,7 @@
       "offer": "15"
     },
     "STAT 101 D": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
