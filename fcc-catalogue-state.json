@@ -1938,7 +1938,7 @@
       "offer": "35"
     },
     "COMP 113 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "SBLOCK S215",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -2258,7 +2258,7 @@
       "offer": "150"
     },
     "CPPG 101 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6634,7 +6634,7 @@
       "offer": "35"
     },
     "SOCL 100 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
