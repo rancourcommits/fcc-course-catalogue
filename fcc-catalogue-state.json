@@ -4986,7 +4986,7 @@
       "offer": "35"
     },
     "MATH 203 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4994,7 +4994,7 @@
       "offer": "35"
     },
     "MATH 209 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S413",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -5002,7 +5002,7 @@
       "offer": "35"
     },
     "MATH 212 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5010,7 +5010,7 @@
       "offer": "35"
     },
     "MATH 213 A": {
-      "available": 30,
+      "available": 29,
       "enrolled": "",
       "location": "SBLOCK S416",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6170,7 +6170,7 @@
       "offer": "35"
     },
     "PSYC 175 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6202,7 +6202,7 @@
       "offer": "30"
     },
     "PSYC 240 A": {
-      "available": 2,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6258,7 +6258,7 @@
       "offer": "35"
     },
     "PSYC 298 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
