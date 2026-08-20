@@ -3905,14 +3905,6 @@
       "instructor": "Quratulaen",
       "offer": "35"
     },
-    "ENGL 409 A": {
-      "available": 32,
-      "enrolled": "",
-      "location": "EBLOCK E222",
-      "schedule": "start:09/01/2026 T R 09:30 - 10:45",
-      "instructor": "S Mir",
-      "offer": "35"
-    },
     "ENGL 499 A": {
       "available": 20,
       "enrolled": "",
@@ -3968,14 +3960,6 @@
       "schedule": "start:09/02/2026 W 16:00 - 19:00",
       "instructor": "T Bokhari",
       "offer": "25"
-    },
-    "ENGL 620 A": {
-      "available": 35,
-      "enrolled": "",
-      "location": "EBLOCK E206",
-      "schedule": "start:09/04/2026 F 16:00 - 19:00",
-      "instructor": "M Saleh",
-      "offer": "35"
     },
     "ENGL 690 A": {
       "available": 15,
@@ -6010,7 +5994,7 @@
       "offer": "25"
     },
     "PLSC 523 A": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:09/03/2026 R 16:00 - 19:00",
@@ -6122,7 +6106,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
