@@ -1834,7 +1834,7 @@
       "offer": "35"
     },
     "CHEM 703 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "SBLOCK S126",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -1842,7 +1842,7 @@
       "offer": "35"
     },
     "CHEM 746 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "SBLOCK S126",
       "schedule": "start:08/31/2026 M W 14:00 - 15:15",
@@ -1850,7 +1850,7 @@
       "offer": "35"
     },
     "CHEM 762 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "SBLOCK S126",
       "schedule": "start:08/31/2026 M W 15:30 - 16:45",
@@ -4634,7 +4634,7 @@
       "offer": "35"
     },
     "ISLM 101 O": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -4874,7 +4874,7 @@
       "offer": "15"
     },
     "MATH 108 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5874,7 +5874,7 @@
       "offer": "35"
     },
     "PLSC 323 A": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5890,7 +5890,7 @@
       "offer": "35"
     },
     "PLSC 335 A": {
-      "available": 13,
+      "available": 14,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
