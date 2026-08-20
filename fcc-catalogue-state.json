@@ -2226,7 +2226,7 @@
       "offer": "35"
     },
     "COMP 451 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S219",
       "schedule": "start:09/01/2026 T R 11:00 - 12:50",
@@ -2770,7 +2770,7 @@
       "offer": "35"
     },
     "CSCS 468 A": {
-      "available": 27,
+      "available": 26,
       "enrolled": "",
       "location": "SBLOCK S319",
       "schedule": "start:08/31/2026 M 11:00 - 12:50",
@@ -4634,7 +4634,7 @@
       "offer": "35"
     },
     "ISLM 101 O": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:08/31/2026 M W 09:00 - 09:50",
@@ -4874,7 +4874,7 @@
       "offer": "15"
     },
     "MATH 108 C": {
-      "available": 3,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5874,7 +5874,7 @@
       "offer": "35"
     },
     "PLSC 323 A": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5898,7 +5898,7 @@
       "offer": "35"
     },
     "PLSC 340 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5906,7 +5906,7 @@
       "offer": "35"
     },
     "PLSC 400 A": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
