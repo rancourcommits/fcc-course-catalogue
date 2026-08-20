@@ -3394,7 +3394,7 @@
       "offer": "25"
     },
     "EDUC 110 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -3626,7 +3626,7 @@
       "offer": "25"
     },
     "ENGL 108 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -4466,7 +4466,7 @@
       "offer": "35"
     },
     "HIST 306 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
