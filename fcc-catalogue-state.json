@@ -2362,7 +2362,7 @@
       "offer": "10"
     },
     "CRIM 110 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -2618,7 +2618,7 @@
       "offer": "35"
     },
     "CSCS 202 A": {
-      "available": 15,
+      "available": 14,
       "enrolled": "",
       "location": "SBLOCK S416",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3610,7 +3610,7 @@
       "offer": "25"
     },
     "ENGL 106 II": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E241",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -3626,7 +3626,7 @@
       "offer": "25"
     },
     "ENGL 108 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3770,7 +3770,7 @@
       "offer": "35"
     },
     "ENGL 175 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E222",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4434,7 +4434,7 @@
       "offer": "35"
     },
     "HIST 255 A": {
-      "available": 9,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
