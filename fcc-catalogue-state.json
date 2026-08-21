@@ -10,7 +10,7 @@
       "offer": "35"
     },
     "ARTS 101 B": {
-      "available": 2,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5730,7 +5730,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 6,
+      "available": 7,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
