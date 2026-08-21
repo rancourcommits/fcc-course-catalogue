@@ -2898,7 +2898,7 @@
       "offer": "15"
     },
     "DATA 207 A": {
-      "available": 6,
+      "available": 7,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -2994,7 +2994,7 @@
       "offer": "35"
     },
     "ECON 100 M": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -3738,7 +3738,7 @@
       "offer": "25"
     },
     "ENGL 108 Q": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -3786,7 +3786,7 @@
       "offer": "35"
     },
     "ENGL 175 B": {
-      "available": 16,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E222",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4290,7 +4290,7 @@
       "offer": "35"
     },
     "GEOG 101 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -4522,7 +4522,7 @@
       "offer": "35"
     },
     "HIST 312 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E121",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -5042,7 +5042,7 @@
       "offer": "35"
     },
     "MCOM 105 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6666,7 +6666,7 @@
       "offer": "35"
     },
     "SOCL 100 G": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
