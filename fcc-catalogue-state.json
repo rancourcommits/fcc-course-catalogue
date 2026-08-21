@@ -5050,7 +5050,7 @@
       "offer": "35"
     },
     "MCOM 105 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5738,7 +5738,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
