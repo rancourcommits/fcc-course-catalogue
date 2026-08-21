@@ -2402,7 +2402,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6802,7 +6802,7 @@
       "offer": "25"
     },
     "SOCL 499 A": {
-      "available": 21,
+      "available": 20,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
