@@ -1834,7 +1834,7 @@
       "offer": "35"
     },
     "CHEM 703 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S126",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -1842,7 +1842,7 @@
       "offer": "35"
     },
     "CHEM 746 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S126",
       "schedule": "start:08/31/2026 M W 14:00 - 15:15",
@@ -1850,7 +1850,7 @@
       "offer": "35"
     },
     "CHEM 762 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S126",
       "schedule": "start:08/31/2026 M W 15:30 - 16:45",
@@ -2890,7 +2890,7 @@
       "offer": "15"
     },
     "DATA 206 C": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -2914,7 +2914,7 @@
       "offer": "15"
     },
     "DATA 300 A": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -3738,7 +3738,7 @@
       "offer": "25"
     },
     "ENGL 108 Q": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4282,7 +4282,7 @@
       "offer": "35"
     },
     "GEOG 101 C": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5558,7 +5558,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "35"
     },
     "PHYS 499B A": {
@@ -5566,7 +5566,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "TBD",
+      "instructor": "K Javed",
       "offer": "35"
     },
     "PHYS 503 A": {
@@ -5606,7 +5606,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "25"
     },
     "PHYS 699B A": {
@@ -5614,7 +5614,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "25"
     },
     "PHYS 702 A": {
@@ -5662,7 +5662,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "30"
     },
     "PHYS 799B A": {
@@ -5670,7 +5670,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "20"
     },
     "PHYS 799C A": {
@@ -5678,7 +5678,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "20"
     },
     "PHYS 799D A": {
@@ -5686,7 +5686,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "30"
     },
     "PHYS COMP A": {
@@ -5694,7 +5694,7 @@
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
-      "instructor": "S Zaheer",
+      "instructor": "K Javed",
       "offer": "25"
     },
     "PKST 101 G": {
