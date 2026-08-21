@@ -490,7 +490,7 @@
       "offer": "35"
     },
     "BUSN 201 E": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E333",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -618,7 +618,7 @@
       "offer": "33"
     },
     "BUSN 230 G": {
-      "available": 21,
+      "available": 22,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -634,7 +634,7 @@
       "offer": "35"
     },
     "BUSN 230 I": {
-      "available": 17,
+      "available": 16,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3010,7 +3010,7 @@
       "offer": "35"
     },
     "ECON 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -3026,7 +3026,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5461,7 +5461,7 @@
       "available": 0,
       "enrolled": "",
       "location": "SBLOCK S039",
-      "schedule": "start:09/01/2026 T R 09:30 - 10:45",
+      "schedule": "start:09/01/2026 T R 09:30 - 10:20",
       "instructor": "S Shah",
       "offer": "35"
     },
@@ -5469,7 +5469,7 @@
       "available": 0,
       "enrolled": "",
       "location": "SBLOCK S029",
-      "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
+      "schedule": "start:08/31/2026 M W 10:00 - 10:50",
       "instructor": "K Javed",
       "offer": "35"
     },
@@ -5477,7 +5477,7 @@
       "available": 0,
       "enrolled": "",
       "location": "SBLOCK S007",
-      "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
+      "schedule": "start:08/31/2026 M W 11:00 - 11:50",
       "instructor": "A Rehman",
       "offer": "35"
     },
@@ -5519,14 +5519,6 @@
       "location": "SBLOCK S016",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
       "instructor": "L Kahlon",
-      "offer": "35"
-    },
-    "PHYS 331 A": {
-      "available": 33,
-      "enrolled": "",
-      "location": "SBLOCK S016A",
-      "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
-      "instructor": "TBD",
       "offer": "35"
     },
     "PHYS 334 A": {
