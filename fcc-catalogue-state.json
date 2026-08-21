@@ -3026,7 +3026,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 5,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3882,7 +3882,7 @@
       "offer": "35"
     },
     "ENGL 322 A": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5042,7 +5042,7 @@
       "offer": "35"
     },
     "MCOM 105 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6234,7 +6234,7 @@
       "offer": "35"
     },
     "PSYC 300 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
