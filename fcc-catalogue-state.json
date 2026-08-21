@@ -1658,7 +1658,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -2378,7 +2378,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4714,7 +4714,7 @@
       "offer": "35"
     },
     "LING 217 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4722,7 +4722,7 @@
       "offer": "35"
     },
     "LING 217 B": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E227",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -5882,7 +5882,7 @@
       "offer": "35"
     },
     "PLSC 322 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
