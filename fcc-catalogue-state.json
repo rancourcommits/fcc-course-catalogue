@@ -426,7 +426,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -2378,7 +2378,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4666,7 +4666,7 @@
       "offer": "35"
     },
     "ISLM 201 A": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -5218,7 +5218,7 @@
       "offer": "35"
     },
     "MCOM 402 B": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
