@@ -3018,7 +3018,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -3074,7 +3074,7 @@
       "offer": "35"
     },
     "ECON 201 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E203",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
