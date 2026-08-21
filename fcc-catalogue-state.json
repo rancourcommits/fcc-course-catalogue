@@ -2402,7 +2402,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4530,7 +4530,7 @@
       "offer": "35"
     },
     "HIST 400 A": {
-      "available": 35,
+      "available": 34,
       "enrolled": "",
       "location": "TBD TBD",
       "schedule": "start:08/31/2026 MTWRF",
@@ -4962,7 +4962,7 @@
       "offer": "35"
     },
     "MATH 212 A": {
-      "available": 4,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
