@@ -1666,7 +1666,7 @@
       "offer": "35"
     },
     "CHEM 150 E": {
-      "available": 24,
+      "available": 23,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -4810,7 +4810,7 @@
       "offer": "35"
     },
     "MATH 102 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S410",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5050,7 +5050,7 @@
       "offer": "35"
     },
     "MCOM 200 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S213",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5058,7 +5058,7 @@
       "offer": "35"
     },
     "MCOM 200 B": {
-      "available": 20,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E041",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
