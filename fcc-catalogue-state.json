@@ -426,7 +426,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -2970,7 +2970,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3530,7 +3530,7 @@
       "offer": "35"
     },
     "EDUC 330 A": {
-      "available": 33,
+      "available": 32,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5138,7 +5138,7 @@
       "offer": "35"
     },
     "MCOM 302 A": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -5146,7 +5146,7 @@
       "offer": "35"
     },
     "MCOM 302 B": {
-      "available": 14,
+      "available": 15,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
