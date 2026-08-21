@@ -746,7 +746,7 @@
       "offer": "35"
     },
     "BUSN 280 I": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -2266,7 +2266,7 @@
       "offer": "35"
     },
     "CPPG 111 A": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E040",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3450,7 +3450,7 @@
       "offer": "35"
     },
     "EDUC 120 C": {
-      "available": 16,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3482,7 +3482,7 @@
       "offer": "35"
     },
     "EDUC 210 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -3490,7 +3490,7 @@
       "offer": "35"
     },
     "EDUC 240 A": {
-      "available": 16,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E241",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
