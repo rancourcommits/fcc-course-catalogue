@@ -578,7 +578,7 @@
       "offer": "35"
     },
     "BUSN 230 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E332",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -3410,7 +3410,7 @@
       "offer": "35"
     },
     "EDUC 110 F": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3562,7 +3562,7 @@
       "offer": "35"
     },
     "EDUC 360 A": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6122,7 +6122,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 10,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6362,7 +6362,7 @@
       "offer": "30"
     },
     "PSYC 370 A": {
-      "available": 24,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -6778,7 +6778,7 @@
       "offer": "35"
     },
     "SOCL 425 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -7002,7 +7002,7 @@
       "offer": "20"
     },
     "STAT 207 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
