@@ -234,7 +234,7 @@
       "offer": "35"
     },
     "BIOT 305 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "SBLOCK S413",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -2378,7 +2378,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -3410,7 +3410,7 @@
       "offer": "35"
     },
     "EDUC 110 F": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3794,7 +3794,7 @@
       "offer": "35"
     },
     "ENGL 201 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4666,7 +4666,7 @@
       "offer": "35"
     },
     "ISLM 201 A": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -4682,7 +4682,7 @@
       "offer": "35"
     },
     "ISLM 306 A": {
-      "available": 12,
+      "available": 11,
       "enrolled": "",
       "location": "EBLOCK E137",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6402,7 +6402,7 @@
       "offer": "35"
     },
     "PSYC 415 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
