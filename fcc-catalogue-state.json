@@ -2402,7 +2402,7 @@
       "offer": "25"
     },
     "CRST 155 A": {
-      "available": 8,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -2418,7 +2418,7 @@
       "offer": "35"
     },
     "CRST 212 A": {
-      "available": 29,
+      "available": 28,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:09/02/2026 W 12:00 - 12:50",
