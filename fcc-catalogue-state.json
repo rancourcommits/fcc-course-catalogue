@@ -4281,6 +4281,22 @@
       "instructor": "TBD",
       "offer": "35"
     },
+    "GEOG 101 C": {
+      "available": 6,
+      "enrolled": "",
+      "location": "EBLOCK E228",
+      "schedule": "start:09/01/2026 T R 09:30 - 10:45",
+      "instructor": "K Shakrul",
+      "offer": "35"
+    },
+    "GEOG 101 E": {
+      "available": 1,
+      "enrolled": "",
+      "location": "EBLOCK E228",
+      "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
+      "instructor": "K Shafiqu",
+      "offer": "35"
+    },
     "GEOG 101 F": {
       "available": 0,
       "enrolled": "",
@@ -5034,7 +5050,7 @@
       "offer": "35"
     },
     "MCOM 105 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6650,7 +6666,7 @@
       "offer": "35"
     },
     "SOCL 100 G": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E244",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
