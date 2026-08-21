@@ -82,7 +82,7 @@
       "offer": "35"
     },
     "BIOL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:09/01/2026 T R 09:30 - 10:20",
@@ -3026,7 +3026,7 @@
       "offer": "35"
     },
     "ECON 101 C": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -4050,7 +4050,7 @@
       "offer": "25"
     },
     "ENVR 240 A": {
-      "available": 12,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E242",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -4074,7 +4074,7 @@
       "offer": "35"
     },
     "ENVR 323 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
@@ -5402,7 +5402,7 @@
       "offer": "35"
     },
     "PHIL 202 A": {
-      "available": 11,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -6906,7 +6906,7 @@
       "offer": "15"
     },
     "STAT 102 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
