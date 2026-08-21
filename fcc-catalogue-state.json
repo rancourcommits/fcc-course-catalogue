@@ -242,7 +242,7 @@
       "offer": "35"
     },
     "BIOT 307 A": {
-      "available": 32,
+      "available": 31,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -258,7 +258,7 @@
       "offer": "35"
     },
     "BIOT 313 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S329",
       "schedule": "start:08/31/2026 M 11:00 - 12:50",
@@ -426,7 +426,7 @@
       "offer": "10"
     },
     "BUSN 101 B": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E328",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -2378,7 +2378,7 @@
       "offer": "35"
     },
     "CRST 151 A": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "XBLOCK X002",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -3042,7 +3042,7 @@
       "offer": "35"
     },
     "ECON 102 B": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E204",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3050,7 +3050,7 @@
       "offer": "35"
     },
     "ECON 102 C": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4274,7 +4274,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
