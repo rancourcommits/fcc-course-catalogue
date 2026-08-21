@@ -1658,7 +1658,7 @@
       "offer": "35"
     },
     "CHEM 150 D": {
-      "available": 15,
+      "available": 16,
       "enrolled": "",
       "location": "SBLOCK S210",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -2226,7 +2226,7 @@
       "offer": "35"
     },
     "COMP 451 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S219",
       "schedule": "start:09/01/2026 T R 11:00 - 12:50",
@@ -4274,7 +4274,7 @@
       "offer": "20"
     },
     "GEOG 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E228",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -5882,7 +5882,7 @@
       "offer": "35"
     },
     "PLSC 322 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
@@ -6082,7 +6082,7 @@
       "offer": "35"
     },
     "PSYC 101 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S111",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6770,7 +6770,7 @@
       "offer": "35"
     },
     "SOCL 350 A": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -6954,7 +6954,7 @@
       "offer": "35"
     },
     "STAT 115 C": {
-      "available": 4,
+      "available": 3,
       "enrolled": "",
       "location": "SBLOCK S421",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
