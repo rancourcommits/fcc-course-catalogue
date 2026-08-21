@@ -2466,7 +2466,7 @@
       "offer": "35"
     },
     "CRST 391 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E243",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -4554,7 +4554,7 @@
       "offer": "25"
     },
     "HPED 102 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "GROUND GROUND",
       "schedule": "start:09/01/2026 T R 16:00 - 17:00",
@@ -4562,7 +4562,7 @@
       "offer": "25"
     },
     "HPED 105 A": {
-      "available": 3,
+      "available": 2,
       "enrolled": "",
       "location": "VCOURT VCOURT",
       "schedule": "start:09/01/2026 T R 15:00 - 16:00",
@@ -4674,7 +4674,7 @@
       "offer": "35"
     },
     "ISLM 301 A": {
-      "available": 3,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5802,7 +5802,7 @@
       "offer": "35"
     },
     "PLSC 204 A": {
-      "available": 13,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5858,7 +5858,7 @@
       "offer": "35"
     },
     "PLSC 311 A": {
-      "available": 18,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -5906,7 +5906,7 @@
       "offer": "35"
     },
     "PLSC 335 A": {
-      "available": 14,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 12:00 - 12:50",
