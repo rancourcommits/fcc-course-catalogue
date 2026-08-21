@@ -10,7 +10,7 @@
       "offer": "35"
     },
     "ARTS 101 B": {
-      "available": 0,
+      "available": 2,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -3514,7 +3514,7 @@
       "offer": "35"
     },
     "EDUC 310 A": {
-      "available": 27,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -5098,7 +5098,7 @@
       "offer": "35"
     },
     "MCOM 203 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "EBLOCK E039",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -7226,7 +7226,7 @@
       "offer": "35"
     },
     "URDU 104 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E102",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
