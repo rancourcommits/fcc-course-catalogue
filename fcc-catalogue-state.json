@@ -4842,7 +4842,7 @@
       "offer": "5"
     },
     "MATH 105 C": {
-      "available": 5,
+      "available": 4,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -6946,7 +6946,7 @@
       "offer": "35"
     },
     "STAT 115 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
