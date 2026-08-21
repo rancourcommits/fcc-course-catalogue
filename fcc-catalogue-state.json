@@ -706,7 +706,7 @@
       "offer": "35"
     },
     "BUSN 280 D": {
-      "available": 3,
+      "available": 4,
       "enrolled": "",
       "location": "EBLOCK E330",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -714,7 +714,7 @@
       "offer": "35"
     },
     "BUSN 280 E": {
-      "available": 22,
+      "available": 17,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
@@ -786,7 +786,7 @@
       "offer": "35"
     },
     "BUSN 280 N": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E343",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -4554,7 +4554,7 @@
       "offer": "25"
     },
     "HPED 102 A": {
-      "available": 2,
+      "available": 4,
       "enrolled": "",
       "location": "GROUND GROUND",
       "schedule": "start:09/01/2026 T R 16:00 - 17:00",
