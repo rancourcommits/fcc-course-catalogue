@@ -5730,7 +5730,7 @@
       "offer": "35"
     },
     "PLSC 101 A": {
-      "available": 7,
+      "available": 8,
       "enrolled": "",
       "location": "EBLOCK E126",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -6290,7 +6290,7 @@
       "offer": "35"
     },
     "PSYC 330 A": {
-      "available": 22,
+      "available": 21,
       "enrolled": "",
       "location": "EBLOCK E230",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
@@ -6442,7 +6442,7 @@
       "offer": "35"
     },
     "PSYC 440 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S109",
       "schedule": "start:09/01/2026 T R 15:30 - 16:45",
