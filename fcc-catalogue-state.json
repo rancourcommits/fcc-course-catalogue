@@ -466,7 +466,7 @@
       "offer": "35"
     },
     "BUSN 201 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E240",
       "schedule": "start:08/31/2026 M W F 09:00 - 09:50",
@@ -2762,7 +2762,7 @@
       "offer": "35"
     },
     "CSCS 456 A": {
-      "available": 6,
+      "available": 7,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6754,7 +6754,7 @@
       "offer": "35"
     },
     "SOCL 301 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
