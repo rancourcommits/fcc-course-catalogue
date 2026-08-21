@@ -242,7 +242,7 @@
       "offer": "35"
     },
     "BIOT 307 A": {
-      "available": 31,
+      "available": 32,
       "enrolled": "",
       "location": "SBLOCK S321",
       "schedule": "start:08/31/2026 M W F 10:00 - 10:50",
@@ -2970,7 +2970,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 11,
+      "available": 12,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -4682,7 +4682,7 @@
       "offer": "35"
     },
     "ISLM 306 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E137",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -4802,7 +4802,7 @@
       "offer": "35"
     },
     "MATH 102 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S412",
       "schedule": "start:09/01/2026 T R 12:30 - 13:45",
@@ -6450,7 +6450,7 @@
       "offer": "35"
     },
     "PSYC 465 A": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
