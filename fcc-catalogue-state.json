@@ -3018,7 +3018,7 @@
       "offer": "35"
     },
     "ECON 101 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E202",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
@@ -5954,7 +5954,7 @@
       "offer": "15"
     },
     "PLSC 407 A": {
-      "available": 26,
+      "available": 25,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6706,7 +6706,7 @@
       "offer": "35"
     },
     "SOCL 118 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E104",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6746,7 +6746,7 @@
       "offer": "35"
     },
     "SOCL 291 A": {
-      "available": 19,
+      "available": 20,
       "enrolled": "",
       "location": "EBLOCK E105",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
