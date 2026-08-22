@@ -3738,7 +3738,7 @@
       "offer": "25"
     },
     "ENGL 108 Q": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6202,7 +6202,7 @@
       "offer": "35"
     },
     "PSYC 295 A": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S417",
       "schedule": "start:08/31/2026 M W F 14:00 - 14:50",
