@@ -2850,7 +2850,7 @@
       "offer": "15"
     },
     "DATA 102 C": {
-      "available": 7,
+      "available": 6,
       "enrolled": "",
       "location": "SBLOCK S425",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -2970,7 +2970,7 @@
       "offer": "10"
     },
     "ECON 100 E": {
-      "available": 10,
+      "available": 9,
       "enrolled": "",
       "location": "EBLOCK E205",
       "schedule": "start:08/31/2026 M W F 08:00 - 08:50",
@@ -3722,7 +3722,7 @@
       "offer": "25"
     },
     "ENGL 108 N": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E103",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -6258,7 +6258,7 @@
       "offer": "35"
     },
     "PSYC 305 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E246",
       "schedule": "start:09/01/2026 T R 11:00 - 12:15",
