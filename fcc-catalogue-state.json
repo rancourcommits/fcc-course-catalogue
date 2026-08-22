@@ -5802,7 +5802,7 @@
       "offer": "35"
     },
     "PLSC 204 A": {
-      "available": 11,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5954,7 +5954,7 @@
       "offer": "15"
     },
     "PLSC 407 A": {
-      "available": 25,
+      "available": 26,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
