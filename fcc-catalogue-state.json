@@ -1226,7 +1226,7 @@
       "offer": "35"
     },
     "BUSN 460 F": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "EBLOCK E213",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -3698,7 +3698,7 @@
       "offer": "25"
     },
     "ENGL 108 J": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "EBLOCK E122",
       "schedule": "start:08/31/2026 M W F 15:00 - 15:50",
@@ -5794,7 +5794,7 @@
       "offer": "35"
     },
     "PLSC 203 B": {
-      "available": 19,
+      "available": 18,
       "enrolled": "",
       "location": "EBLOCK E139",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
