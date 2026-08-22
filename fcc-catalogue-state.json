@@ -6850,7 +6850,7 @@
       "offer": "35"
     },
     "STAT 100 B": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
