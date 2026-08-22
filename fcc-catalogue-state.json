@@ -3466,7 +3466,7 @@
       "offer": "35"
     },
     "EDUC 120 E": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E214",
       "schedule": "start:09/01/2026 T R 09:30 - 10:45",
@@ -3546,7 +3546,7 @@
       "offer": "15"
     },
     "EDUC 350 A": {
-      "available": 28,
+      "available": 27,
       "enrolled": "",
       "location": "EBLOCK E140",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -4962,7 +4962,7 @@
       "offer": "35"
     },
     "MATH 212 A": {
-      "available": 6,
+      "available": 5,
       "enrolled": "",
       "location": "SBLOCK S212",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -5466,7 +5466,7 @@
       "offer": "35"
     },
     "PHYS 101 C": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S007",
       "schedule": "start:08/31/2026 M W 11:00 - 11:50",
