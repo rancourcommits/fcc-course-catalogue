@@ -3810,7 +3810,7 @@
       "offer": "35"
     },
     "ENGL 201 C": {
-      "available": 18,
+      "available": 19,
       "enrolled": "",
       "location": "EBLOCK E221",
       "schedule": "start:08/31/2026 M W F 11:00 - 11:50",
@@ -6850,7 +6850,7 @@
       "offer": "35"
     },
     "STAT 100 B": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S420",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
