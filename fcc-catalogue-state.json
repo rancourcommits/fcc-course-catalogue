@@ -82,7 +82,7 @@
       "offer": "35"
     },
     "BIOL 100 E": {
-      "available": 0,
+      "available": 1,
       "enrolled": "",
       "location": "SBLOCK S341",
       "schedule": "start:09/01/2026 T R 09:30 - 10:20",
@@ -2114,7 +2114,7 @@
       "offer": "35"
     },
     "COMP 303 B": {
-      "available": 14,
+      "available": 13,
       "enrolled": "",
       "location": "SBLOCK S320",
       "schedule": "start:09/01/2026 T R 08:00 - 09:15",
@@ -5434,7 +5434,7 @@
       "offer": "35"
     },
     "PHYS 100 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "SBLOCK S039",
       "schedule": "start:09/01/2026 T R 14:00 - 14:50",
@@ -6090,7 +6090,7 @@
       "offer": "35"
     },
     "PSYC 105 A": {
-      "available": 1,
+      "available": 0,
       "enrolled": "",
       "location": "EBLOCK E038",
       "schedule": "start:09/01/2026 T R 14:00 - 15:15",
@@ -6122,7 +6122,7 @@
       "offer": "35"
     },
     "PSYC 165 A": {
-      "available": 9,
+      "available": 10,
       "enrolled": "",
       "location": "EBLOCK E229",
       "schedule": "start:08/31/2026 M W F 16:00 - 16:50",
